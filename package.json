@@ -1,0 +1,21 @@
+{
+  "name": "dora-community",
+  "version": "0.0.1",
+  "description": "Website for DORA community of practice.",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dora-team/dora.community"
+  },
+  "author": "Amanda Lewis",
+  "license" : "SEE LICENSE IN LICENSE",
+  "homepage": "https://dora.community",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.7",
+    "postcss-cli": "^9.0.2"
+  }
+}
