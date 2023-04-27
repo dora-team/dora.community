@@ -10,78 +10,29 @@ menu:
 
 {{< /blocks/cover >}}
 
-<section id="pageContent">
-  <h1 class="text-center">Connect with Us</h1> 
-  <br>
-  <div class="container">
-    <div class="card-deck">
-      <div class="card border-primary-dark">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 475"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-		 
-        <div class="card-body bg-primary-dark">
-          <h5 class="card-title text-black section-head">Research</h5>
-          <p class="card-text text-black">
-            <p>The largest and longest running academically rigorous research program on software delivery & operations. 
-            DORA was founded by Dr. Nicole Forsgren, Jez Humble, and Gene Kim. DORA joined Google Cloud in 2018.</p>
-           
-           <p> Read the 2022 Accelerate State of DevOps Report, and other DORA Research publications at 
-            <a href="https://dora.dev/quickcheck/">DORA.dev</a>.</p>
-          </p>
-        </div>
-      </div>
-      <div class="card border-primary-dark">
-        <img
-          src="/about/stability_velocity.jpg"
-		  class="card-img-top"
-		  draggable="false"
-          style="padding: 2rem;padding-bottom: 5rem"
-          alt="DORA Quick Check"
-        />
-        <div class="card-body bg-primary-dark">
-          <h5 class="card-title text-black section-head">
-            Quick Check
-          </h5>
-          <p class="card-text text-black">
-            The DORA research shows that velocity and stability do not have to be tradeoffs. The Four Key Metrics can be used to measure 
-            software delivery and operations:
-            <ul>
-              <li>Deployment Frequency - The number of times code is deployed to production each day, week, or month.</li>
-              <li>Lead Time for Changes - The time it takes to make a change to production.</li>
-              <li>Time to Resolution - The time it takes to resolve an issue in production.</li>
-              <li>Change Failure Rate - The percentage of changes that fail in production.</li>
-            </ul>
-            The four key metrics can be used to track the progress of a team over time and to identify areas where improvement is needed.
-            <br><br>
-            Learn more and take the quick check on <a href="https://dora.dev/quickcheck/">DORA.dev</a>
-            <br>
-            <br>
-            
-         
-          </p>
-        </div>
-      </div>
-      <div class="card border-primary-dark">
-        <img
-          src="/about/capabilities.jpg"
-		  class="card-img-top"
-		  draggable="false"
-          style="padding: 2rem;padding-bottom: 9rem"
-          alt="DORA Capabilities"
-        />
-        <div class="card-body bg-primary-dark">
-          <h5 class="card-title text-black section-head">Capabilities</h5>
-          <p class="card-text text-black">
-            How do we get better?  DORA's research includes a predictive analysis of which capabilities drive the outcomes teams want.
-            This predictive analysis gives us key insights into where to invest.  
-           
-            <p>By tracking the DORA four keys, teams can identify areas where they can improve their velocity and stability. This can lead to a more efficient and 
-            reliable software delivery process.</p>
+{{< blocks/section color="100" >}}
+  
+{{% blocks/feature icon="fa-sharp fa-solid fa-people-group" title="Google Group" %}}
+  Join the <a href="https://groups.google.com/g/dora-community/about">DORA Community of Practice Google Group</a> for asyncronous 
+  discussions, and event notifications.
+  {{% /blocks/feature %}}
+  
+  {{% blocks/feature  icon="fa-brands fa-linkedin" title="LinkedIn"  %}}
+  
+  Follow us on <a href="https://www.linkedin.com/company/10879409">LinkedIn</a>.  Share upcoming DORA related events and news with your connections.
+  {{% /blocks/feature %}}
 
-            <p>Explore which capabilities are holding you back at <a href="https://dora.dev/quickcheck/">DORA.dev</a>.</p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <br />
-    
-  </div>
+  {{% blocks/feature img="/static/favicons/dora.ico" title="DORA.dev" %}}
+  Access the DORA Research publications, benchmark your team with the Quick Check, and identify which capability is holding you back at 
+  <a href="https://dora.dev">DORA.dev</a>.
+  {{% /blocks/feature %}}
+
+  {{% blocks/feature icon="fa-brands fa-twitter" title="Twitter" %}}
+  Keep the conversation going on <a href="https://twitter.com/devops_research">Twitter</a> .
+  {{% /blocks/feature %}}
+
+  {{% blocks/feature icon="fa-brands fa-mastodon" title="Mastedon" %}}
+  Connect with us on <a href="https://mastodon.social/@dora@hachyderm.io">Mastedon</a>.  Share upcoming DORA related events and news with your connections.
+  {{% /blocks/feature %}}
+
+{{< /blocks/section >}}
