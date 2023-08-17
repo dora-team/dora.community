@@ -1,6 +1,7 @@
 ---
 title: DORA Community Summit
 linkTitle: Summit
+excludeSiteBanner: true
 menu:
   main:
     weight: 10
