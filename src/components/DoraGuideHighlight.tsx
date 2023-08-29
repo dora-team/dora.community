@@ -11,7 +11,7 @@ type GuideProps = {
   image?: string;
   title: string;
   body: string;
-  url?: string;
+  url?: any;
 };
 
 export const DoraGuideHighlight = ({
