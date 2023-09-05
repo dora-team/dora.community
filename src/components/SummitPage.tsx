@@ -8,13 +8,12 @@ import doraSummitLogo from "../assets/dora-summit-at-does.png";
 export const SummitPage = () => {
   return (
     <>
-     
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">
         <Card title="DORA Community Summit">
           <Box textAlign="center">
-          <img src={doraSummitLogo} />
+            <img src={doraSummitLogo} />
           </Box>
 
           <h2>Accelerate your journey with lessons from fellow travelers</h2>
@@ -48,9 +47,8 @@ export const SummitPage = () => {
           <p>09:00 - 09:10 - Welcome Remarks</p>
 
           <p>
-            09:10 - 09:30 -{" "}
-            <Link to={"./opening-keynote"}>Opening Keynote</Link>, Nicole
-            Forsgren, PhD
+            09:10 - 09:30 - <Link to={"/opening-keynote"}>Opening Keynote</Link>
+            , Nicole Forsgren, PhD
           </p>
 
           <p>
@@ -60,7 +58,7 @@ export const SummitPage = () => {
 
           <p>
             10:00 - 10:05 -{" "}
-            <Link to="./john-deere">
+            <Link to="/john-deere">
               How DORA influenced John Deere’s Agile Operating Model
             </Link>
           </p>
@@ -70,8 +68,11 @@ export const SummitPage = () => {
           <p>11:40 - 12:00 - Closing Remarks, Nathen Harvey</p>
 
           <p>
-            This event is being held as a pre-conference event with the <a href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv">DevOps
-            Enterprise Summit</a>.
+            This event is being held as a pre-conference event with the{" "}
+            <a href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv">
+              DevOps Enterprise Summit
+            </a>
+            .
           </p>
         </Card>
       </Box>
