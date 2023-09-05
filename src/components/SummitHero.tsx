@@ -13,7 +13,7 @@ export const SummitHero = () => {
         Oct 2 2023: Join the{" "}
         <b>DORA Community Summit at DevOps Enterprise Summit</b> to learn,
         discuss, and collaborate with fellow community members.{" "}
-        <Link to={"./summit"}>Tickets and Info </Link>
+        <Link to={"/summit"}>Tickets and Info </Link>
       </>
     </Box>
   );

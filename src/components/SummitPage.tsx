@@ -2,13 +2,13 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import { Link } from "react-router-dom";
-import { SummitHero } from "./SummitHero";
+
 import doraSummitLogo from "../assets/dora-summit-at-does.png";
 
 export const SummitPage = () => {
   return (
     <>
-      <SummitHero />
+     
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">
