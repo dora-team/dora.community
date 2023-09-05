@@ -42,7 +42,11 @@ DORA studies the culture and capabilities that enable high-performing technology
 
 * **10:00** - **10:05** - <a href="john-deere" style="color:#fff; text-decoration:underline">How DORA influenced John Deere's Agile Operating Model</a>
 
-* **10:05 - 11:40** - Group discussions
+* **10:05 - 11:00** - Group discussions
+
+* **11:00 - 11:05** - <a href="denali-lumma" style="color:#fff; text-decoration:underline">Guide to the DORA Community</a>
+
+* **11:05 - 11:40** - Group Discussions
 
 * **11:40 - 12:00** - Closing Remarks, Nathen Harvey
 
