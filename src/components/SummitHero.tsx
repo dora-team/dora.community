@@ -7,6 +7,7 @@ export const SummitHero = () => {
       sx={{
         backgroundColor: "#fde293",
         padding: "1rem",
+        textAlign: "center",
       }}
     >
       <>

@@ -9,6 +9,7 @@ import { CommunityGuidelinesPage } from "./components/CommunityGuidelines.tsx";
 import { SummitPage } from "./components/SummitPage.tsx";
 import { OpeningKeynotePage } from "./components/OpeningKeynotePage.tsx";
 import { JohnDeerePage } from "./components/JohnDeerePage.tsx";
+import { DenaliLummaPage } from "./components/DenaliLummaPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,22 +22,26 @@ const router = createBrowserRouter([
         path: "communityguidelines",
         element: <CommunityGuidelinesPage />,
       },
-      { 
+      {
         path: "join",
         element: <JoinPage />,
       },
-      { 
+      {
         path: "summit",
         element: <SummitPage />,
       },
-      { 
+      {
         path: "summit/opening-keynote",
         element: <OpeningKeynotePage />,
       },
-      { 
+      {
         path: "summit/john-deere",
-        element: < JohnDeerePage />,
-      }
+        element: <JohnDeerePage />,
+      },
+      {
+        path: "summit/denali-lumma",
+        element: <DenaliLummaPage />,
+      },
     ],
   },
 ]);
