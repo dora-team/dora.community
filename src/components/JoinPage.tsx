@@ -10,6 +10,7 @@ import lisaCrispin from "../assets/lisa-crispin-headshot.jpg";
 import { DoraGuideHighlight } from "./DoraGuideHighlight";
 import { Hero } from "./Hero";
 import { SummitHero } from "./SummitHero";
+import { SignUpButton } from "./SignUpButton";
 
 export const JoinPage = () => {
   return (
@@ -21,16 +22,14 @@ export const JoinPage = () => {
       <Box maxWidth="1600px" margin="auto">
         <Box>
           <Card title="Google Group Mailing List">
-            <Box display="flex" alignItems="center">
-            <Box width="600px">
-             <Box marginBottom="1rem"> <a href="https://groups.google.com/g/dora-community/about">
-                Join the DORA Community of Practice Google Group Mailing list
-              </a>{" "}
-              to:</Box>
-              <li>Connect with members asynchronously</li>
-              <li>Receive invitations for community events</li>
-              <li>Stay up-to-date on community news </li>
+            <Box marginBottom="1rem" fontSize="1.5rem">
+              Join the DORA Community of Practice Google Group Mailing list to:
             </Box>
+            <li>Connect with members asynchronously</li>
+            <li>Receive invitations for community events</li>
+            <li>Stay up-to-date on community news </li>
+            <Box marginTop="2rem">
+              <SignUpButton />
             </Box>
           </Card>
         </Box>

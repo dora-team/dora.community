@@ -14,5 +14,5 @@ export const Button = (props: any) => {
       </Box>
     );
   }
-  return ButtonStyled(props);
+  return <ButtonStyled {...props} />;
 };

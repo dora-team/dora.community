@@ -1,11 +1,7 @@
 import Box from "@mui/material/Box";
 import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
 
-import { Button } from "./Button";
-
-const handleSignUpButton = () => {
-  window.open("https://groups.google.com/g/dora-community/about", "_blank");
-};
+import { SignUpButton } from "./SignUpButton";
 
 export const Hero = () => {
   return (
@@ -24,13 +20,7 @@ export const Hero = () => {
                   performance. Enabling a culture of continuous improvement.
                 </Box>
 
-                <Button
-                  onClick={handleSignUpButton}
-                  variant="contained"
-                  centered
-                >
-                  Join the DORA Community of Practice
-                </Button>
+                <SignUpButton centered />
               </Box>
             </Box>
           </Box>
