@@ -21,12 +21,17 @@ export const JoinPage = () => {
       <Box maxWidth="1600px" margin="auto">
         <Box>
           <Card title="Google Group Mailing List">
-            <p>
-              Join the DORA Community of Practice Google Group Mailing list to:
-            </p>
-            <li>Asyncronously connect with members</li>
-            <li>Calendar invitations for community events</li>
-            <li>Community News </li>
+            <Box display="flex" alignItems="center">
+            <Box width="600px">
+             <Box marginBottom="1rem"> <a href="https://groups.google.com/g/dora-community/about">
+                Join the DORA Community of Practice Google Group Mailing list
+              </a>{" "}
+              to:</Box>
+              <li>Connect with members asynchronously</li>
+              <li>Receive invitations for community events</li>
+              <li>Stay up-to-date on community news </li>
+            </Box>
+            </Box>
           </Card>
         </Box>
         <Box
@@ -44,11 +49,11 @@ export const JoinPage = () => {
               welcome, including active listening.
             </p>
             <p>
-              Most sessions start with a guest speaker,{" "}
+              Most sessions start with a guest speaker who's presentation is
+              recorded.{" "}
               <a href="https://www.youtube.com/playlist?list=PLKK5zTDXqzFNt1OTjhlrCnhVl1UO2QMbk">
-                check out previous sessions.
+                Watch previous sessions.
               </a>{" "}
-              Only the presentation portion is recorded.
             </p>
             <p>
               Would you like to present at a community discussion? Please email{" "}
@@ -96,14 +101,14 @@ export const JoinPage = () => {
               altText="Steve Fenton"
               image={steveFenton}
               body="Steve Fenton is an Octonaut at Octopus Deploy and a five-time Microsoft MVP with more than two decades of experience in software delivery. He has written books on TypeScript (Apress, InfoQ), Octopus Deploy, and Web Operations. Steve has worked in the role of Software Engineer, SDET, Development Manager, and Director of Product and Data in a range of startups, SMEs, and enterprises."
-              url="https://www.linkedin.com/in/stevefenton/"
+              linkedIn="https://www.linkedin.com/in/stevefenton/"
             />
             <DoraGuideHighlight
               title="Denali Lumma"
               altText="Denali Lumma"
               image={denaliLumma}
               body="Denali Lumma is a technology executive with over 20 years experience in startup to public offering, small, midsize and global companies supporting teams responsible for customer-facing product development for B2C, B2B, healthcare and life sciences, and infrastructure teams responsible for technical platforms, security, privacy, compliance, corporate IT, quality, reliability, and availability. She has helped to build multiple unicorns as an early engineer at companies like Netflix, 23andMe, Okta, Salesforce, and Uber. Denali serves on the board for Savage Jazz Dance Company, distinguished by its disciplined dancers and instructors, and its dedication to the exploration of jazz music’s range of expression. She is an investor in Steezy, making dance the next big global sport. Denali is Founder and CEO at Doubling, offering technical advisory services to portfolio companies at Y Combinator, Andreessen Horowitz, and other venture capital groups. Denali lives in Los Gatos, California with her husband and two children. "
-              url="https://www.linkedin.com/in/denali-lumma/"
+              linkedIn="https://www.linkedin.com/in/denali-lumma/"
             />
             <DoraGuideHighlight
               title="Betsalel (Saul) Williamson"
@@ -113,20 +118,42 @@ export const JoinPage = () => {
             He is passionate about helping his peers and projects succeed. Saul has served on the boards of Pittsburgh chapters of PDMA and IEEE where he developed workshops, events, and conducted market research to help students and professionals engage with their local communities. 
             Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow!  
             Outside of work, Saul enjoys working on software hobby projects, traveling, and playing classical piano."
-              url="https://www.linkedin.com/in/betsalel/"
+              linkedIn="https://www.linkedin.com/in/betsalel/"
             />
             <DoraGuideHighlight
               title="Lisa Crispin"
               altText="Lisa Crispin"
               image={lisaCrispin}
-              body="Lisa Crispin is the co-author, with Janet Gregory, of three books: Agile Testing
-            Condensed: A Brief Introduction, More Agile Testing: Learning Journeys for the Whole
-            Team, Agile Testing: A Practical Guide for Testers and Agile Teams; the LiveLessons
-            Agile Testing Essentials video course. She and Janet co-founded the Agile Testing
-            Fellowship, which offers “Holistic Testing: Strategies for agile teams” live training
-            course both remotely and in-person. Lisa was voted by her peers as the Most InfluentialAgile Testing Professional Person at Agile Testing Days in 2012. She is co-founder with Janet of Agile Testing Fellowship, Inc. and is happily available for training and consulting. Please visit www.lisacrispin.com, www.agiletestingfellow.com, and
-            www.agiletester.ca for more. Contact Lisa on Twitter as @lisacrispin, and LinkedIn."
-              url="https://www.linkedin.com/in/lisa-crispin-88420a/"
+              body={
+                <Box>
+                  Lisa Crispin is the co-author, with Janet Gregory, of three
+                  books: Agile Testing Condensed: A Brief Introduction, More
+                  Agile Testing: Learning Journeys for the Whole Team, Agile
+                  Testing: A Practical Guide for Testers and Agile Teams; the
+                  LiveLessons Agile Testing Essentials video course. She and
+                  Janet co-founded the Agile Testing Fellowship, which offers
+                  “Holistic Testing: Strategies for agile teams” live training
+                  course both remotely and in-person. Lisa was voted by her
+                  peers as the Most InfluentialAgile Testing Professional Person
+                  at Agile Testing Days in 2012. She is co-founder with Janet of
+                  Agile Testing Fellowship, Inc. and is happily available for
+                  training and consulting. Please visit{" "}
+                  <a href="https://www.lisacrispin.com" target="_blank">
+                    www.lisacrispin.com
+                  </a>
+                  ,{" "}
+                  <a href="https://www.agiletestingfellow.com" target="_blank">
+                    www.agiletestingfellow.com
+                  </a>
+                  , and{" "}
+                  <a href="https://www.agiletester.ca" target="_blank">
+                    www.agiletester.ca
+                  </a>{" "}
+                  for more. Contact Lisa on Twitter, and LinkedIn.
+                </Box>
+              }
+              linkedIn="https://www.linkedin.com/in/lisa-crispin-88420a/"
+              twitter="https://twitter.com/lisacrispin"
             />
           </Box>
         </Card>

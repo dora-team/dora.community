@@ -9,6 +9,17 @@ export const DenaliLummaPage = () => {
     <>
       <SummitHero />
       <Hero />
+      <Box maxWidth="1600px" margin="auto">
+        <h2>Guide to the DORA Community</h2>
+
+        <p>
+          The DORA Community was formally launched with the release of the 2022
+          Accelerate State of DevOps Report, almost a year ago. The community
+          includes practitioners, leaders, and researchers interested in
+          learning more about and sharing their experiences with driving high
+          performance in technology-driven organizations.
+        </p>
+      </Box>
 
       <Box maxWidth="1600px" margin="auto">
         <Card title="Denali Lumma, CEO, Doubling and DORA Community Guide">

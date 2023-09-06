@@ -5,13 +5,15 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Twitter } from "@mui/icons-material";
 
 type GuideProps = {
   altText: string;
   image?: string;
   title: string;
-  body: string;
-  url?: any;
+  body: string | JSX.Element;
+  linkedIn?: any;
+  twitter?: any;
 };
 
 export const DoraGuideHighlight = ({
@@ -19,7 +21,8 @@ export const DoraGuideHighlight = ({
   altText,
   image,
   body,
-  url,
+  linkedIn,
+  twitter,
 }: GuideProps) => {
   return (
     <Card>
@@ -33,9 +36,16 @@ export const DoraGuideHighlight = ({
         </Typography>
       </CardContent>
       <CardActions>
-        <Link to={url} target="_blank">
-          <LinkedInIcon />
-        </Link>
+        {linkedIn && (
+          <Link to={linkedIn} target="_blank">
+            <LinkedInIcon />
+          </Link>
+        )}
+        {twitter && (
+          <Link to={twitter} target="_blank">
+            <Twitter />
+          </Link>
+        )}
       </CardActions>
     </Card>
   );

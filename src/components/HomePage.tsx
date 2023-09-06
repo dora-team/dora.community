@@ -43,8 +43,8 @@ export const HomePage = () => {
             DevOps Research and Assessment (DORA) is the largest and longest
             running research program of its kind, that seeks to understand the
             capabilities that drive software delivery and operations
-            performance. DORA helps teams apply those capabilities, leading to
-            better organizational performance.
+            performance. <br /> <br /> DORA helps teams apply those
+            capabilities, leading to better organizational performance.
             <Button onClick={handleDoraDevButton} variant="contained" centered>
               Explore DORA.dev
             </Button>
@@ -53,10 +53,12 @@ export const HomePage = () => {
             title="Accelerate State of DevOps Report"
             imageLeft={sodr2022thumb}
           >
-            Over the past eight years, more than 33,000 professionals around the
-            world have taken part in the Accelerate State of DevOps survey,
-            making it the largest and longest-running research of its kind. Year
-            aft
+            More than 33,000 professionals around the world have taken part in
+            the Accelerate State of DevOps survey, making it the largest and
+            longest-running research of its kind. Year after year, the reports
+            provide data-driven industry insights that examine the capabilities
+            and practices that drive software delivery, operational and
+            organizational performance.
             <Button onClick={handleSodrButton} variant="contained" centered>
               Read the Report
             </Button>
@@ -66,9 +68,17 @@ export const HomePage = () => {
             iconLeft={faYoutube}
             iconStyle={{ color: "#d01b1b" }}
           >
-            Use our quick check tool to discover how you compare to industry
-            peers, identify specific capabilities you can use to improve
-            performance, and make progress on your software delivery goals.
+            Most sessions start with a guest speaker who's presentation is
+            recorded. <br />
+            <br />
+            Some recent topics:
+            <br />
+            <br />
+            <li>Team Topologies</li>
+            <li>Minimum Viable CD</li>
+            <li>Documentation</li>
+            <li>DORA & Space Metrics</li>
+            <li>Scaling DORA</li>
             <Button onClick={handleYoutubeButton} variant="contained" centered>
               Watch Community Recordings
             </Button>

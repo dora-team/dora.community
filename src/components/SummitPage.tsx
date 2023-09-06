@@ -26,11 +26,17 @@ export const SummitPage = () => {
           </p>
 
           <p>
-            <a href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv">
+            <a
+              href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv"
+              target="_blank"
+            >
               Register now
             </a>{" "}
             by adding the DORA Community Summit ($75) to your{" "}
-            <a href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv">
+            <a
+              href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv"
+              target="_blank"
+            >
               DevOps Enterprise Summit registration
             </a>
             .
@@ -47,8 +53,9 @@ export const SummitPage = () => {
           <p>09:00 - 09:10 - Welcome Remarks</p>
 
           <p>
-            09:10 - 09:30 - <Link to={"/summit/opening-keynote"}>Opening Keynote</Link>
-            , Nicole Forsgren, PhD
+            09:10 - 09:30 -{" "}
+            <Link to={"/summit/opening-keynote"}>Opening Keynote</Link>, Nicole
+            Forsgren, PhD
           </p>
 
           <p>
@@ -76,7 +83,10 @@ export const SummitPage = () => {
 
           <p>
             This event is being held as a pre-conference event with the{" "}
-            <a href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv">
+            <a
+              href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv"
+              target="_blank"
+            >
               DevOps Enterprise Summit
             </a>
             .
