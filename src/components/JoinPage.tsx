@@ -48,7 +48,7 @@ export const JoinPage = () => {
               welcome, including active listening.
             </p>
             <p>
-              Most sessions start with a guest speaker whose presentation is
+              Most sessions start with a guest speaker who's presentation is
               recorded.{" "}
               <a href="https://www.youtube.com/playlist?list=PLKK5zTDXqzFNt1OTjhlrCnhVl1UO2QMbk">
                 Watch previous sessions.
