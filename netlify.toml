@@ -4,5 +4,4 @@
 [[redirects]]
   from = "/summit/"
   to = "/summit"
-  status = 301
-  
+  status = 200
