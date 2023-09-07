@@ -23,15 +23,7 @@ const router = createBrowserRouter([
         element: <CommunityGuidelinesPage />,
       },
       {
-        path: "communityguidelines/",
-        element: <CommunityGuidelinesPage />,
-      },
-      {
         path: "join",
-        element: <JoinPage />,
-      },
-      {
-        path: "join/",
         element: <JoinPage />,
       },
       {
@@ -39,15 +31,7 @@ const router = createBrowserRouter([
         element: <SummitPage />,
       },
       {
-        path: "summit/",
-        element: <SummitPage />,
-      },
-      {
         path: "summit/opening-keynote",
-        element: <OpeningKeynotePage />,
-      },
-      {
-        path: "summit/opening-keynote/",
         element: <OpeningKeynotePage />,
       },
       {
@@ -55,15 +39,7 @@ const router = createBrowserRouter([
         element: <JohnDeerePage />,
       },
       {
-        path: "summit/john-deere/",
-        element: <JohnDeerePage />,
-      },
-      {
         path: "summit/denali-lumma",
-        element: <DenaliLummaPage />,
-      },
-      {
-        path: "summit/denali-lumma/",
         element: <DenaliLummaPage />,
       },
     ],
