@@ -19,27 +19,27 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       {
-        path: "communityguidelines",
+        path: "communityguidelines/",
         element: <CommunityGuidelinesPage />,
       },
       {
-        path: "join",
+        path: "join/",
         element: <JoinPage />,
       },
       {
-        path: "summit",
+        path: "summit/",
         element: <SummitPage />,
       },
       {
-        path: "summit/opening-keynote",
+        path: "summit/opening-keynote/",
         element: <OpeningKeynotePage />,
       },
       {
-        path: "summit/john-deere",
+        path: "summit/john-deere/",
         element: <JohnDeerePage />,
       },
       {
-        path: "summit/denali-lumma",
+        path: "summit/denali-lumma/",
         element: <DenaliLummaPage />,
       },
     ],
