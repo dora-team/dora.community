@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import { SummitHero } from "./SummitHero";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const DenaliLummaPage = () => {
   return (
@@ -18,6 +19,13 @@ export const DenaliLummaPage = () => {
           includes practitioners, leaders, and researchers interested in
           learning more about and sharing their experiences with driving high
           performance in technology-driven organizations.
+        </p>
+        <p>
+          The DORA Community includes four Community Guides who help create a 
+          welcoming, inclusive environment for everyone while also shaping the 
+          future of the community.  Denali Lumma, DORA Community Guide, will 
+          share her experience with the DORA Community including insights into 
+          the value of community and how you can get involved.
         </p>
       </Box>
 
