@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import { SummitHero } from "./SummitHero";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const DenaliLummaPage = () => {
   return (
