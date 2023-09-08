@@ -1,4 +1,5 @@
 import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import sodr2022thumb from "../assets/sodr-2022-thumb.png";
@@ -25,20 +26,11 @@ const handleSodrButton = () => {
 
 export const HomePage = () => {
   return (
-    <>
-      <Stack spacing={0}>
-        <SummitHero />
-        <Hero />
-
-        <Box
-          display="grid"
-          gridTemplateColumns="1fr 1fr 1fr"
-          gridAutoRows="1fr"
-          gap="1.5em"
-          p="0.5rem"
-          maxWidth="1600px"
-          margin="auto"
-        >
+    <Stack spacing={0}>
+      <SummitHero />
+      <Hero />
+      <Grid container spacing={2} maxWidth={1600} margin="auto" padding="1rem">
+        <Grid item xl={4} md={6} xs={12}>
           <Card title="DORA.dev" imageLeft={doraDevCard}>
             DevOps Research and Assessment (DORA) is the largest and longest
             running research program of its kind, that seeks to understand the
@@ -49,6 +41,8 @@ export const HomePage = () => {
               Explore DORA.dev
             </Button>
           </Card>
+        </Grid>
+        <Grid item xl={4} md={6} xs={12}>
           <Card
             title="Accelerate State of DevOps Report"
             imageLeft={sodr2022thumb}
@@ -63,6 +57,8 @@ export const HomePage = () => {
               Read the Report
             </Button>
           </Card>
+        </Grid>
+        <Grid item xl={4} xs={12}>
           <Card
             title="YouTube Playlist"
             iconLeft={faYoutube}
@@ -83,8 +79,8 @@ export const HomePage = () => {
               Watch Community Recordings
             </Button>
           </Card>
-        </Box>
-        <Box>
+        </Grid>
+        <Grid item xs={12}>
           <Card title="Calendar">
             <Box display="flex" justifyContent="center" id="test">
               <Box width="800px">
@@ -94,8 +90,8 @@ export const HomePage = () => {
                   width="800"
                   height="600"
 
-                  // frameborder="0"
-                  // scrolling="no"
+                // frameborder="0"
+                // scrolling="no"
                 ></iframe>
               </Box>
               {/* <iframe
@@ -108,8 +104,8 @@ export const HomePage = () => {
               ></iframe> */}
             </Box>
           </Card>
-        </Box>
-      </Stack>
-    </>
+        </Grid>
+      </Grid>
+    </Stack>
   );
-};
+}
