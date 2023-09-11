@@ -19,6 +19,13 @@ export const DenaliLummaPage = () => {
           learning more about and sharing their experiences with driving high
           performance in technology-driven organizations.
         </p>
+        <p>
+          The DORA Community includes four Community Guides who help create a 
+          welcoming, inclusive environment for everyone while also shaping the 
+          future of the community.  Denali Lumma, DORA Community Guide, will 
+          share her experience with the DORA Community including insights into 
+          the value of community and how you can get involved.
+        </p>
       </Box>
 
       <Box maxWidth="1600px" margin="auto">
