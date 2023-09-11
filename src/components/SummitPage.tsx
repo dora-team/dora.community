@@ -13,7 +13,7 @@ export const SummitPage = () => {
       <Box maxWidth="1600px" margin="auto">
         <Card title="DORA Community Summit">
           <Box textAlign="center">
-            <img src={doraSummitLogo} />
+            <img src={doraSummitLogo} width="720" height="361" alt="DORA Summit at DOES" />
           </Box>
 
           <h2>Accelerate your journey with lessons from fellow travelers</h2>
