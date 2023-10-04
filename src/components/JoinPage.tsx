@@ -2,7 +2,7 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import steveFenton from "../assets/steve.jpg";
 import amandaLewisHeadshot from "../assets/amandalewis-headshot.jpg";
-import nathenHarvey from "../assets/nathen-harvey-3000 (1).jpg";
+import nathenHarvey from "../assets/nathen-harvey-3000.jpg";
 import daveStanke from "../assets/davestanke-headshot.png";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
 import saulWilliamson from "../assets/BetsalelWilliamson.jpeg";
