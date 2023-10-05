@@ -1,13 +1,13 @@
 import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
-import { SummitHero } from "./SummitHero";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
+import { SODRHero } from "./SODRHero";
 
 export const DenaliLummaPage = () => {
   return (
     <>
-      <SummitHero />
+      <SODRHero />
       <Hero />
       <Box maxWidth="1600px" margin="auto">
         <h2>Guide to the DORA Community</h2>

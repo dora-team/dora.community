@@ -1,16 +1,16 @@
 import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
-import { SummitHero } from "./SummitHero";
 import mattRing from "../assets/matt-ring.jpg";
 import justinThomsen from "../assets/justin-thomsen.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
+import { SODRHero } from "./SODRHero";
 
 export const JohnDeerePage = () => {
   return (
     <>
-      <SummitHero />
+      <SODRHero />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">

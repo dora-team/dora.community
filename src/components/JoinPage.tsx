@@ -9,14 +9,13 @@ import saulWilliamson from "../assets/BetsalelWilliamson.jpeg";
 import lisaCrispin from "../assets/lisa-crispin-headshot.jpg";
 import { DoraGuideHighlight } from "./DoraGuideHighlight";
 import { Hero } from "./Hero";
-import { SummitHero } from "./SummitHero";
 import { SignUpButton } from "./SignUpButton";
+import { SODRHero } from "./SODRHero";
 
 export const JoinPage = () => {
   return (
     <>
-      <SummitHero />
-
+      <SODRHero />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">
