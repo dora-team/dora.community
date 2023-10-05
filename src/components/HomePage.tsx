@@ -7,7 +7,7 @@ import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Hero } from "./Hero";
-import { SummitHero } from "./SummitHero";
+import { SODRHero } from "./SODRHero";
 
 const handleDoraDevButton = () => {
   window.open("https://dora.dev", "_blank");
@@ -27,7 +27,7 @@ const handleSodrButton = () => {
 export const HomePage = () => {
   return (
     <Stack spacing={0}>
-      <SummitHero />
+      <SODRHero />
       <Hero />
       <Grid container spacing={2} maxWidth={1600} margin="auto" padding="1rem">
         <Grid item xl={4} md={6} xs={12}>

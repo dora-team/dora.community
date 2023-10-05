@@ -2,21 +2,20 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import steveFenton from "../assets/steve.jpg";
 import amandaLewisHeadshot from "../assets/amandalewis-headshot.jpg";
-import nathenHarvey from "../assets/nathen-harvey-3000 (1).jpg";
+import nathenHarvey from "../assets/nathen-harvey-3000.jpg";
 import daveStanke from "../assets/davestanke-headshot.png";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
 import saulWilliamson from "../assets/BetsalelWilliamson.jpeg";
 import lisaCrispin from "../assets/lisa-crispin-headshot.jpg";
 import { DoraGuideHighlight } from "./DoraGuideHighlight";
 import { Hero } from "./Hero";
-import { SummitHero } from "./SummitHero";
 import { SignUpButton } from "./SignUpButton";
+import { SODRHero } from "./SODRHero";
 
 export const JoinPage = () => {
   return (
     <>
-      <SummitHero />
-
+      <SODRHero />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">

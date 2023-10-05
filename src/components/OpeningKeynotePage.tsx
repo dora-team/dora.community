@@ -2,12 +2,12 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import nicoleForsgren from "../assets/nicoleforsgrenheadshot.jpeg";
-import { SummitHero } from "./SummitHero";
+import { SODRHero } from "./SODRHero";
 
 export const OpeningKeynotePage = () => {
   return (
     <>
-      <SummitHero />
+      <SODRHero />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">

@@ -2,12 +2,14 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import { Link } from "react-router-dom";
+import { SODRHero } from "./SODRHero";
 
 import doraSummitLogo from "../assets/dora-summit-at-does.png";
 
 export const SummitPage = () => {
   return (
     <>
+      <SODRHero />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">
@@ -26,20 +28,8 @@ export const SummitPage = () => {
           </p>
 
           <p>
-            <a
-              href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv"
-              target="_blank"
-            >
-              Register now
-            </a>{" "}
-            by adding the DORA Community Summit ($75) to your{" "}
-            <a
-              href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv"
-              target="_blank"
-            >
-              DevOps Enterprise Summit registration
-            </a>
-            .
+            The inaugural DORA Community Summit was held on Monday, October 2 as a pre-event for the {" "}
+            <a href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv" target="_blank">DevOps Enterprise Summit</a>.
           </p>
 
           <h3>Schedule</h3>
@@ -66,7 +56,7 @@ export const SummitPage = () => {
           <p>
             10:00 - 10:05 -{" "}
             <Link to="/summit/john-deere">
-              How DORA influenced John Deere’s Agile Operating Model
+              How DORA influenced John Deere's Agile Operating Model
             </Link>
           </p>
 
@@ -80,17 +70,6 @@ export const SummitPage = () => {
           <p>11:05 - 11:40 - Group discussions</p>
 
           <p>11:40 - 12:00 - Closing Remarks, Nathen Harvey</p>
-
-          <p>
-            This event is being held as a pre-conference event with the{" "}
-            <a
-              href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv"
-              target="_blank"
-            >
-              DevOps Enterprise Summit
-            </a>
-            .
-          </p>
         </Card>
       </Box>
     </>
