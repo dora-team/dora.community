@@ -2,6 +2,7 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
+import lummaSlides  from "../assets/slides/DORA-Community-Summit-Matt-Ring.pdf";
 import { SODRHero } from "./SODRHero";
 
 export const DenaliLummaPage = () => {
@@ -12,8 +13,8 @@ export const DenaliLummaPage = () => {
       <Box maxWidth="1600px" margin="auto">
         <h2>Guide to the DORA Community</h2>
 
-        <p>
-          <a href="/src/assets/slides/DORA-Community-Summit-Denali-Lumma.pdf" target="_blank">Slides</a> (PDF)
+        <p>  
+          <a href = {lummaSlides} target="_blank">Slides</a> (PDF)
         </p>
 
         <p>
