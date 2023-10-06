@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
-import sodr2022thumb from "../assets/sodr-2022-thumb.png";
+import sodr2023thumb from "../assets/sodr-2023-thumb.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -45,9 +45,9 @@ export const HomePage = () => {
         <Grid item xl={4} md={6} xs={12}>
           <Card
             title="Accelerate State of DevOps Report"
-            imageLeft={sodr2022thumb}
+            imageLeft={sodr2023thumb}
           >
-            More than 33,000 professionals around the world have taken part in
+            More than 36,000 professionals around the world have taken part in
             the Accelerate State of DevOps survey, making it the largest and
             longest-running research of its kind. Year after year, the reports
             provide data-driven industry insights that examine the capabilities
