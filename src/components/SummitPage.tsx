@@ -44,12 +44,12 @@ export const SummitPage = () => {
             adventure begins!
           </p>
 
-          <p>09:00 - 09:10 - Welcome Remarks | <a href = {nathenSlides} target="_blank">Slides</a> (PDF)</p>
+          <p>09:00 - 09:10 - Welcome Remarks | <a href = {nathenSlides} target="_blank">Slides</a></p>
 
           <p>
             09:10 - 09:30 -{" "}
             <Link to={"/summit/opening-keynote"}>Opening Keynote</Link>, Nicole
-            Forsgren, PhD | <a href = {forsgrenSlides} target="_blank">Slides</a> (PDF)
+            Forsgren, PhD | <a href = {forsgrenSlides} target="_blank">Slides</a>
           </p>
 
           <p>
@@ -61,14 +61,14 @@ export const SummitPage = () => {
             10:00 - 10:05 -{" "}
             <Link to="/summit/john-deere">
               How DORA influenced John Deere's Agile Operating Model
-            </Link>{" "} | <a href = {ringSlides} target="_blank">Slides</a> (PDF)
+            </Link>{" "} | <a href = {ringSlides} target="_blank">Slides</a>
           </p>
 
           <p>10:05 - 11:00 - Group discussions</p>
 
           <p>
             11:00 - 11:05 -
-            <Link to="/summit/denali-lumma"> Guide to DORA Community</Link> | <a href = {lummaSlides} target="_blank">Slides</a> (PDF)
+            <Link to="/summit/denali-lumma"> Guide to DORA Community</Link> | <a href = {lummaSlides} target="_blank">Slides</a>
           </p>
 
           <p>11:05 - 11:40 - Group discussions</p>
