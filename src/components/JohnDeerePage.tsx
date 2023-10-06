@@ -17,6 +17,10 @@ export const JohnDeerePage = () => {
         <h2>How DORA influenced John Deere's Agile Operating Model</h2>
 
         <p>
+          <a href="/src/assets/slides/DORA-Community-Summit-Matt-Ring.pdf" target="_blank">Slides</a> (PDF)
+        </p>
+
+        <p>
           In our{" "}
           <a href="https://videos.itrevolution.com/watch/778295505/">
             DOES 2022 talk

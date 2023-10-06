@@ -13,6 +13,10 @@ export const DenaliLummaPage = () => {
         <h2>Guide to the DORA Community</h2>
 
         <p>
+          <a href="/src/assets/slides/DORA-Community-Summit-Denali-Lumma.pdf" target="_blank">Slides</a> (PDF)
+        </p>
+
+        <p>
           The DORA Community was formally launched with the release of the 2022
           Accelerate State of DevOps Report, almost a year ago. The community
           includes practitioners, leaders, and researchers interested in
