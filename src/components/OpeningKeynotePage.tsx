@@ -2,6 +2,7 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import nicoleForsgren from "../assets/nicoleforsgrenheadshot.jpeg";
+import forsgrenSlides from "../assets/slides/DORA-Community-Summit-Nicole-Forsgren-Keynote.pdf";
 import { SODRHero } from "./SODRHero";
 
 export const OpeningKeynotePage = () => {
@@ -12,6 +13,10 @@ export const OpeningKeynotePage = () => {
 
       <Box maxWidth="1600px" margin="auto">
         <Card title="Opening Keynote">
+        <p>  
+          <a href = {forsgrenSlides} target="_blank">Slides</a> (PDF)
+        </p>
+
           <Box
             display="grid"
             gridTemplateColumns="1fr 1fr"

@@ -4,6 +4,7 @@ import { Hero } from "./Hero";
 import mattRing from "../assets/matt-ring.jpg";
 import justinThomsen from "../assets/justin-thomsen.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ringSlides  from "../assets/slides/DORA-Community-Summit-Matt-Ring.pdf";
 import { Link } from "react-router-dom";
 import { SODRHero } from "./SODRHero";
 
@@ -15,6 +16,10 @@ export const JohnDeerePage = () => {
 
       <Box maxWidth="1600px" margin="auto">
         <h2>How DORA influenced John Deere's Agile Operating Model</h2>
+
+        <p>  
+          <a href = {ringSlides} target="_blank">Slides</a> (PDF)
+        </p>
 
         <p>
           In our{" "}
