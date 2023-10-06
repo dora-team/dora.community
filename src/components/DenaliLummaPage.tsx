@@ -2,7 +2,7 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
-import lummaSlides  from "../assets/slides/DORA-Community-Summit-Matt-Ring.pdf";
+import lummaSlides  from "../assets/slides/DORA-Community-Summit-Denali-Lumma.pdf";
 import { SODRHero } from "./SODRHero";
 
 export const DenaliLummaPage = () => {
