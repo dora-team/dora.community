@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import { Link } from "react-router-dom";
 import { SODRHero } from "./SODRHero";
+import nathenSlides  from "../assets/slides/DORA-Community-Summit-Nathen-Harvey.pdf";
 
 import doraSummitLogo from "../assets/dora-summit-at-does.png";
 
@@ -40,7 +41,7 @@ export const SummitPage = () => {
             adventure begins!
           </p>
 
-          <p>09:00 - 09:10 - Welcome Remarks</p>
+          <p>09:00 - 09:10 - Welcome Remarks | <a href = {nathenSlides} target="_blank">Slides</a> (PDF)</p>
 
           <p>
             09:10 - 09:30 -{" "}
