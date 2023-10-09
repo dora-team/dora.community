@@ -3,6 +3,10 @@ import Box from "@mui/material/Box";
 import { Hero } from "./Hero";
 import { Link } from "react-router-dom";
 import { SODRHero } from "./SODRHero";
+import nathenSlides  from "../assets/slides/DORA-Community-Summit-Nathen-Harvey.pdf";
+import lummaSlides  from "../assets/slides/DORA-Community-Summit-Denali-Lumma.pdf";
+import ringSlides  from "../assets/slides/DORA-Community-Summit-Matt-Ring.pdf";
+import forsgrenSlides from "../assets/slides/DORA-Community-Summit-Nicole-Forsgren-Keynote.pdf";
 
 import doraSummitLogo from "../assets/dora-summit-at-does.png";
 
@@ -40,12 +44,12 @@ export const SummitPage = () => {
             adventure begins!
           </p>
 
-          <p>09:00 - 09:10 - Welcome Remarks</p>
+          <p>09:00 - 09:10 - Welcome Remarks | <a href = {nathenSlides} target="_blank">Slides</a></p>
 
           <p>
             09:10 - 09:30 -{" "}
             <Link to={"/summit/opening-keynote"}>Opening Keynote</Link>, Nicole
-            Forsgren, PhD
+            Forsgren, PhD | <a href = {forsgrenSlides} target="_blank">Slides</a>
           </p>
 
           <p>
@@ -57,14 +61,14 @@ export const SummitPage = () => {
             10:00 - 10:05 -{" "}
             <Link to="/summit/john-deere">
               How DORA influenced John Deere's Agile Operating Model
-            </Link>
+            </Link>{" "} | <a href = {ringSlides} target="_blank">Slides</a>
           </p>
 
           <p>10:05 - 11:00 - Group discussions</p>
 
           <p>
             11:00 - 11:05 -
-            <Link to="/summit/denali-lumma"> Guide to DORA Community</Link>
+            <Link to="/summit/denali-lumma"> Guide to DORA Community</Link> | <a href = {lummaSlides} target="_blank">Slides</a>
           </p>
 
           <p>11:05 - 11:40 - Group discussions</p>
