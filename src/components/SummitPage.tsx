@@ -7,8 +7,7 @@ import nathenSlides  from "../assets/slides/DORA-Community-Summit-Nathen-Harvey.
 import lummaSlides  from "../assets/slides/DORA-Community-Summit-Denali-Lumma.pdf";
 import ringSlides  from "../assets/slides/DORA-Community-Summit-Matt-Ring.pdf";
 import forsgrenSlides from "../assets/slides/DORA-Community-Summit-Nicole-Forsgren-Keynote.pdf";
-
-import doraSummitLogo from "../assets/dora-summit-at-does.png";
+import doraFamiilyPhoto from "../assets/dora-summit-family-photo-2023.png"
 
 export const SummitPage = () => {
   return (
@@ -19,17 +18,10 @@ export const SummitPage = () => {
       <Box maxWidth="1600px" margin="auto">
         <Card title="DORA Community Summit">
           <Box textAlign="center">
-            <img src={doraSummitLogo} width="720" height="361" alt="DORA Summit at DOES" />
+            <img src={doraFamiilyPhoto} width="720" height="252" alt="DORA Summit Family Photo - 2023" />
           </Box>
 
-          <h2>Accelerate your journey with lessons from fellow travelers</h2>
-
-          <p>
-            DORA studies the culture and capabilities that enable
-            high-performing technology-driven organizations like yours. Join the
-            inaugural DORA Community Summit to learn, discuss, and collaborate
-            on putting the research findings into practice.
-          </p>
+          <h2>Accelerating the journey with lessons from fellow travelers</h2>
 
           <p>
             The inaugural DORA Community Summit was held on Monday, October 2 as a pre-event for the {" "}
