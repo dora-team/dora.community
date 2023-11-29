@@ -42,14 +42,16 @@ export const HomePage = () => {
             imageLeft={devopsdoz}
             size="l"
           >
-            DORA's Accelerate State of DevOps Report has been nominated for Best
-            DevOps Survey/Analysis/Research, which recognizes "research that has
+            DORA's Accelerate State of DevOps Report has been nominated for <i>Best
+            DevOps Survey/Analysis/Research</i>, which recognizes "research that has
             significantly and positively impacted the DevOps community." And
-            DORA Advocate Amanda Lewis has been nominated for Top DevOps
-            Evangelist in recognition of her leadership in the DORA Community.
+            DORA Advocate Amanda Lewis has been nominated for <i>Top DevOps
+            Evangelist</i> in recognition of her leadership in the DORA Community.
             <br />
             <br />
-            Public voting is now open. Cast your vote to share how DORA's
+            Public voting is now open. <a href="https://www.surveymonkey.com/r/DevOpsDozen2023">
+            Cast your vote
+            </a> to share how DORA's
             research and community have benefited you!
             <Button
               onClick={handleDevoOpsDozenButton}
