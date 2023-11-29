@@ -8,6 +8,11 @@ import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Hero } from "./Hero";
 import { SODRHero } from "./SODRHero";
+import devopsdoz from "../assets/devopsdozenpromo.png";
+
+const handleDevoOpsDozenButton = () => {
+  window.open("https://www.surveymonkey.com/r/DevOpsDozen2023", "_blank");
+};
 
 const handleDoraDevButton = () => {
   window.open("https://dora.dev", "_blank");
@@ -29,14 +34,43 @@ export const HomePage = () => {
     <Stack spacing={0}>
       <SODRHero />
       <Hero />
+
       <Grid container spacing={2} maxWidth={1600} margin="auto" padding="1rem">
+        <Grid item xs={12}>
+          <Card
+            title="Vote for DORA in the DevOps Dozen Awards"
+            imageLeft={devopsdoz}
+            size="l"
+          >
+            DORA's Accelerate State of DevOps Report has been nominated for <i>Best
+            DevOps Survey/Analysis/Research</i>, which recognizes "research that has
+            significantly and positively impacted the DevOps community." And
+            DORA Advocate Amanda Lewis has been nominated for <i>Top DevOps
+            Evangelist</i> in recognition of her leadership in the DORA Community.
+            <br />
+            <br />
+            Public voting is now open. <a href="https://www.surveymonkey.com/r/DevOpsDozen2023">
+            Cast your vote
+            </a> to share how DORA's
+            research and community have benefited you!
+            <Button
+              onClick={handleDevoOpsDozenButton}
+              variant="contained"
+              centered
+            >
+              Cast Your Vote
+            </Button>
+          </Card>
+        </Grid>
         <Grid item xl={4} md={6} xs={12}>
-          <Card title="DORA.dev" imageLeft={doraDevCard}>
+          <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
             DevOps Research and Assessment (DORA) is the largest and longest
             running research program of its kind, that seeks to understand the
             capabilities that drive software delivery and operations
             performance. <br /> <br /> DORA helps teams apply those
             capabilities, leading to better organizational performance.
+            <br />
+            <br />
             <Button onClick={handleDoraDevButton} variant="contained" centered>
               Explore DORA.dev
             </Button>
@@ -46,6 +80,7 @@ export const HomePage = () => {
           <Card
             title="Accelerate State of DevOps Report"
             imageLeft={sodr2023thumb}
+            size="s"
           >
             More than 36,000 professionals around the world have taken part in
             the Accelerate State of DevOps survey, making it the largest and
@@ -58,11 +93,13 @@ export const HomePage = () => {
             </Button>
           </Card>
         </Grid>
+
         <Grid item xl={4} xs={12}>
           <Card
             title="YouTube Playlist"
             iconLeft={faYoutube}
             iconStyle={{ color: "#d01b1b" }}
+            size="s"
           >
             Most sessions start with a guest speaker who's presentation is
             recorded. <br />
@@ -80,6 +117,7 @@ export const HomePage = () => {
             </Button>
           </Card>
         </Grid>
+
         <Grid item xs={12}>
           <Card title="Calendar">
             <Box display="flex" justifyContent="center" id="test">
@@ -90,8 +128,8 @@ export const HomePage = () => {
                   width="800"
                   height="600"
 
-                // frameborder="0"
-                // scrolling="no"
+                  // frameborder="0"
+                  // scrolling="no"
                 ></iframe>
               </Box>
               {/* <iframe
@@ -108,4 +146,4 @@ export const HomePage = () => {
       </Grid>
     </Stack>
   );
-}
+};

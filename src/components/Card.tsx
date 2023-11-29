@@ -12,9 +12,18 @@ type CardProps = {
   iconStyle?: any;
   // children?: JSX.Element | JSX.Element[] | string;
   children?: any;
+  size?: "s" | "m" | "l";
 };
 
-export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardProps) => {
+const imageWidth = {
+  s: "150px",
+  m: "250px",
+  l: "350px",
+};
+
+
+
+export const Card = ({ title, imageLeft, iconLeft, iconStyle, children, size= "m" }: CardProps) => {
   return (
     <Box m="0.5rem" display="flex" flex={1} flexDirection="column">
       <Box
@@ -42,12 +51,12 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardPr
         <Box display="flex" height="100%">
           {imageLeft && (
             <Box p="1rem">
-              <img src={imageLeft} width="150px" />
+              <img src={imageLeft} width={imageWidth[size]} />
             </Box>
           )}
           {iconLeft && (
             <Box p="1rem">
-              <FontAwesomeIcon icon={iconLeft} style={{...iconStyle,width:"150px", fontSize: "200px"}}  />
+              <FontAwesomeIcon icon={iconLeft} style={{...iconStyle,width:imageWidth[size], fontSize: "200px"}}  />
             </Box>
           )}
           <Box p="1rem" width="100%" id="card-content">{children}</Box>
