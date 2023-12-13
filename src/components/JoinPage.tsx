@@ -113,9 +113,9 @@ export const JoinPage = () => {
               altText="Betsalel (Saul) Williamson"
               image={saulWilliamson}
               body="Betsalel (Saul) Williamson is an Electrical Engineer and has a broad range of experiences in community development and DevOps. He is the owner of Williamson Computing Services, LLC and helps companies implement best practices in DevOps and new product development.
-              He is passionate about helping his peers and projects succeed. Saul has served on the boards of Pittsburgh chapters of PDMA and IEEE where he developed workshops, events, and conducted market research to help students and professionals engage with their local communities. 
-              Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow!  
-              Outside of work, Saul enjoys working on software hobby projects, traveling, and playing classical piano.  He lives in Palm Springs, California."
+            He is passionate about helping his peers and projects succeed. Saul has served on the boards of Pittsburgh chapters of PDMA and IEEE where he developed workshops, events, and conducted market research to help students and professionals engage with their local communities. 
+            Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow!  
+            Outside of work, Saul enjoys working on software hobby projects, traveling, and playing classical piano.  He lives in Palm Springs, California."
               linkedIn="https://www.linkedin.com/in/betsalel/"
             />
             <DoraGuideHighlight
