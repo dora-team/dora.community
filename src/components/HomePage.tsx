@@ -8,11 +8,6 @@ import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Hero } from "./Hero";
 import { SODRHero } from "./SODRHero";
-import devopsdoz from "../assets/devopsdozenpromo.png";
-
-const handleDevoOpsDozenButton = () => {
-  window.open("https://www.surveymonkey.com/r/DevOpsDozen2023", "_blank");
-};
 
 const handleDoraDevButton = () => {
   window.open("https://dora.dev", "_blank");
@@ -36,32 +31,6 @@ export const HomePage = () => {
       <Hero />
 
       <Grid container spacing={2} maxWidth={1600} margin="auto" padding="1rem">
-        <Grid item xs={12}>
-          <Card
-            title="Vote for DORA in the DevOps Dozen Awards"
-            imageLeft={devopsdoz}
-            size="l"
-          >
-            DORA's Accelerate State of DevOps Report has been nominated for <i>Best
-            DevOps Survey/Analysis/Research</i>, which recognizes "research that has
-            significantly and positively impacted the DevOps community." And
-            DORA Advocate Amanda Lewis has been nominated for <i>Top DevOps
-            Evangelist</i> in recognition of her leadership in the DORA Community.
-            <br />
-            <br />
-            Public voting is now open. <a href="https://www.surveymonkey.com/r/DevOpsDozen2023">
-            Cast your vote
-            </a> to share how DORA's
-            research and community have benefited you!
-            <Button
-              onClick={handleDevoOpsDozenButton}
-              variant="contained"
-              centered
-            >
-              Cast Your Vote
-            </Button>
-          </Card>
-        </Grid>
         <Grid item xl={4} md={6} xs={12}>
           <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
             DevOps Research and Assessment (DORA) is the largest and longest
