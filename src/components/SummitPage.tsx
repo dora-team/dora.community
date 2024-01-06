@@ -24,8 +24,7 @@ export const SummitPage = () => {
           <h2>Accelerating the journey with lessons from fellow travelers</h2>
 
           <p>
-            The inaugural DORA Community Summit was held on Monday, October 2 as a pre-event for the {" "}
-            <a href="https://itrevolution.com/product/devops-enterprise-summit-las-vegas-2023/?utm_medium=referral&utm_source=dora&utm_term=doracommunitysummit&utm_content=onsale&utm_campaign=does23lv" target="_blank">DevOps Enterprise Summit</a>.
+            The inaugural DORA Community Summit was held on Monday, October 2 as a pre-event for the DevOps Enterprise Summit. Catch-up on the recordings in this <a href="https://www.youtube.com/playlist?list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5" target="_youtube">YouTube Playlist</a>.
           </p>
 
           <h3>Schedule</h3>
