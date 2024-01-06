@@ -14,7 +14,7 @@ export const DenaliLummaPage = () => {
         <h2>Guide to the DORA Community</h2>
 
         <p>  
-          <a href = {lummaSlides} target="_blank">Slides</a> (PDF)
+          <a href = {lummaSlides} target="_blank">Slides</a> (PDF) | <a href="https://www.youtube.com/watch?v=mTRw_w3AP88&list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5&index=1" target="_youtube">Recording</a>
         </p>
 
         <p>
