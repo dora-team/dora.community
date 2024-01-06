@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 
@@ -24,5 +24,6 @@ export const Nav = () => (
     <NavItem path="/communityguidelines" label="Community Guidelines" />
     <NavItem path="/join" label="Join Community" />
     <NavItem path="summit" label="Community Summit" />
+    <NavItem path="/blog" label="Blog" />
   </NavStyled>
 );

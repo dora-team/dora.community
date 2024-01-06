@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";

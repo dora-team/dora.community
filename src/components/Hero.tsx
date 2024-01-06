@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
 import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
 
 import { SignUpButton } from "./SignUpButton";

@@ -1,5 +1,5 @@
 import { Card } from "./Card";
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
 import { Hero } from "./Hero";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
 import lummaSlides  from "../assets/slides/DORA-Community-Summit-Denali-Lumma.pdf";

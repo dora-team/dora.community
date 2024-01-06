@@ -1,6 +1,6 @@
 import { default as MuiButton } from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
 
 const ButtonStyled = styled(MuiButton)({
   // padding: "0.5rem",
