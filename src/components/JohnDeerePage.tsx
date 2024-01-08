@@ -1,5 +1,5 @@
 import { Card } from "./Card";
-import Box from "@mui/material/Box";
+import {Box } from "@mui/material";
 import { Hero } from "./Hero";
 import mattRing from "../assets/matt-ring.jpg";
 import justinThomsen from "../assets/justin-thomsen.jpg";

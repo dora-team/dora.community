@@ -1,5 +1,5 @@
 import { Card } from "./Card";
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
 import { Hero } from "./Hero";
 import nicoleForsgren from "../assets/nicoleforsgrenheadshot.jpeg";
 import forsgrenSlides from "../assets/slides/DORA-Community-Summit-Nicole-Forsgren-Keynote.pdf";

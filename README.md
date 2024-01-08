@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# DORA Community Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Community Blog
 
-Currently, two official plugins are available:
+How to add a blog article:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Add a md file under /posts, follow this naming convention: [blog-post.yyyymmdd.md](blog-post-.yyyymmdd.md), if more than 1 blog for that date, follow blog-post.yyyymmdd.#.md (ex. blog-post.20231231.1.md)
+   <br/><br/>
+2. Add blog post to the /constants.tsx file:
 
-## Expanding the ESLint configuration
+   title: "Blog Title",
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   article: post#, [1]
 
-- Configure the top-level `parserOptions` property like this:
+   date: "YYYY-MM",
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   dateText: "Month Year",
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   id: "YYYY-MM-DD-#",[2]
+
+   tags: ["DORA", "DevOps", "Code Reviews"],[3]
+
+   description: "Description",
+
+   <b>image</b>: image,
+
+   imageLabel: "image text",
+
+   featured: true,[4]
+
+<br/>
+
+[1] the next post number
+
+[2] default to 1, increment for additional posts on same day
+
+[3] Add relevant tags, these will show up in the sidebar on the blog page
+
+[4] If you want the blog to be featured, mark as 2. Only 2 should be featured.
