@@ -1,5 +1,8 @@
 import post1 from "./posts/blog-post.20240105.md";
 import post2 from "./posts/blog-post.20231231.md";
+import doraSummitFamilyPhoto from "./assets/dora-summit-family-photo-2023.png";
+import robDora from "./assets/robdoracommunity.jpg";
+
 
 
 
@@ -12,7 +15,7 @@ export const posts = [
     id: "2024-01-05-1",
     tags: ["DORA"],
     description: "What's happening in the DORA community in January 2024",
-    image: "https://source.unsplash.com/random?wallpapers",
+    image: robDora,
     imageLabel: "Image Text",
     featured: true,
   },
@@ -24,7 +27,7 @@ export const posts = [
     id: "2023-12-31-1",
     tags: ["DORA", "DevOps", "Code Reviews"],
     description: "Recap of 2023 in the DORA Community of Practice",
-    image: "https://source.unsplash.com/random?wallpapers",
+    image: doraSummitFamilyPhoto,
     imageLabel: "Image Text",
     featured: true,
   },

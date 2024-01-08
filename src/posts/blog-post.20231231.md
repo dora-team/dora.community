@@ -1,6 +1,6 @@
 _December 31, 2023 by [Amanda](/)_
 
-The past year was a fantastic year for the DORA community of practice. We've seen wonderful growth, both in terms of the number of members, and engagement . We had 30 lean coffee discussions, 15 community connection sessions, and over 170 discussion threads in our google group.
+The past year was a fantastic year for the DORA Community of Practice! We've seen wonderful growth, both in terms of the number of members and engagement . We had 30 lean coffee discussions, 15 community connection sessions, and over 170 discussion threads in our Google group.
 
 **Growth of the Community**
 
@@ -8,26 +8,26 @@ The DORA community has grown exponentially over the past year. We now have over 
 
 **2023 Community Lean Coffee Discussion Topics**
 
-- [Risks for DORA](https://youtu.be/HBB677RLuyc?si=46pDKburNdmSOmN8)
-- [Reliability](https://youtu.be/-j0cSnOUeFc?si=j480xI0G8ZcXPHaP)
-- [ROI and DORA](https://youtu.be/L8LOJUay1Xw?si=YF91-1xTvPoSIx6R)
-- [A Culture of Continuous Learning](https://youtu.be/GnpX2B8IymA?si=7GOa0cIDtwfxJ5o-)
-- [Scaling DORA at Liberty Mutual](https://youtu.be/VGVfbyOTya0?si=ezoVRJNDh1lIrjST)
-- [Deming, DORA, and Operationalism](https://youtu.be/sH34-UiU8w0?si=No4wtDQI1f06lHwP)
-- [DORA in SPACE](https://youtu.be/HnKjouazi3k?si=QTF_LtuWXLM9dtao)
-- [DORA.dev](https://youtu.be/QHGCg_7EJZ8?si=qAVp8bDtwbuLxYh-)
-- [Sustainability](https://youtu.be/nuH4i19kT4w?si=iJ3YDy0CbjBHqsxl)
-- [Miniable Viable Continuous Delivery](https://youtu.be/npKvDymzjzU?si=4X_Nbnp4sqzWo4yJ)
-- [Documentation is like Sunshine](https://youtu.be/g-a8bmAP57I?si=h6EZkF4PzGu0bKmA)
+- [Risks for DORA](https://www.youtube.com/watch?v=mMGAaRxq8YU&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=6)
+- [Reliability](https://www.youtube.com/watch?v=LOtur7clvMc&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=7)
+- [ROI and DORA](https://www.youtube.com/watch?v=Fd-9nT-GjiY&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=8)
+- [A Culture of Continuous Learning](https://www.youtube.com/watch?v=FY1zK7Gu47A&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=9)
+- [Scaling DORA at Liberty Mutual](https://www.youtube.com/watch?v=Sw456nkXo6Q&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=10)
+- [Deming, DORA, and Operationalism](https://www.youtube.com/watch?v=qcGAno5K7Xg&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=11)
+- [DORA in SPACE](https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12)
+- [DORA.dev](https://www.youtube.com/watch?v=J-Xu7qEfXow&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=13)
+- [Sustainability](https://www.youtube.com/watch?v=prHMq6WD-Ss&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=14)
+- [Minimum Viable Continuous Delivery](https://www.youtube.com/watch?v=lpQVdxpdOQQ&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=15)
+- [Documentation is like Sunshine](https://www.youtube.com/watch?v=_hWMYwQvyfc&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=16)
 - DevOps Roles
-- [Centralized, Role Based and Team Coordination Models](https://youtu.be/qDMSFUN4qJo?si=V9eEEHbjLRSjTLlz)
+- [Centralized, Role Based and Team Coordination Models](https://www.youtube.com/watch?v=uiJ-btoxFoE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=17)
 - Software Delivery Teams
-- [Team Topologies](https://youtu.be/gcayzfzRIvk?si=wFd6ixMrg-J8wXxg)
-- [DORA Core](https://youtu.be/DqwlDT11vps?si=xvaIU23l77gzGSbo)
-- [2023 DORA Report](https://youtu.be/1pgQO1jw-ys?si=6OkHpzRcDndVJlkT)
-- [Code Reviews](https://youtu.be/-UxQ8r1R8Vw?si=3Uw6BPBTqwwQBjy9)
-- [Documentation](https://youtu.be/7Rbvt54CqdE?si=dQIik2pUV8BYjkL0)
-- [Trunk-based Development](https://youtu.be/imMz1EjFJ_c?si=okRyw9qen-YktWUg)
+- [Team Topologies](https://www.youtube.com/watch?v=VD6J9h55YdQ&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=18)
+- [DORA Core](https://www.youtube.com/watch?v=aB6fIoGgm7g&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=19)
+- [2023 DORA Report](https://www.youtube.com/watch?v=UkSiKOpoeUI&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=20)
+- [Code Reviews](https://www.youtube.com/watch?v=WnmzWgy6tSg&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=23)
+- [2023 Documentation Findings](https://www.youtube.com/watch?v=MjBMU3XUOXY&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=24)
+- [Trunk-based Development](https://www.youtube.com/watch?v=Sse_FOeM8Co&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=25)
 
 **2023 Most Active Threads in the Google Group**
 
@@ -46,7 +46,9 @@ The DORA community has grown exponentially over the past year. We now have over 
 
 **2023 Inaugural Community Summit**
 
-![INSERT ALT TEXT HERE](INSERT FILE NAME HERE)
+The [DORA Community Summit](https://dora.community/summit) was held on October 2, 2023 as a pre-conference event at IT Revolution's DevOps Enterprise Summit.
+
+The [slides and](https://dora.community/summit) [[**new**](https://dora.community/summit)] [videos from the presentations are available now!](https://dora.community/summit)
 
 **A special thank you to our 2023 DORA Guides & Speakers**
 
@@ -59,21 +61,19 @@ The DORA community has grown exponentially over the past year. We now have over 
 
 **Speakers**
 
-- Dave Farley
-- Dave Stanke
-- Ben Deany
 - Apostolis Apostolidis (Toli)
-- AJ Wasserman
 - Scott Aucoin
-- John Willis
-- Dr. Nicole Forsgren
-- Matthew Skelton
-- Nikita
-- Brian Finster
 - Jared Bhatti
+- Ben Deany
+- Dave Farley
+- Brian Finster
+- Dr. Nicole Forsgren
 - Michelle Irvine
-- Denali Lumma
 - Nathen Harvey
 - Amanda Lewis
-
-
+- Denali Lumma
+- Nikita Namjoshi
+- Matthew Skelton
+- Dave Stanke
+- AJ Wasserman
+- John Willis
