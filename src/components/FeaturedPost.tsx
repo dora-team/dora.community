@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import CardActionArea from '@mui/material/CardActionArea';
+// import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Link from '@mui/material/Link';
@@ -23,7 +23,7 @@ export const FeaturedPost = (props: FeaturedPostProps) => {
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="#">
+      {/* <CardActionArea component="a" href="#"> */}
         <Card sx={{ display: 'flex' }}>
           <CardContent sx={{ flex: 1 }}>
             <Typography component="h2" variant="h5">
@@ -49,7 +49,7 @@ export const FeaturedPost = (props: FeaturedPostProps) => {
             alt={post.imageLabel}
           />
         </Card>
-      </CardActionArea>
+      {/* </CardActionArea> */}
     </Grid>
   );
 }
