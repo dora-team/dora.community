@@ -18,7 +18,7 @@ export const JohnDeerePage = () => {
         <h2>How DORA influenced John Deere's Agile Operating Model</h2>
 
         <p>  
-          <a href = {ringSlides} target="_blank">Slides</a> (PDF) | <a href="https://www.youtube.com/watch?v=1EZsgWhOdyw&list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5&index=1" target="_youtube">Recording</a>
+          <a href = {ringSlides} target="_blank">Slides</a> (PDF) | <a href="https://www.youtube.com/watch?v=1EZsgWhOdyw&list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5&index=3" target="_youtube">Recording</a>
         </p>
 
         <p>
