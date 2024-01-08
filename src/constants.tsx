@@ -16,7 +16,7 @@ export const posts = [
     tags: ["DORA"],
     description: "What's happening in the DORA community in January 2024",
     image: robDora,
-    imageLabel: "Image Text",
+    imageLabel: "DORA Community Lean Coffee",
     featured: true,
   },
   {
@@ -28,13 +28,13 @@ export const posts = [
     tags: ["DORA", "DevOps", "Code Reviews"],
     description: "Recap of 2023 in the DORA Community of Practice",
     image: doraSummitFamilyPhoto,
-    imageLabel: "Image Text",
+    imageLabel: "DORA Community Summit Family Photo",
     featured: true,
   },
 ];
 
 export const sidebar = {
-  title: "Join the Conversation",
+  title: "DORA Community Blog",
   description:
-    "Join the Google Group to read, and participate in the asynchronous discussions.",
+    "Community News, Event Recaps, and Community Shared Resources.",
 };
