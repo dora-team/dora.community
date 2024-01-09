@@ -5,7 +5,7 @@ import ReactGA from "react-ga";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const TRACKING_ID = "UA-334748512"; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = "G-RH0RJETN8N"; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 export const Root = () => {
