@@ -22,7 +22,7 @@ const imageWidth = {
 
 
 
-export const NoTitleCard = ({ title, imageLeft, iconLeft, iconStyle, children, size= "m" }: NoTitleCardProps) => {
+export const NoTitleCard = ({ imageLeft, iconLeft, iconStyle, children, size= "m" }: NoTitleCardProps) => {
   return (
     <Box m="0.5rem" display="flex" flex={1} flexDirection="column">
       <Box
