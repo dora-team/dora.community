@@ -39,10 +39,9 @@ export const HomePage = () => {
             imageLeft={devopsdoz}
             size="l"
           >
-            DORA's Accelerate State of DevOps Report has been selected as the <i>Best
-            DevOps Survey/Analysis/Research</i>! This award recognizes 
-            research that has significantly and positively impacted the DevOps 
-            community.
+            DORA's Accelerate State of DevOps Report was selected as the <i>Best
+            DevOps Survey/Analysis/Research</i>, which recognizes "research that has 
+            significantly and positively impacted the DevOps community."
             <br />
             <br />
             Congratulations to all of 
