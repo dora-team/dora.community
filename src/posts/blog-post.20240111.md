@@ -61,7 +61,7 @@ The DORA Community Discussions start with a brief introduction talk, and then a 
 
 - <a href="https://lightrun.com/resources/key-benefits-of-pairing-generative-ai-tools-with-developer-observability/" target="_blank"> Key Benefits of Pairing Generative AI Tools with Developer Observability</a>
 
-Join the <a href=https://groups.google.com/g/dora-community" target="_blank">DORA Community google group</a> to receive invitations to future DORA Community events.
+Join the <a href="https://groups.google.com/g/dora-community" target="_blank">DORA Community google group</a> to receive invitations to future DORA Community events.
 
 ---
 
