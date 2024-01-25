@@ -1,4 +1,4 @@
-_December 31, 2023 by [Amanda](/)_
+_December 31, 2023 by Amanda
 
 The past year was a fantastic year for the DORA Community of Practice! We've seen wonderful growth, both in terms of the number of members and engagement . We had 30 lean coffee discussions, 15 community connection sessions, and over 170 discussion threads in our Google group.
 
