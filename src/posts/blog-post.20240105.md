@@ -1,4 +1,4 @@
-_January 5, 2024 by [Amanda](/)_
+_January 5, 2024 by Amanda
 
 Happy New Year!! I am looking forward to a great year ahead with the DORA
 community. We will kick off our year with a Community Discussion on the focus

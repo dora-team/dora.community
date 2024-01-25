@@ -1,4 +1,4 @@
-_January 11, 2024 by [Amanda](/)_
+_January 11, 2024 by Amanda
 
 **Discussion Topic**: Focus for 2024
 
@@ -59,7 +59,7 @@ The DORA Community Discussions start with a brief introduction talk, and then a 
 
 - <a href="https://lisacrispin.com/2023/11/27/learning-about-ai-at-agile-testing-days-2023/" target="_blank">Learning about AI at Agile Testing Days 2023</a>
 
-- <a href="ttps://lightrun.com/resources/key-benefits-of-pairing-generative-ai-tools-with-developer-observability/" target="_blank"> Key Benefits of Pairing Generative AI Tools with Developer Observability</a>
+- <a href="https://lightrun.com/resources/key-benefits-of-pairing-generative-ai-tools-with-developer-observability/" target="_blank"> Key Benefits of Pairing Generative AI Tools with Developer Observability</a>
 
 Join the <a href=https://groups.google.com/g/dora-community" target="_blank">DORA Community google group</a> to receive invitations to future DORA Community events.
 
