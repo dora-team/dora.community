@@ -29,9 +29,9 @@ export const FeaturedPost = (props: FeaturedPostProps) => {
             <Typography component="h2" variant="h5">
               {post.title}
             </Typography>
-            <Typography variant="subtitle1" color="text.secondary">
-              {post.date}
-            </Typography>
+            {/* <Typography variant="subtitle1" color="text.secondary">
+              {post.blogDate}
+            </Typography> */}
             <Typography variant="subtitle1" paragraph>
               {post.description}
             </Typography>

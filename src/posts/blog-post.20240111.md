@@ -1,4 +1,4 @@
-_January 11, 2024 by Amanda
+January 11, 2024 by Amanda
 
 **Discussion Topic**: Focus for 2024
 
@@ -64,4 +64,3 @@ The DORA Community Discussions start with a brief introduction talk, and then a 
 Join the <a href="https://groups.google.com/g/dora-community" target="_blank">DORA Community google group</a> to receive invitations to future DORA Community events.
 
 ---
-
