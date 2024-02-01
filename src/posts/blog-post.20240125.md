@@ -26,7 +26,7 @@ Context matters and trying to simply copy-and-paste DORA is rarely successful so
 
 - Draw upper management into the discussion with the goal of "innovation". Use innovation as a way to connect to "software delivery"
 - Demonstration wins over conversation. Focus on little wins, keep iterating. Communicate the progress to upper management.
-- Deming was committed to training the executives before practitioners. <a href="https://itrevolution.com/product/demings-journey-to-profound-knowledge/" target="_blank">https://itrevolution.com/product/demings-journey-to-profound-knowledge/</a>
+- Deming was committed to training the executives before practitioners. <a href="https://itrevolution.com/product/demings-journey-to-profound-knowledge/" target="_blank">Deming’s Journey to Profound Knowledge</a>
 - "organizational scar tissue"....most process was put in place with good intentions but we often fail to revisit whether or not they're still helpful
 
 ### **What strategies have you used to encourage the change to come from your team / the people closest to the work?**
@@ -44,8 +44,8 @@ Context matters and trying to simply copy-and-paste DORA is rarely successful so
 - Use dashboards that only have charts for things that are used for decisions. If quality needs attention... you can subtly add the signal and the questions soon arise that give you the opportunity to say how they could proceed.
 - Look at the data with your team, include them in the discussions, ensure they understand how the metrics will be used for good.
 - Find metrics that showcase where the team is excelling, along with metrics that they can use to identify areas for improvement.
-- <a href="https://en.wikipedia.org/wiki/Technology_adoption_life_cycle" target="_blank">https://en.wikipedia.org/wiki/Technology_adoption_life_cycle</a>
-- <a href="https://www.infoq.com/news/2021/03/space-developer-productivity/" target="_blank">https://www.infoq.com/news/2021/03/space-developer-productivity/</a>
+- <a href="https://en.wikipedia.org/wiki/Technology_adoption_life_cycle" target="_blank">Technology adoption life cycle</a>
+- <a href="https://queue.acm.org/detail.cfm?id=3454124" target="_blank">The SPACE of Developer Productivity:  There's more to it than you think.</a>
 - From Dave Farley's <a href="https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914" target="_blank">Modern Software Engineering book</a>: "...why do we, as software developers, need to ask for permission to do a good job? We are the experts in software development, so we are best placed to understand what works and what doesn't."
 - Build in slack time to allow the team to think about continuous improvement opportunities
 - Gameify and celebrate the largest lessons learned over the biggest "winners"
