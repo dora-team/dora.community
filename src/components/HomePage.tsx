@@ -17,10 +17,7 @@ const handleDoraDevButton = () => {
 };
 
 const handleYoutubeButton = () => {
-  window.open(
-    "https://www.youtube.com/playlist?list=PLKK5zTDXqzFNt1OTjhlrCnhVl1UO2QMbk",
-    "_blank"
-  );
+  window.open("https://www.youtube.com/@dora-dev", "_blank");
 };
 
 const handleSodrButton = () => {
