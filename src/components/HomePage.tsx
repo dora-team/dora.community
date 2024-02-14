@@ -17,7 +17,7 @@ const handleDoraDevButton = () => {
 };
 
 const handleYoutubeButton = () => {
-  window.open("https://www.youtube.com/@dora-dev", "_blank");
+  window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
 };
 
 const handleSodrButton = () => {
@@ -80,13 +80,13 @@ export const HomePage = () => {
 
         <Grid item xl={4} xs={12}>
           <Card
-            title="YouTube Playlist"
+            title="YouTube Channel"
             iconLeft={faYoutube}
             iconStyle={{ color: "#d01b1b" }}
             size="s"
           >
             Most sessions start with a guest speaker who's presentation is
-            recorded. <br />
+            recorded.<br />
             <br />
             Some recent topics:
             <br />
@@ -97,7 +97,7 @@ export const HomePage = () => {
             <li>DORA & Space Metrics</li>
             <li>Scaling DORA</li>
             <Button onClick={handleYoutubeButton} variant="contained" centered>
-              Watch Community Recordings
+              Subscribe to Our Channel
             </Button>
           </Card>
         </Grid>
