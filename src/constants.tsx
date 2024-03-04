@@ -4,12 +4,34 @@ import post3 from "./posts/blog-post.20240111.md";
 import post4 from "./posts/blog-post.20240122.md";
 import post5 from "./posts/blog-post.20240125.md";
 import post6 from "./posts/blog-post.20240201.md";
+import post7 from "./posts/blog-post.20240208.md";
 import doraSummitFamilyPhoto from "./assets/dora-summit-family-photo-2023.png";
 import robDora from "./assets/robdoracommunity.jpg";
 import fourKeys from "./assets/softwaredeliverymetrics.png";
 import metricMonday from "./assets/metric_monday160x160.jpg";
 
 export const posts = [
+  {
+    title: "Open Discussion on Code Review Use Cases",
+    article: post7,
+    date: "2024-02",
+    dateText: "February 2024",
+    id: "2024-02-08-1",
+    tags: [
+      "DORA",
+      "Code Reviews",
+
+      "Continuous Improvement",
+      "Engineering Productivity",
+
+      "Metrics",
+    ],
+    description:
+      "Daniel Izquierdo Cortázar, CEO @ Bitergia, kicked off a community discussion on code reviews ",
+    image: robDora,
+    imageLabel: "DORA Community Lean Coffee",
+    featured: false,
+  },
   {
     title: "February 2024 Community News",
     article: post6,
