@@ -3,11 +3,34 @@ import post2 from "./posts/blog-post.20231231.md";
 import post3 from "./posts/blog-post.20240111.md";
 import post4 from "./posts/blog-post.20240122.md";
 import post5 from "./posts/blog-post.20240125.md";
+import post6 from "./posts/blog-post.20240201.md";
 import doraSummitFamilyPhoto from "./assets/dora-summit-family-photo-2023.png";
 import robDora from "./assets/robdoracommunity.jpg";
 import fourKeys from "./assets/softwaredeliverymetrics.png";
+import metricMonday from "./assets/metric_monday160x160.jpg";
 
 export const posts = [
+  {
+    title: "February 2024 Community News",
+    article: post6,
+    date: "2024-02",
+    dateText: "February 2024",
+    id: "2024-02-02-1",
+    tags: [
+      "DORA",
+      "Goals",
+
+      "Continuous Improvement",
+      "Engineering Productivity",
+
+      "Metrics",
+    ],
+    description:
+      "What's happening in the DORA community in February 2024 ",
+    image: robDora,
+    imageLabel: "DORA Community Lean Coffee",
+    featured: false,
+  },
   {
     title: "Applying DORA in Your Context",
     article: post5,
@@ -45,7 +68,7 @@ export const posts = [
     ],
     description:
       "Metric Mondays are an opportunity for the community to have a lean coffee discussion around metrics. ",
-    image: fourKeys,
+    image: metricMonday,
     imageLabel: "DORA Community Lean Coffee",
     featured: true,
   },
