@@ -49,7 +49,7 @@ export const JoinPage = () => {
             <p>
               Most sessions start with a guest speaker who's presentation is
               recorded.{" "}
-              <a href="https://www.youtube.com/playlist?list=PLKK5zTDXqzFNt1OTjhlrCnhVl1UO2QMbk">
+              <a href="https://www.youtube.com/@dora-dev">
                 Watch previous sessions.
               </a>{" "}
             </p>
