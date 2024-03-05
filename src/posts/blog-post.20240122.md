@@ -89,10 +89,7 @@ The DORA Community Discussions start with a brief introduction talk, and then a 
 - Comparing lack of business intelligence in software delivery with analytics journey maturity that the organization has in other areas, IT, sales, etc.
 - Give context to the metrics whether it is going up or down
 - Give insights, and make suggestions
-  <<<<<<< HEAD
-- # The ROI report here - <a href="https://dora.dev/publications/" target="_blank">https://dora.dev/publications/</a> - might help leaders see the impact and possibilities that improved software delivery performance may have
 - DORA's <a href="https://dora.dev/publications/#additional-publications" target="_blank">The ROI of DevOps Transformation</a> report - might help leaders see the impact and possibilities that improved software delivery performance may have
-  > > > > > > > main
 - Have a hypothesis, "We believe X will result in Y and we will know this when <insert metric> improves by X %"?
 
 ### **How precise do the metrics need to be?**
@@ -100,20 +97,13 @@ The DORA Community Discussions start with a brief introduction talk, and then a 
 ##### From the community:
 
 - Precise enough to support the decision you are trying to make or change you are trying to drive.
-  <<<<<<< HEAD
-- # <a href="http://vitrina.readthedocs.io/" target="_blank">vitrina.readthedocs.io</a>
 - <a href="http://vitrina.readthedocs.io/" target="_blank">Vitrina: a portfolio development kit for DevOps</a>
-  > > > > > > > main
 
 ### **Where to start to make improvements that will reflect in the key metrics?**
 
 ##### From the community:
 
-<<<<<<<a HEAD
-
-- # <a href="https://img2.storyblok.com/filters:format(webp)/f/84825/1920x1080/2dbfcf4f15/value-vs-effort-matrix.jpeg" target="_blank">https://img2.storyblok.com/filters:format(webp)/f/84825/1920x1080/2dbfcf4f15/value-vs-effort-matrix.jpeg</a>
 - <a href="https://img2.storyblok.com/filters:format(webp)/f/84825/1920x1080/2dbfcf4f15/value-vs-effort-matrix.jpeg" target="_blank">The Value vs. Effort Matrix</a>
-  > > > > > > > main
 - let's all work to achieve continuous delivery, and here are some measurements that may help guide you
 - locus of control might help, too. An individual contributor might not be able to change how incentives work in the org but can change their practice of writing tests
 
