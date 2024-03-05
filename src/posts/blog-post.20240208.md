@@ -4,7 +4,7 @@ February 8, 2024 by Amanda
 
 The DORA Community Discussions start with a brief introduction talk, and then a discussion with the attendees using the <a href="https://leancoffee.org/" target="_blank">Lean coffee</a>.
 
-<iframe width="560" height="315" src="https://youtu.be/N4dq5fY4WyI?si=qpaLCerjGkEiPmjL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen > </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N4dq5fY4WyI?si=qpaLCerjGkEiPmjL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen > </iframe>
 
 ### Topics discussed:
 
