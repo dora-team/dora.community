@@ -45,7 +45,7 @@ Context matters and trying to simply copy-and-paste DORA is rarely successful so
 - Look at the data with your team, include them in the discussions, ensure they understand how the metrics will be used for good.
 - Find metrics that showcase where the team is excelling, along with metrics that they can use to identify areas for improvement.
 - <a href="https://en.wikipedia.org/wiki/Technology_adoption_life_cycle" target="_blank">Technology adoption life cycle</a>
-- <a href="https://queue.acm.org/detail.cfm?id=3454124" target="_blank">The SPACE of Developer Productivity: There's more to it than you think.</a>
+- <a href="https://queue.acm.org/detail.cfm?id=3454124" target="_blank">The SPACE of Developer Productivity:  There's more to it than you think.</a>
 - From Dave Farley's <a href="https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914" target="_blank">Modern Software Engineering book</a>: "...why do we, as software developers, need to ask for permission to do a good job? We are the experts in software development, so we are best placed to understand what works and what doesn't."
 - Build in slack time to allow the team to think about continuous improvement opportunities
 - Gameify and celebrate the largest lessons learned over the biggest "winners"
