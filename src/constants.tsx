@@ -3,78 +3,11 @@ import post2 from "./posts/blog-post.20231231.md";
 import post3 from "./posts/blog-post.20240111.md";
 import post4 from "./posts/blog-post.20240122.md";
 import post5 from "./posts/blog-post.20240125.md";
-import post6 from "./posts/blog-post.20240201.md";
-import post7 from "./posts/blog-post.20240208.md";
-import post8 from "./posts/blog-post.20240222.md";
 import doraSummitFamilyPhoto from "./assets/dora-summit-family-photo-2023.png";
 import robDora from "./assets/robdoracommunity.jpg";
-import metricMonday from "./assets/metric_monday160x160.jpg";
+import fourKeys from "./assets/softwaredeliverymetrics.png";
 
 export const posts = [
-  {
-    title: "Testing All the Way Around the DevOps Loop",
-    article: post8,
-    date: "2024-02",
-    dateText: "February 2024",
-    id: "2024-02-22-1",
-    tags: [
-      "DORA",
-      "Testing",
-      "QA",
-
-      "Continuous Improvement",
-      "Engineering Productivity",
-
-      "Metrics",
-    ],
-    description:
-      "Lisa Crispin, an independent consultant, author and speaker, kicked off a community discussion on Testing.",
-    image: robDora,
-    imageLabel: "DORA Community Lean Coffee",
-    featured: true,
-  },
-  {
-    title: "Open Discussion on Code Review Use Cases",
-    article: post7,
-    date: "2024-02",
-    dateText: "February 2024",
-    id: "2024-02-08-1",
-    tags: [
-      "DORA",
-      "Code Reviews",
-
-      "Continuous Improvement",
-      "Engineering Productivity",
-
-      "Metrics",
-    ],
-    description:
-      "Daniel Izquierdo Cortázar, CEO @ Bitergia, kicked off a community discussion on code reviews ",
-    image: robDora,
-    imageLabel: "DORA Community Lean Coffee",
-    featured: true,
-  },
-  {
-    title: "February 2024 Community News",
-    article: post6,
-    date: "2024-02",
-    dateText: "February 2024",
-    id: "2024-02-02-1",
-    tags: [
-      "DORA",
-      "Goals",
-
-      "Continuous Improvement",
-      "Engineering Productivity",
-
-      "Metrics",
-    ],
-    description:
-      "What's happening in the DORA community in February 2024 ",
-    image: robDora,
-    imageLabel: "DORA Community Lean Coffee",
-    featured: false,
-  },
   {
     title: "Applying DORA in Your Context",
     article: post5,
@@ -94,7 +27,7 @@ export const posts = [
       "Teams that adopt a mindset and practice of continuous improvement are likely to see the most benefits. To get the most out of DORA, consider it in the context of your team and your users. ",
     image: robDora,
     imageLabel: "DORA Community Lean Coffee",
-    featured: false,
+    featured: true,
   },
   {
     title: "Metrics Monday January 2024 - DORA Community Discussion",
@@ -112,9 +45,9 @@ export const posts = [
     ],
     description:
       "Metric Mondays are an opportunity for the community to have a lean coffee discussion around metrics. ",
-    image: metricMonday,
+    image: fourKeys,
     imageLabel: "DORA Community Lean Coffee",
-    featured: false,
+    featured: true,
   },
   {
     title: "Bottom-up or top-down? DORA Community Discussion",
