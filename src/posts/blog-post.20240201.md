@@ -12,7 +12,7 @@ A special thank you to everyone who has participated in the DORA research, and t
 
 - <a href="https://www.youtube.com/@dora-dev" target="_blank">DORA YouTube Channel</a>
 - <a href="https://dora.community/blog/" target="_blank">DORA.community Blog</a>
-- <a href="https://dora.dev/" target="_blank">DORA Quick Check </a>
+- <a href="https://dora.dev/quickcheck" target="_blank">DORA Quick Check </a>
 
 **DORA.community Upcoming Events**:
 
