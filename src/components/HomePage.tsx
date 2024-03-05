@@ -48,7 +48,7 @@ export const HomePage = () => {
         </Grid>
         <Grid item xl={4} md={6} xs={12}>
           <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
-            DevOps Research and Assessment (DORA) is the largest and longest
+            DORA is the largest and longest
             running research program of its kind, that seeks to understand the
             capabilities that drive software delivery and operations
             performance. <br /> <br /> DORA helps teams apply those
