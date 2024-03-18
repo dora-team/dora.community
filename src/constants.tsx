@@ -6,11 +6,30 @@ import post5 from "./posts/blog-post.20240125.md";
 import post6 from "./posts/blog-post.20240201.md";
 import post7 from "./posts/blog-post.20240208.md";
 import post8 from "./posts/blog-post.20240222.md";
+import post9 from "./posts/blog-post.20240318.md"
 import doraSummitFamilyPhoto from "./assets/dora-summit-family-photo-2023.png";
 import robDora from "./assets/robdoracommunity.jpg";
 import metricMonday from "./assets/metric_monday160x160.jpg";
 
 export const posts = [
+  {
+    title: "March 2024 Community News",
+    article: post9,
+    date: "2024-03",
+    dateText: "March 2024",
+    id: "2024-03-18-1",
+    tags: [
+      "DORA",
+      "Work Distribution"
+      ,
+      "Events"
+    ],
+    description:
+      "What's happening in the DORA community in March 2024",
+    image: robDora,
+    imageLabel: "DORA Community Lean Coffee",
+    featured: true,
+  },
   {
     title: "Testing All the Way Around the DevOps Loop",
     article: post8,
@@ -52,7 +71,7 @@ export const posts = [
       "Daniel Izquierdo Cortázar, CEO @ Bitergia, kicked off a community discussion on code reviews ",
     image: robDora,
     imageLabel: "DORA Community Lean Coffee",
-    featured: true,
+    featured: false,
   },
   {
     title: "February 2024 Community News",
