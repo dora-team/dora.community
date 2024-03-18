@@ -13,7 +13,7 @@ The discussion starts off with a brief presentation, then we use the lean coffee
 We will kick-off this community discussion with an overview of the DORA research findings on work distribution, and how work distribution impacts software delivery performance, well-being, and organizational performance. 
 
 **Speaker**:
-<a href="https://dora.dev/research/team/">Michelle Irvine</a> leads DORA’s research into documentation and is a technical writer with Google Cloud. Before Google, Michelle produced physics textbooks for Ontario highschools and documentation for physics simulation software.
+<a href="https://dora.dev/research/team/" target="_blank">Michelle Irvine</a> leads DORA’s research into documentation and is a technical writer with Google Cloud. Before Google, Michelle produced physics textbooks for Ontario highschools and documentation for physics simulation software.
 
 
 
