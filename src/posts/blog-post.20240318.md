@@ -58,6 +58,7 @@ Catch-up on the latest community discussions on the DORA Community playlist:
 
 - <a href="https://youtu.be/dGirCJJ5mZ0?si=jrKOLh9qroVvOFz1" target="_blank">Testing all around the DevOps Loop</a>
 - <a a href="https://youtu.be/N4dq5fY4WyI?si=kgfW52qMdIhtywY2" target="_blank">Code Reviews</a>
+- <a href="https://www.youtube.com/watch?v=tGjlka0clz0">DORA in an AI-powered World</a>
 
 
 **DORA around the world**:
