@@ -13,14 +13,14 @@ The discussion starts off with a brief presentation, then we use the lean coffee
 We will kick-off this community discussion with an overview of the DORA research findings on work distribution, and how work distribution impacts software delivery performance, well-being, and organizational performance. 
 
 **Speaker**:
-<a href="https://dora.dev/research/team/" target="_blank">Michelle Irvine</a> leads DORA’s research into documentation and is a technical writer with Google Cloud. Before Google, Michelle produced physics textbooks for Ontario highschools and documentation for physics simulation software.
+<a href="https://dora.dev/research/team/" target="_blank">Michelle Irvine</a> leads DORA’s research into documentation and is a technical writer with Google Cloud. Before Google, Michelle produced physics textbooks for Ontario high schools and documentation for physics simulation software.
 
 
 
 
 **Metric Monday (1 hour)**:
 The discussion starts off with a brief presentation on metrics, then we use the lean coffee format for the remainder of the discussion.
-March 15th: <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240325T160000&p1=43&p2=1440&p3=136&p4=tz_pt&p5=196&p6=248" target="_blank"> 16:00</a> UTC 
+March 25th: <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240325T160000&p1=43&p2=1440&p3=136&p4=tz_pt&p5=196&p6=248" target="_blank"> 16:00</a> UTC 
 
 **Upcoming Conferences & Events from the community**:
 
@@ -37,7 +37,8 @@ March 15th: <a href="https://www.timeanddate.com/worldclock/converter.html?iso=2
 - Mar 18-20: <a href="https://www.usenix.org/conference/srecon24americas" target="_blank">SREcon Americas</a>
 - March 19: <a href="https://info.honeycomb.io/dora-report-webinar/" target="_blank">Fireside Chat: Honeycomb & DORA Talk Engineering Productivity and Cost-Cutting Strategies</a>
 - March 19:  <a href="https://www.meetup.com/tech-leader-chats/events/298807733/" target="_blank">How to use the DORA metrics to improve software team productivity</a>
-- April 3: <a href="https://getdx.com/webinar/dora-metrics-actionable/" target="_blank">Make DORA Metrics Actionable</a>
+- April 3: <a href="https://getdx.com/webinar/dora-metrics-actionable/" target="_blank">When Not To Use DORA Metrics</a>
+- April 9-11 <a href="https://cloud.withgoogle.com/next" target="_blank">Google Cloud Next</a> - Stop by the DORA booth in the Innovators Hive
 - April 15-16: <a href="https://www.writethedocs.org/conf/portland/2024/" target="_blank">Write the Docs 24</a>
 - Apr 24-25: <a href="https://itrevolution.com/product/enterprise-technology-leadership-summit-europe-2024/" target="_blank">Enterprise Technology Leadership Summit Europe (Virtual)</a>
 - May 1: <a href="https://www.linkedin.com/events/pursuingminutes-levelmttrwithdo7167881671860563969/" target="_blank">Pursuing Minutes-Level MTTR with Developer Observability </a>
