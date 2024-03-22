@@ -105,12 +105,26 @@ export const HomePage = () => {
         <Grid item xs={12}>
           <Card title="Calendar">
             <Box display="flex" justifyContent="center" id="test">
-              <Box width="800px">
+              <Box
+                position="relative"
+                overflow="hidden"
+                maxWidth="800px"
+                width="100%"
+                height="600px"
+                margin="0 auto"
+              >
                 <iframe
                   src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%233F51B5&ctz=America%2FNew_York&mode=AGENDA&src=ZTNmYmQ3NzY3ZDcxYWM2MDE3ZTJhYTZmOTBkYmRjZDNhYWNhZDg4MDkyNTllZGQ4NGEzNTgzZTVkZTMzYzViNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%238E24AA"
                   // style="border:solid 1px #777"
-                  width="800"
-                  height="600"
+                  style={{
+                    top: 0,
+                    left: 0,
+                    bottom: 0,
+                    right: 0,
+                    width: "100%",
+                    height: "100%",
+                    border: "none",
+                  }}
 
                   // frameborder="0"
                   // scrolling="no"
