@@ -3,12 +3,12 @@ import { Box } from "@mui/material";
 import { Hero } from "./Hero";
 import denaliLumma from "../assets/DenaliLumma.jpeg";
 import lummaSlides  from "../assets/slides/DORA-Community-Summit-Denali-Lumma.pdf";
-import { SODRHero } from "./SODRHero";
+import { SurveyHero } from "./SurveyHero";
 
 export const DenaliLummaPage = () => {
   return (
     <>
-      <SODRHero />
+      <SurveyHero />
       <Hero />
       <Box maxWidth="1600px" margin="auto">
         <h2>Guide to the DORA Community</h2>

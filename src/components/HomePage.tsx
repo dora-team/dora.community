@@ -9,7 +9,7 @@ import { Card } from "./Card";
 import { NoTitleCard } from "./NoTitleCard";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Hero } from "./Hero";
-import { SODRHero } from "./SODRHero";
+import { SurveyHero } from "./SurveyHero";
 
 
 const handleDoraDevButton = () => {
@@ -27,7 +27,7 @@ const handleSodrButton = () => {
 export const HomePage = () => {
   return (
     <Stack spacing={0}>
-      <SODRHero />
+      <SurveyHero />
       <Hero />
 
       <Grid container spacing={2} maxWidth={1600} margin="auto" padding="1rem">
