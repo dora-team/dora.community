@@ -3,12 +3,12 @@ import { Box } from "@mui/material";
 import { Hero } from "./Hero";
 import nicoleForsgren from "../assets/nicoleforsgrenheadshot.jpeg";
 import forsgrenSlides from "../assets/slides/DORA-Community-Summit-Nicole-Forsgren-Keynote.pdf";
-import { SODRHero } from "./SODRHero";
+import { SurveyHero } from "./SurveyHero";
 
 export const OpeningKeynotePage = () => {
   return (
     <>
-      <SODRHero />
+      <SurveyHero />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">
