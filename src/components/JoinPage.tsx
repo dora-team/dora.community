@@ -172,12 +172,15 @@ export const JoinPage = () => {
             As a Cloud Developer Advocate at Google, Nathen helps the industry understand and apply DevOps and SRE practices in the cloud.  These practices are rooted in the understanding that increased reliability comes with increased velocity.
             
             He is part of the DevOpsDays conferences global organizing committee and was a technical reviewer for the Accelerate State of DevOps Report."
+            linkedIn="https://www.linkedin.com/in/nathen/"
+            twitter="https://twitter.com/nathenharvey"
             />
             <DoraGuideHighlight
               title="Dave Stanke"
               altText="Dave Stanke"
               image={daveStanke}
               body="Dave Stanke is a Developer Advocate for DORA, a program run by Google Cloud. He specializes in DevOps, Site Reliability Engineering (SRE), and other flavors of technical relationship therapy. He loves chatting with practitioners: listening to stories, telling stories, sharing a healthy cry. Prior to Google, he was the CTO of OvationTix, a SaaS startup in the performing arts industry, where he specialized in feeding memory to Java servers. He chose on purpose to live in New Jersey, where he enjoys cooking, indie rock, and fatherhood."
+              linkedIn="https://www.linkedin.com/in/davidstanke/"
             />
             <DoraGuideHighlight
               title="Amanda Lewis"
@@ -187,6 +190,7 @@ export const JoinPage = () => {
 
 Amanda has spent her career building connections across leadership, developers, product managers, project management, and operators through working on teams that developed e-commerce platforms, content management systems, observability tools, and supported developers. These connections and conversations lead to happy customers and better outcomes for the business. She brings her years of experience and empathy to the work that she does helping teams understand and implement DevOps and reliability practices.
 "
+              linkedIn="https://www.linkedin.com/in/lewisamanda/"
             />
           </Box>
         </Card>
