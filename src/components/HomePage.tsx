@@ -85,7 +85,7 @@ export const HomePage = () => {
             </Button>
           </Card>
         </Grid>
-        <Grid item xl={4} md={6} xs={12}>
+        <Grid item xs={12}>
         <Card
             title="Award Winning Research"
             imageLeft={devopsdoz}
