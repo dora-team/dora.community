@@ -105,7 +105,7 @@ export const HomePage = () => {
 
         <Grid item xs={12}>
           <Card title="Calendar">
-            <Box display="flex" justifyContent="center" id="test">
+            <Box display="flex" justifyContent="center" id="calendar">
               <Box
                 position="relative"
                 overflow="hidden"
