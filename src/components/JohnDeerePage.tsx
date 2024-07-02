@@ -6,12 +6,12 @@ import justinThomsen from "../assets/justin-thomsen.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ringSlides  from "../assets/slides/DORA-Community-Summit-Matt-Ring.pdf";
 import { Link } from "react-router-dom";
-import { SurveyHero } from "./SurveyHero";
+import { DORAAwardsHero } from "./DORAAwardsHero";
 
 export const JohnDeerePage = () => {
   return (
     <>
-      <SurveyHero />
+      <DORAAwardsHero />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">
