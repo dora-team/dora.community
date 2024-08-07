@@ -2,7 +2,7 @@ import { Card } from "./Card";
 import { Box } from "@mui/material";
 import { Hero } from "./Hero";
 import { Link } from "react-router-dom";
-import { DORAAwardsHero } from "./DORAAwardsHero";
+import { SiteBanner } from "./SiteBanner";
 import nathenSlides  from "../assets/slides/DORA-Community-Summit-Nathen-Harvey.pdf";
 import lummaSlides  from "../assets/slides/DORA-Community-Summit-Denali-Lumma.pdf";
 import ringSlides  from "../assets/slides/DORA-Community-Summit-Matt-Ring.pdf";
@@ -12,7 +12,7 @@ import doraFamiilyPhoto from "../assets/dora-summit-family-photo-2023.png"
 export const SummitPage = () => {
   return (
     <>
-      <DORAAwardsHero />
+      <SiteBanner />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">

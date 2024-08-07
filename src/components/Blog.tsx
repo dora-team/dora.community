@@ -4,7 +4,7 @@ import { BlogPostList } from "../components/BlogPostList";
 import { Sidebar } from "../components/Sidebar";
 import { useParams } from "react-router-dom";
 import { Hero } from "./Hero";
-import { DORAAwardsHero } from "./DORAAwardsHero";
+import { SiteBanner } from "./SiteBanner";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import { Card } from "../components/Card";
@@ -20,7 +20,7 @@ export const Blog = () => {
 
   return (
     <main>
-      <DORAAwardsHero />
+      <SiteBanner />
       <Hero />
       <Container maxWidth="xl">
         <Card title="DORA Community Blog">
