@@ -10,12 +10,12 @@ import lisaCrispin from "../assets/lisa-crispin-headshot.jpg";
 import { DoraGuideHighlight } from "./DoraGuideHighlight";
 import { Hero } from "./Hero";
 import { SignUpButton } from "./SignUpButton";
-import { DORAAwardsHero } from "./DORAAwardsHero";
+import { SiteBanner } from "./SiteBanner";
 
 export const JoinPage = () => {
   return (
     <>
-      <DORAAwardsHero />
+      <SiteBanner />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">

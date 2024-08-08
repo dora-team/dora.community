@@ -2,12 +2,12 @@ import { Card } from "./Card";
 import { Box } from "@mui/material";
 // import { styled } from "@mui/material/styles";
 import { Hero } from "./Hero";
-import { DORAAwardsHero } from "./DORAAwardsHero";
+import { SiteBanner } from "./SiteBanner";
 
 export const CommunityGuidelinesPage = () => {
   return (
     <>
-      <DORAAwardsHero />
+      <SiteBanner />
       <Hero />
 
       <Box maxWidth="1600px" margin="auto">

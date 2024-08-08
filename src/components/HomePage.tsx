@@ -8,7 +8,7 @@ import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Hero } from "./Hero";
-import { DORAAwardsHero } from "./DORAAwardsHero";
+import { SiteBanner } from "./SiteBanner";
 
 
 const handleDoraDevButton = () => {
@@ -26,7 +26,7 @@ const handleSodrButton = () => {
 export const HomePage = () => {
   return (
     <Stack spacing={0}>
-      <DORAAwardsHero />
+      <SiteBanner />
       <Hero />
 
       <Grid container spacing={2} maxWidth={1600} margin="auto" padding="1rem">
@@ -93,12 +93,12 @@ export const HomePage = () => {
             size="m"
           >
             DORA's Accelerate State of DevOps Report was selected as the <i>Best
-            DevOps Survey/Analysis/Research</i>, which recognizes “research that has 
+            DevOps Survey/Analysis/Research</i>, which recognizes “research that has
             significantly and positively impacted the DevOps community.”
             <br />
             <br />
-            Congratulations to all of 
-            the <a href="https://devopsdozen.com/" target="_devops-dozen">2024 DevOps 
+            Congratulations to all of
+            the <a href="https://devopsdozen.com/" target="_devops-dozen">2024 DevOps
             Dozen winners</a>!
           </Card>
         </Grid>
