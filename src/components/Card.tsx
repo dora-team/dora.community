@@ -1,10 +1,6 @@
 import { Box } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
-// import { styled } from "@mui/material/styles";
-// import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-
 type CardProps = {
   title: string;
   imageLeft?: string;
@@ -31,7 +27,7 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children, size= "m
           borderRadius: "14px 14px 0 0",
           border: "1px solid #dadce0",
           overflow: "hidden"
-          
+
         }}
       >
         <Box
@@ -41,12 +37,12 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children, size= "m
             backgroundColor: "#f8f9fa",
             // backgroundColor: "#f00",
             // borderRadius: "14px 14px 0 0",
-            
+
             borderRadius: "8px",
-            
+
           }}
         >
-         <h2>{title}</h2> 
+         <h2>{title}</h2>
         </Box>
         <Box display="flex" height="100%">
           {imageLeft && (
