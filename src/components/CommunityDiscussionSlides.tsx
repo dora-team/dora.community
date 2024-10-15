@@ -1,0 +1,1 @@
+import vsmSlides  from "../assets/slides/DORA-Guide-VSM-for-Software-Delivery.pdf";
