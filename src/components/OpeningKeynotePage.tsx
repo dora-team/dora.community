@@ -9,11 +9,11 @@ export const OpeningKeynotePage = () => {
   return (
     <>
       <SiteBanner />
-      <Hero />
 
       <Box maxWidth="1600px" margin="auto">
+        <Hero />
         <Card title="Opening Keynote">
-        <p>  
+        <p>
           <a href = {forsgrenSlides} target="_blank">Slides</a> (PDF) | <a href="https://www.youtube.com/watch?v=Hydf67rDUrY&list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5&index=2" target="_youtube">Recording</a>
         </p>
 
