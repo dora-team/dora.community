@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import doraLogoNoWords from "../assets/dora-logo-no-words.svg";
+import doraCommunityLogo from "../assets/dora-community-of-practice.png";
 import { Nav } from "./Nav";
 import { Link } from "react-router-dom";
 
@@ -21,12 +21,10 @@ export const Header = () => {
     <HeaderStyled>
       <LogoStyled>
         <Link to="/">
-        <img src={doraLogoNoWords} height="50px" />
+        <img src={doraCommunityLogo} height="70px" />
         </Link>
       </LogoStyled>
       <Nav />
-      
-      
     </HeaderStyled>
   );
 };

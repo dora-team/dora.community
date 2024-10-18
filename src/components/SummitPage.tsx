@@ -13,9 +13,10 @@ export const SummitPage = () => {
   return (
     <>
       <SiteBanner />
-      <Hero />
+
 
       <Box maxWidth="1600px" margin="auto">
+        <Hero />
         <Card title="DORA Community Summit">
           <Box textAlign="center">
             <img src={doraFamiilyPhoto} width="720" height="252" alt="DORA Summit Family Photo - 2023" />

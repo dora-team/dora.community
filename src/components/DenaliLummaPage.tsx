@@ -9,11 +9,11 @@ export const DenaliLummaPage = () => {
   return (
     <>
       <SiteBanner />
-      <Hero />
       <Box maxWidth="1600px" margin="auto">
+        <Hero />
         <h2>Guide to the DORA Community</h2>
 
-        <p>  
+        <p>
           <a href = {lummaSlides} target="_blank">Slides</a> (PDF) | <a href="https://www.youtube.com/watch?v=mTRw_w3AP88&list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5&index=4" target="_youtube">Recording</a>
         </p>
 
@@ -25,10 +25,10 @@ export const DenaliLummaPage = () => {
           performance in technology-driven organizations.
         </p>
         <p>
-          The DORA Community includes four Community Guides who help create a 
-          welcoming, inclusive environment for everyone while also shaping the 
-          future of the community.  Denali Lumma, DORA Community Guide, will 
-          share her experience with the DORA Community including insights into 
+          The DORA Community includes four Community Guides who help create a
+          welcoming, inclusive environment for everyone while also shaping the
+          future of the community.  Denali Lumma, DORA Community Guide, will
+          share her experience with the DORA Community including insights into
           the value of community and how you can get involved.
         </p>
       </Box>

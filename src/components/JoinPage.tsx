@@ -16,9 +16,9 @@ export const JoinPage = () => {
   return (
     <>
       <SiteBanner />
-      <Hero />
 
       <Box maxWidth="1600px" margin="auto">
+        <Hero />
         <Box>
           <Card title="Google Group Mailing List">
             <Box marginBottom="1rem" fontSize="1.5rem">
@@ -113,8 +113,8 @@ export const JoinPage = () => {
               altText="Betsalel (Saul) Williamson"
               image={saulWilliamson}
               body="Betsalel (Saul) Williamson is an Electrical Engineer and has a broad range of experiences in community development and DevOps. He is the owner of Williamson Computing Services, LLC and helps companies implement best practices in DevOps and new product development.
-            He is passionate about helping his peers and projects succeed. Saul has served on the boards of Pittsburgh chapters of PDMA and IEEE where he developed workshops, events, and conducted market research to help students and professionals engage with their local communities. 
-            Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow!  
+            He is passionate about helping his peers and projects succeed. Saul has served on the boards of Pittsburgh chapters of PDMA and IEEE where he developed workshops, events, and conducted market research to help students and professionals engage with their local communities.
+            Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow!
             Outside of work, Saul enjoys working on software hobby projects, traveling, and playing classical piano.  He lives in Palm Springs, California."
               linkedIn="https://www.linkedin.com/in/betsalel/"
             />
@@ -170,7 +170,7 @@ export const JoinPage = () => {
               body="Nathen Harvey has built a career on helping teams realize their potential while aligning technology to business outcomes.
 
             As a Cloud Developer Advocate at Google, Nathen helps the industry understand and apply DevOps and SRE practices in the cloud.  These practices are rooted in the understanding that increased reliability comes with increased velocity.
-            
+
             He is part of the DevOpsDays conferences global organizing committee and was a technical reviewer for the Accelerate State of DevOps Report."
             linkedIn="https://www.linkedin.com/in/nathen/"
             twitter="https://twitter.com/nathenharvey"
@@ -186,7 +186,7 @@ export const JoinPage = () => {
               title="Amanda Lewis"
               altText="Amanda Lewis"
               image={amandaLewisHeadshot}
-              body="Amanda Lewis is the DORA.community Development Lead and a developer advocate with Google Cloud, focused on DORA, DevOps, and Developer Productivity.   
+              body="Amanda Lewis is the DORA.community Development Lead and a developer advocate with Google Cloud, focused on DORA, DevOps, and Developer Productivity.
 
 Amanda has spent her career building connections across leadership, developers, product managers, project management, and operators through working on teams that developed e-commerce platforms, content management systems, observability tools, and supported developers. These connections and conversations lead to happy customers and better outcomes for the business. She brings her years of experience and empathy to the work that she does helping teams understand and implement DevOps and reliability practices.
 "

@@ -21,8 +21,8 @@ export const Blog = () => {
   return (
     <main>
       <SiteBanner />
-      <Hero />
       <Container maxWidth="xl">
+        <Hero />
         <Card title="DORA Community Blog">
           <Grid container spacing={4}>
             {posts
