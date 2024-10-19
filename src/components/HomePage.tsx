@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
-import sodr2023thumb from "../assets/sodr-2023-thumb.png";
+import sodr2024thumb from "../assets/sodr-2024-thumb.png";
 import devopsdoz from "../assets/best-devops-research.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
@@ -20,7 +20,7 @@ const handleYoutubeButton = () => {
 };
 
 const handleSodrButton = () => {
-  window.open("https://bit.ly/dora-sodr", "_blank");
+  window.open("https://dora.dev/dora-report-2024", "_blank");
 };
 
 export const HomePage = () => {
@@ -49,15 +49,15 @@ export const HomePage = () => {
         <Grid item xl={4} md={6} xs={12}>
           <Card
             title="Accelerate State of DevOps Report"
-            imageLeft={sodr2023thumb}
+            imageLeft={sodr2024thumb}
             size="s"
           >
-            More than 36,000 professionals around the world have taken part in
-            the Accelerate State of DevOps survey, making it the largest and
-            longest-running research of its kind. Year after year, the reports
-            provide data-driven industry insights that examine the capabilities
-            and practices that drive software delivery, operational and
-            organizational performance.
+            DORA's tenth annual report, based on insights from 39,000
+            professionals, reveals AI's significant impact on software
+            development. The report also explores platform engineering and
+            highlights the importance of user-centricity and stable priorities
+            for organizational success.
+            <br /><br />
             <Button onClick={handleSodrButton} variant="contained" centered>
               Read the Report
             </Button>
