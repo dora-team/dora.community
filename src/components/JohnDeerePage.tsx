@@ -12,12 +12,12 @@ export const JohnDeerePage = () => {
   return (
     <>
       <SiteBanner />
-      <Hero />
 
       <Box maxWidth="1600px" margin="auto">
+        <Hero />
         <h2>How DORA influenced John Deere's Agile Operating Model</h2>
 
-        <p>  
+        <p>
           <a href = {ringSlides} target="_blank">Slides</a> (PDF) | <a href="https://www.youtube.com/watch?v=1EZsgWhOdyw&list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5&index=3" target="_youtube">Recording</a>
         </p>
 
