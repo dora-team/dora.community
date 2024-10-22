@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 
-export const SiteBannerEnabled = false;
-export const SiteBannerURL = "https://docs.google.com/forms/d/e/1FAIpQLSfqR-4fS9MlqjhgYmdDcrGqEkGccA_8MJoRXevYO1xJoXSkTA/viewform";
-export const SiteBannerText = "Apply for the Google Cloud DORA Awards!";
+export const SiteBannerEnabled = true;
+export const SiteBannerURL = "https://cloud.google.com/resources/devops/state-of-devops";
+export const SiteBannerText = "Download the Accelerate State of DevOps Report 2024";
 
 /**
  * SiteBanner component.
@@ -26,7 +26,7 @@ export const SiteBanner = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#fde293",
+        backgroundColor: "#f2e15c",
         padding: "1rem",
         textAlign: "center",
       }}
