@@ -11,7 +11,7 @@ export const SODRHero = () => {
     >
       <>
         Download the{" "}
-        <a href="https://cloud.google.com/devops/state-of-devops" target="_blank">Accelerate State of DevOps Report 2023</a>{" "}
+        <a href="https://cloud.google.com/resources/devops/state-of-devops" target="_blank">Accelerate State of DevOps Report 2023</a>{" "}
         now!
       </>
     </Box>
