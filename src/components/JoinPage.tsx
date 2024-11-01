@@ -167,11 +167,14 @@ export const JoinPage = () => {
               title="Nathen Harvey"
               altText="Nathen Harvey"
               image={nathenHarvey}
-              body="Nathen Harvey has built a career on helping teams realize their potential while aligning technology to business outcomes.
-
-            As a Cloud Developer Advocate at Google, Nathen helps the industry understand and apply DevOps and SRE practices in the cloud.  These practices are rooted in the understanding that increased reliability comes with increased velocity.
-
-            He is part of the DevOpsDays conferences global organizing committee and was a technical reviewer for the Accelerate State of DevOps Report."
+              body="Nathen Harvey leads the DORA team at Google Cloud. DORA
+              enables teams and organizations to thrive by making industry-
+              shaping research accessible and actionable. Nathen has learned
+              and shared lessons from some incredible organizations, teams, and
+              open source communities. He is a co-author of multiple DORA
+              reports on software delivery performance and was a contributor
+              and editor for 97 Things Every Cloud Engineer Should Know,
+              published by O'Reilly in 2020."
             linkedIn="https://www.linkedin.com/in/nathen/"
             twitter="https://twitter.com/nathenharvey"
             />
