@@ -3,7 +3,6 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import sodr2024thumb from "../assets/sodr-2024-thumb.png";
-import devopsdoz from "../assets/best-devops-research.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -85,23 +84,6 @@ export const HomePage = () => {
             <Button onClick={handleYoutubeButton} variant="contained" centered>
               Subscribe to Our Channel
             </Button>
-          </Card>
-        </Grid>
-        <Grid item xs={12}>
-        <Card
-            title="Award Winning Research"
-            imageLeft={devopsdoz}
-            iconStyle={{ color: "#d01b1b" }}
-            size="m"
-          >
-            DORA's Accelerate State of DevOps Report was selected as the <i>Best
-            DevOps Survey/Analysis/Research</i>, which recognizes “research that has
-            significantly and positively impacted the DevOps community.”
-            <br />
-            <br />
-            Congratulations to all of
-            the <a href="https://devopsdozen.com/" target="_devops-dozen">2024 DevOps
-            Dozen winners</a>!
           </Card>
         </Grid>
 
