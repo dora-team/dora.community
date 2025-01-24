@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import tshirtCard from "../assets/dora-community-shirts.png";
-// import sodr2024thumb from "../assets/sodr-2024-thumb.png";
+// import sodr2024thumb from "../assets/sodr-2024-thumb.png"; // removed temporarily, restore after Feb 14
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -61,7 +61,7 @@ export const HomePage = () => {
             </Button>
           </Card>
         </Grid>
-{/*
+{/*  removed temporarily, restore after Feb 14
         <Grid item xl={4} md={6} xs={12}>
           <Card
             title="Accelerate State of DevOps Report"
