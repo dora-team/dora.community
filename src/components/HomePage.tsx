@@ -2,7 +2,8 @@ import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
-import sodr2024thumb from "../assets/sodr-2024-thumb.png";
+import tshirtCard from "../assets/dora-community-shirts.png";
+// import sodr2024thumb from "../assets/sodr-2024-thumb.png"; // removed temporarily, restore after Feb 14
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -18,8 +19,13 @@ const handleYoutubeButton = () => {
   window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
 };
 
-const handleSodrButton = () => {
-  window.open("https://dora.dev/dora-report-2024", "_blank");
+// removed temporarily, restore after Feb 14
+// const handleSodrButton = () => {
+//   window.open("https://dora.dev/dora-report-2024", "_blank");
+// };
+
+const handleTshirtButton = () => {
+  window.open("https://dora.dev/merch/", "_blank");
 };
 
 export const HomePage = () => {
@@ -45,6 +51,23 @@ export const HomePage = () => {
             </Button>
           </Card>
         </Grid>
+
+        <Grid item xl={4} md={6} xs={12}>
+          <Card title="T-shirts" imageLeft={tshirtCard} size="s">
+          Limited-edition DORA tees are here! Two designs (DORA & DORA Community), multiple colors, straight cut & fitted styles. Get yours before they disappear!
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Button onClick={handleTshirtButton} variant="contained" centered>
+              Browse t-shirts now
+            </Button>
+          </Card>
+        </Grid>
+{/*  removed temporarily, restore after Feb 14
         <Grid item xl={4} md={6} xs={12}>
           <Card
             title="Accelerate State of DevOps Report"
@@ -62,7 +85,7 @@ export const HomePage = () => {
             </Button>
           </Card>
         </Grid>
-
+ */}
         <Grid item xl={4} md={6} xs={12}>
           <Card
             title="YouTube Channel"
