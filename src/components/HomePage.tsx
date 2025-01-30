@@ -33,7 +33,7 @@ export const HomePage = () => {
     <Stack spacing={0}>
       <SiteBanner />
 
-      <Grid container spacing={2} maxWidth={1600} margin="auto" padding="1rem">
+      <Grid container spacing={0} maxWidth={1600} margin="auto" padding="1rem">
         <Grid item xs={12}>
           <Hero />
         </Grid>
