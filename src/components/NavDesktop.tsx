@@ -3,7 +3,6 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 
 export const NavDesktop = ({ pages }: { pages: { label: string; path: string }[] }) => (
-  <>
     <Box
       sx={{
         flexGrow: 1,
@@ -31,5 +30,4 @@ export const NavDesktop = ({ pages }: { pages: { label: string; path: string }[]
         </Button>
       ))}
     </Box>
-  </>
 );
