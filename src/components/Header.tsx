@@ -4,8 +4,6 @@ import doraCommunityLogo from "../assets/dora-community-of-practice.png";
 import { Nav } from "./Nav";
 import { Link } from "react-router-dom";
 
-
-
 const HeaderStyled = styled(Box)({
   padding: "0.5rem",
   display: "flex",
@@ -16,6 +14,9 @@ const LogoStyled = styled(Box)({
   flexGrow: 1,
 });
 
+/**
+ * @deprecated Use the new {@link HeaderResponsive} component instead.
+ */
 export const Header = () => {
   return (
     <HeaderStyled>
