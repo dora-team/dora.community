@@ -23,7 +23,6 @@ export const NavDesktop = ({ pages }: { pages: { label: string; path: string }[]
             textTransform: "inherit",
             fontFamily: "'Google Sans', Roboto, Arial, Helvetica, sans-serif",
             fontSize: "1.1rem"
-
           }}
         >
           {page.label}
