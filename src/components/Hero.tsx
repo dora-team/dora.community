@@ -9,7 +9,7 @@ export const Hero = () => {
         <Box>
           <Box display="flex" style={{ backgroundColor: "#f8f9fa" }}>
             <Box display="flex" alignItems="center">
-              <Box>
+              <Box paddingBottom="1rem">
                 <Box p="1rem" fontSize="1.5rem" textAlign="center">
                   The DORA Community provides opportunities to learn, discuss,
                   and collaborate on software delivery and operational
