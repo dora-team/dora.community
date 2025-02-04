@@ -13,9 +13,7 @@ export const SummitPage = () => {
   return (
     <>
       <SiteBanner />
-
-
-      <Box maxWidth="1600px" margin="auto">
+      <Box maxWidth="1600px" margin="auto" padding="1rem">
         <Hero />
         <Card title="DORA Community Summit">
           <Box textAlign="center">

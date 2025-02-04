@@ -12,8 +12,7 @@ export const JohnDeerePage = () => {
   return (
     <>
       <SiteBanner />
-
-      <Box maxWidth="1600px" margin="auto">
+      <Box maxWidth="1600px" margin="auto" padding="1rem">
         <Hero />
         <h2>How DORA influenced John Deere's Agile Operating Model</h2>
 

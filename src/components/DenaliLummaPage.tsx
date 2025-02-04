@@ -9,7 +9,7 @@ export const DenaliLummaPage = () => {
   return (
     <>
       <SiteBanner />
-      <Box maxWidth="1600px" margin="auto">
+      <Box maxWidth="1600px" margin="auto" padding="1rem">
         <Hero />
         <h2>Guide to the DORA Community</h2>
 
