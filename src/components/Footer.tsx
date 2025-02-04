@@ -7,7 +7,10 @@ const FooterStyled = styled(Box)({
   borderTop: "1px solid black",
 });
 
-const NavStyled = styled(Box)({});
+const NavStyled = styled(Box)({
+  fontSize: "12px",
+  margin: "auto",
+});
 
 export const Footer = () => {
   return (
