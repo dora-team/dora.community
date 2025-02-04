@@ -16,7 +16,7 @@ export const JoinPage = () => {
   return (
     <>
       <SiteBanner />
-      <Box maxWidth="1600px" margin="auto">
+      <Box maxWidth="1600px" margin="auto" padding="1rem">
         <Hero />
         <Box>
           <Card title="Google Group Mailing List">

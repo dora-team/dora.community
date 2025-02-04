@@ -9,7 +9,7 @@ export const CommunityGuidelinesPage = () => {
     <>
       <SiteBanner />
 
-      <Box maxWidth="1600px" margin="auto">
+      <Box maxWidth="1600px" margin="auto" padding="1rem">
         <Hero />
         <Card title="Community Guidelines">
           <h3>Overview:</h3>
