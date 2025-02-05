@@ -1,5 +1,5 @@
 import { Card } from "./Card";
-import { Box, Grid, Stack } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import steveFenton from "../assets/steve.jpg";
 import amandaLewisHeadshot from "../assets/amandalewis-headshot.jpg";
 import nathenHarvey from "../assets/nathen-harvey-3000.jpg";
