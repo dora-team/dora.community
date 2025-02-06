@@ -24,6 +24,5 @@ export const Nav = () => (
     <NavItem path="/communityguidelines" label="Community Guidelines" />
     <NavItem path="/join" label="Join Community" />
     <NavItem path="summit" label="Community Summit" />
-    <NavItem path="/blog" label="Blog" />
   </NavStyled>
 );

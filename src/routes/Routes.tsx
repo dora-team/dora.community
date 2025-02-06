@@ -37,7 +37,7 @@ export const routes = [
   {
     element: <Blog />,
     label: "Blog",
-    menuItem: true,
+    menuItem: false,
     path: "/blog",
   },
   {
