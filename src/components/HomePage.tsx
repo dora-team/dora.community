@@ -99,11 +99,11 @@ export const HomePage = () => {
             Some recent topics:
             <br />
             <br />
-            <li>Team Topologies</li>
-            <li>Minimum Viable CD</li>
-            <li>Documentation</li>
-            <li>DORA & Space Metrics</li>
-            <li>Scaling DORA</li>
+            <li><a href="https://www.youtube.com/watch?v=HBEtKSIznn0&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=36">Value Stream Mapping (VSM)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42">Building a Generative Culture</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Cj4HX6iR7DE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=41">A Decade with DORA</a></li>
+            <li><a href="https://www.youtube.com/watch?v=7_myznsXP8Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=37">AI Adoption</a></li>
+            <li><a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12">DORA &amp; SPACE</a></li>
             <Button onClick={handleYoutubeButton} variant="contained" centered>
               Subscribe to Our Channel
             </Button>
