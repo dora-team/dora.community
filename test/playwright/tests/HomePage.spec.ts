@@ -29,12 +29,12 @@ test('DORA.dev card button navigates to correct URL', async ({ page }) => {
   await expect(newPage).toHaveURL('https://dora.dev');
 });
 
-test('T-shirts card button navigates to correct URL', async ({ page }) => {
+test('Report card button navigates to correct URL', async ({ page }) => {
   const [newPage] = await Promise.all([
     page.waitForEvent('popup'),
-    page.getByRole('button', { name: 'Browse t-shirts now' }).click(),
+    page.getByRole('button', { name: 'Read the report' }).click(),
   ]);
-  await expect(newPage).toHaveURL('https://dora.dev/merch/');
+  await expect(newPage).toHaveURL('https://dora.dev/research/2024/dora-report/');
 });
 
 test('YouTube button navigates to correct URL', async ({ page }) => {
