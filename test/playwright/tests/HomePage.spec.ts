@@ -29,12 +29,20 @@ test('DORA.dev card button navigates to correct URL', async ({ page }) => {
   await expect(newPage).toHaveURL('https://dora.dev');
 });
 
-test('Report card button navigates to correct URL', async ({ page }) => {
+test.skip('Report card button navigates to correct URL', async ({ page }) => {
   const [newPage] = await Promise.all([
     page.waitForEvent('popup'),
     page.getByRole('button', { name: 'Read the report' }).click(),
   ]);
   await expect(newPage).toHaveURL('https://dora.dev/research/2024/dora-report/');
+});
+
+test('Cloud Next registration button navigates to correct URL', async ({ page }) => {
+  const [newPage] = await Promise.all([
+    page.waitForEvent('popup'),
+    page.getByRole('button', { name: 'Register now' }).click(),
+  ]);
+  await expect(newPage).toHaveURL('https://cloud.withgoogle.com/next/25?utm_source=gamma&utm_medium=email&utm_campaign=FY25-Q2-global-EXP106-physicalevent-er-next25-mc&utm_content=dora-community-letter&utm_term=-');
 });
 
 test('YouTube button navigates to correct URL', async ({ page }) => {
