@@ -30,13 +30,11 @@ export const CommunityGuidelinesPage = () => {
           <h3>Guidelines:</h3>
 
           <p>
-            <li>
-              Using welcoming and inclusive language Being respectful of
-              differing viewpoints and experiences
-            </li>
-            <li> Gracefully accepting constructive criticism</li>
-            <li>Focusing on what is best for the community</li>
-            <li>Showing empathy towards other community members.</li>{" "}
+            <li>Use welcoming and inclusive language</li>
+            <li>Be respectful of differing viewpoints and experiences</li>
+            <li>Gracefully accept constructive criticism</li>
+            <li>Focus on what is best for the community</li>
+            <li>Show empathy towards other community members.</li>{" "}
           </p>
 
           <h3> Examples of unacceptable behavior by participants include: </h3>
