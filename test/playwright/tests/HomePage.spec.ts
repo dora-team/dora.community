@@ -30,6 +30,7 @@ test('DORA.dev card button navigates to correct URL', async ({ page }) => {
 });
 
 test.skip('Report card button navigates to correct URL', async ({ page }) => {
+  // skipping while the Google Cloud Next feature is on the home page
   const [newPage] = await Promise.all([
     page.waitForEvent('popup'),
     page.getByRole('button', { name: 'Read the report' }).click(),
