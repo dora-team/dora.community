@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { checkSiteBanner } from './siteBannerHelper';
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
@@ -30,6 +31,7 @@ test('DORA.dev card button navigates to correct URL', async ({ page }) => {
 });
 
 test.skip('Report card button navigates to correct URL', async ({ page }) => {
+  // skipping while the Google Cloud Next feature is on the home page
   const [newPage] = await Promise.all([
     page.waitForEvent('popup'),
     page.getByRole('button', { name: 'Read the report' }).click(),
@@ -61,3 +63,6 @@ test('DORA.dev card contains expected text', async ({page}) => {
   await expect(page.getByText('DORA is the largest and longest running research program')).toBeVisible();
 });
 
+test('Homepage displays the correct site banner', async ({ page }) => {
+  await checkSiteBanner(page);
+});

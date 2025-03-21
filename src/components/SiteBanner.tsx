@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 
 export const SiteBannerEnabled = true;
-export const SiteBannerURL = "https://cloud.google.com/resources/devops/state-of-devops";
-export const SiteBannerText = "Download the Accelerate State of DevOps Report 2024";
+export const SiteBannerURL = "https://cloud.google.com/resources/content/dora-impact-of-gen-ai-software-development";
+export const SiteBannerText = "Download the Impact of Generative AI in Software Development";
 
 /**
  * SiteBanner component.
