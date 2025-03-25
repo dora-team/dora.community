@@ -121,6 +121,11 @@ export const HomePage = () => {
                 height="600px"
                 margin="0 auto"
               >
+                <p>
+                  <small>
+                    Have an event that the DORA Community might be interested in? <a href="mailto:dora-community-events@googlegroups.com?Subject=DORA+Community+Calendar+suggestion" target="_blank">Send us the details</a>.
+                  </small>
+                </p>
                 <iframe
                   src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%233F51B5&ctz=America%2FNew_York&mode=AGENDA&src=ZTNmYmQ3NzY3ZDcxYWM2MDE3ZTJhYTZmOTBkYmRjZDNhYWNhZDg4MDkyNTllZGQ4NGEzNTgzZTVkZTMzYzViNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%238E24AA"
                   style={{
@@ -129,7 +134,7 @@ export const HomePage = () => {
                     bottom: 0,
                     right: 0,
                     width: "100%",
-                    height: "100%",
+                    height: "85%",
                     border: "none",
                   }}
                 ></iframe>
