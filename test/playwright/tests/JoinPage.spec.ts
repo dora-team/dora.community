@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { checkSiteBanner } from './siteBannerHelper';
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/join');
@@ -42,4 +43,8 @@ test('Join page includes the DORA Advocacy Team cards', async ({ page }) => {
   await expect(page.getByText('Nathen Harvey').first()).toBeVisible();
   await expect(page.getByText('Dave Stanke').first()).toBeVisible();
   await expect(page.getByText('Amanda Lewis').first()).toBeVisible();
+});
+
+test('Homepage displays the correct site banner', async ({ page }) => {
+  await checkSiteBanner(page);
 });
