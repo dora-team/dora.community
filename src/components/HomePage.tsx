@@ -2,8 +2,7 @@ import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
-// import sodr2024thumb from "../assets/sodr-2024-thumb.png";
-import googleCloudNext from "../assets/google-cloud-next.png"; // Import the new image
+import genAIReportThumb from "../assets/dora-impact-of-generative-ai-in-software-development-report.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -18,13 +17,9 @@ const handleYoutubeButton = () => {
   window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
 };
 
-// const handleSodrButton = () => {
-//   window.open("https://dora.dev/dora-report-2024", "_blank");
-// };
-
-const handleGoogleCloudNextButton = () => {
-    window.open("https://cloud.withgoogle.com/next/25/?utm_source=gamma&utm_medium=email&utm_campaign=FY25-Q2-global-EXP106-physicalevent-er-next25-mc&utm_content=dora-community-letter&utm_term=-", "_blank")
-}
+const handleGenAIReportButton = () => {
+  window.open("https://cloud.google.com/resources/content/dora-impact-of-gen-ai-software-development", "_blank");
+};
 
 export const HomePage = () => {
   return (
@@ -42,46 +37,28 @@ export const HomePage = () => {
             capabilities that drive software delivery and operations
             performance. <br /> <br /> DORA helps teams apply those
             capabilities, leading to better organizational performance.
-            <br />
-            <br />
+            <br /><br /><br />
             <Button onClick={handleDoraDevButton} variant="contained" centered>
               Explore DORA.dev
             </Button>
           </Card>
         </Grid>
 
-{/* 2024 DORA Report
         <Grid item xl={4} md={6} xs={12}>
           <Card
-            title="Accelerate State of DevOps Report"
-            imageLeft={sodr2024thumb}
+            title="Impact of Generative AI"
+            imageLeft={genAIReportThumb}
             size="s"
           >
-            DORA's tenth annual report, based on insights from 39,000
-            professionals, reveals AI's significant impact on software
-            development. The report also explores platform engineering and
-            highlights the importance of user-centricity and stable priorities
-            for organizational success.
-            <br /><br /><br />
-            <Button onClick={handleSodrButton} variant="contained" centered>
-              Read the Report
-            </Button>
-          </Card>
-        </Grid>
- */}
-
-        <Grid item xl={4} md={6} xs={12}>
-          <Card
-            title="Google Cloud Next"
-            imageLeft={googleCloudNext}
-            size="s"
-          >
-            Connect <em>in person</em> at Google Cloud Next, April 9-11 in Las Vegas!<br/><br/>
-            Meet fellow community members, explore AI, and improve your cloud skills.<br/><br/>
-            Join the <a href="https://cloud.withgoogle.com/next/25/session-library?session=MTUP210&utm_source=gamma&utm_medium=email&utm_campaign=FY25-Q2-global-EXP106-physicalevent-er-next25-mc&utm_content=dora-community-letter&utm_term=-" target="_blank">DORA Community meetup</a>, keynotes, and many technical sessions.
+            Generative AI is rapidly reshaping the software development
+            landscape, presenting both exciting opportunities and complex
+            challenges.<br /><br />
+            Read research-backed guidance for leaders and
+            practitioners to effectively navigate this transformation and to
+            maximize AI's benefits.
             <br /><br />
-            <Button onClick={handleGoogleCloudNextButton} variant="contained" centered>
-              Register Now
+            <Button onClick={handleGenAIReportButton} variant="contained" centered>
+              Download the Report
             </Button>
           </Card>
         </Grid>
@@ -104,6 +81,7 @@ export const HomePage = () => {
             <li><a href="https://www.youtube.com/watch?v=Cj4HX6iR7DE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=41">A Decade with DORA</a></li>
             <li><a href="https://www.youtube.com/watch?v=7_myznsXP8Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=37">AI Adoption</a></li>
             <li><a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12">DORA &amp; SPACE</a></li>
+            <br />
             <Button onClick={handleYoutubeButton} variant="contained" centered>
               Subscribe to Our Channel
             </Button>
