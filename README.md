@@ -1,39 +1,73 @@
 # DORA Community Website
 
-## Community Blog
+This project serves as the online hub for the DORA community, providing a space for members to connect, share insights, and collaborate on all things related to continuous improvement and software delivery performance.
 
-How to add a blog article:
+## About DORA
 
-1. Add a md file under /posts, follow this naming convention: [blog-post.yyyymmdd.md](blog-post-.yyyymmdd.md), if more than 1 blog for that date, follow blog-post.yyyymmdd.#.md (ex. blog-post.20231231.1.md)
-   <br/><br/>
-2. Add blog post to the /constants.tsx file:
+The DORA program conducts research to understand the capabilities that drive high performance in software development and delivery. The DORA community is a group of practitioners, researchers, and enthusiasts who are passionate about improving software delivery and organizational performance.
 
-   title: "Blog Title",
+## Project Goals
 
-   article: post#, [1]
+* **Community Hub:** Create a central online location for DORA community members to interact.
+* **Resource Sharing:** Provide a platform for sharing resources, articles, and best practices related to DORA.
+* **Event Information:** Keep the community informed about upcoming events, webinars, and conferences.
+* **Collaboration:** Facilitate collaboration among community members on projects and initiatives.
+* **Knowledge Base:** Build a repository of knowledge and insights related to software delivery performance.
 
-   date: "YYYY-MM",
+## Getting Started
 
-   dateText: "Month Year",
+### Prerequisites
 
-   id: "YYYY-MM-DD-#",[2]
+* [Node.js](https://nodejs.org/)
+* [npm](https://www.npmjs.com/)
 
-   tags: ["DORA", "DevOps", "Code Reviews"],[3]
+### Installation
 
-   description: "Description",
+1. Clone the repository:
 
-   <b>image</b>: image,
+    ```bash
+    git clone https://github.com/dora-team/dora.community.git
+    ```
 
-   imageLabel: "image text",
+2. Navigate to the project directory:
 
-   featured: true,[4]
+    ```bash
+    cd dora-community-website
+    ```
 
-<br/>
+3. Install dependencies:
 
-[1] the next post number
+    ```bash
+    npm install
+    ```
 
-[2] default to 1, increment for additional posts on same day
+### Development
 
-[3] Add relevant tags, these will show up in the sidebar on the blog page
+1. Start the development server:
 
-[4] If you want the blog to be featured, mark as 2. Only 2 should be featured.
+    ```bash
+    npx vite
+    ```
+
+    This will start a local development server, and you can access the website in your browser.
+
+## Contributing
+
+We welcome contributions from the DORA community! If you're interested in contributing, please:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Submit a pull request to the `main` branch.
+
+## Code of Conduct
+
+We are committed to fostering a welcoming and inclusive community. Please review our [community guidelines](https://dora.community/communityguidelines) to understand our expectations for community participation.
+
+## Contact
+
+If you have any questions or need further assistance, please reach out to us at [dora-advocacy@google.com].
+
+## Acknowledgements
+
+We would like to thank all the contributors and members of the DORA community for their support and dedication.
