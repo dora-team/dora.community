@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import genAIReportThumb from "../assets/dora-impact-of-generative-ai-in-software-development-report.png";
+import doraAwardsThumb from "../assets/dora-award.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -17,6 +18,10 @@ const handleYoutubeButton = () => {
   window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
 };
 
+const handleDoraAwardButton = () => {
+  window.open("https://cloud.google.com/awards/devops/", "_blank");
+};
+
 const handleGenAIReportButton = () => {
   window.open("https://cloud.google.com/resources/content/dora-impact-of-gen-ai-software-development", "_blank");
 };
@@ -26,66 +31,89 @@ export const HomePage = () => {
     <Stack spacing={0}>
       <SiteBanner />
 
-      <Grid container spacing={0} maxWidth={1600} margin="auto" padding="1rem">
+      <Grid container spacing={2} maxWidth={1600} margin="auto" padding="1rem">
         <Grid item xs={12}>
           <Hero />
         </Grid>
-        <Grid item xl={4} md={6} xs={12}>
-          <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
-            DORA is the largest and longest
-            running research program of its kind, that seeks to understand the
-            capabilities that drive software delivery and operations
-            performance. <br /> <br /> DORA helps teams apply those
-            capabilities, leading to better organizational performance.
-            <br /><br /><br />
-            <Button onClick={handleDoraDevButton} variant="contained" centered>
-              Explore DORA.dev
-            </Button>
-          </Card>
+        <Grid container item spacing={2} justifyContent="center">
+          <Grid item xl={4} md={6} xs={12}>
+            <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
+              DORA is the largest and longest
+              running research program of its kind, that seeks to understand the
+              capabilities that drive software delivery and operations
+              performance. <br /> <br /> DORA helps teams apply those
+              capabilities, leading to better organizational performance.
+              <br /><br />
+              <Button onClick={handleDoraDevButton} variant="contained" centered>
+                Explore DORA.dev
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xl={4} md={6} xs={12}>
+            <Card
+              title="Google Cloud DORA Awards"
+              imageLeft={doraAwardsThumb}
+              size="s"
+            >
+              Has your team achieved remarkable success through DORA principles?
+              <br />
+              <br />
+              It's time to shine! We're thrilled to announce the launch of the 2025
+              DORA Awards, celebrating outstanding achievements in technology delivery
+              and operational performance.
+              <br /><br />
+              <Button onClick={handleDoraAwardButton} variant="contained" centered>
+                Apply for the DORA Awards
+              </Button>
+            </Card>
+          </Grid>
         </Grid>
 
-        <Grid item xl={4} md={6} xs={12}>
-          <Card
-            title="Impact of Generative AI"
-            imageLeft={genAIReportThumb}
-            size="s"
-          >
-            Generative AI is rapidly reshaping the software development
-            landscape, presenting both exciting opportunities and complex
-            challenges.<br /><br />
-            Read research-backed guidance for leaders and
-            practitioners to effectively navigate this transformation and to
-            maximize AI's benefits.
-            <br /><br />
-            <Button onClick={handleGenAIReportButton} variant="contained" centered>
-              Download the Report
-            </Button>
-          </Card>
-        </Grid>
+        <Grid container item spacing={2} justifyContent="center">
+          <Grid item xl={4} md={6} xs={12}>
+            <Card
+              title="Impact of Generative AI"
+              imageLeft={genAIReportThumb}
+              size="s"
+            >
+              Generative AI is rapidly reshaping the software development
+              landscape, presenting both exciting opportunities and complex
+              challenges.<br /><br />
+              Read research-backed guidance for leaders and
+              practitioners to effectively navigate this transformation and to
+              maximize AI's benefits.
+              <br />
+              <Button onClick={handleGenAIReportButton} variant="contained" centered>
+                Download the Report
+              </Button>
+            </Card>
+          </Grid>
 
-        <Grid item xl={4} md={6} xs={12}>
-          <Card
-            title="YouTube Channel"
-            iconLeft={faYoutube}
-            iconStyle={{ color: "#d01b1b" }}
-            size="s"
-          >
-            Most sessions start with a guest speaker who's presentation is
-            recorded.<br />
-            <br />
-            Some recent topics:
-            <br />
-            <br />
-            <li><a href="https://www.youtube.com/watch?v=HBEtKSIznn0&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=36">Value Stream Mapping (VSM)</a></li>
-            <li><a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42">Building a Generative Culture</a></li>
-            <li><a href="https://www.youtube.com/watch?v=Cj4HX6iR7DE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=41">A Decade with DORA</a></li>
-            <li><a href="https://www.youtube.com/watch?v=7_myznsXP8Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=37">AI Adoption</a></li>
-            <li><a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12">DORA &amp; SPACE</a></li>
-            <br />
-            <Button onClick={handleYoutubeButton} variant="contained" centered>
-              Subscribe to Our Channel
-            </Button>
-          </Card>
+          <Grid item xl={4} md={6} xs={12}>
+            <Card
+              title="YouTube Channel"
+              iconLeft={faYoutube}
+              iconStyle={{ color: "#d01b1b" }}
+              size="s"
+            >
+              Most sessions start with a guest speaker who's presentation is
+              recorded.<br />
+              <br />
+              Some recent topics:
+              <br />
+              <br />
+              <li><a href="https://www.youtube.com/watch?v=HBEtKSIznn0&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=36">Value Stream Mapping (VSM)</a></li>
+              <li><a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42">Building a Generative Culture</a></li>
+              <li><a href="https://www.youtube.com/watch?v=Cj4HX6iR7DE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=41">A Decade with DORA</a></li>
+              <li><a href="https://www.youtube.com/watch?v=7_myznsXP8Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=37">AI Adoption</a></li>
+              <li><a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12">DORA &amp; SPACE</a></li>
+              <br />
+              <Button onClick={handleYoutubeButton} variant="contained" centered>
+                Subscribe to Our Channel
+              </Button>
+            </Card>
+          </Grid>
         </Grid>
 
         <Grid item xs={12}>

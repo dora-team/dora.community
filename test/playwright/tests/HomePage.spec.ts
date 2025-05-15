@@ -30,6 +30,14 @@ test('DORA.dev card button navigates to correct URL', async ({ page }) => {
   await expect(newPage).toHaveURL('https://dora.dev');
 });
 
+test('DORA awards button navigates to correct URL', async ({ page }) => {
+  const [newPage] = await Promise.all([
+    page.waitForEvent('popup'),
+    page.getByRole('button', { name: 'Apply for the DORA Awards' }).click(),
+  ]);
+  await expect(newPage).toHaveURL('https://cloud.google.com/awards/devops');
+});
+
 test('Report card button navigates to correct URL', async ({ page }) => {
   const [newPage] = await Promise.all([
     page.waitForEvent('popup'),
