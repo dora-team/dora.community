@@ -22,6 +22,14 @@ test('JOIN THE DORA COMMUNITY OF PRACTICE button opens correct link in new tab',
   await expect(newPage).toHaveURL('https://groups.google.com/g/dora-community/about');
 });
 
+test('DORA Survey card button navigates to correct URL', async ({ page }) => {
+  const [newPage] = await Promise.all([
+    page.waitForEvent('popup'),
+    page.getByRole('button', { name: 'Take the DORA Survey' }).click(),
+  ]);
+  await expect(newPage).toHaveURL('https://dora.dev/survey/');
+});
+
 test('DORA.dev card button navigates to correct URL', async ({ page }) => {
   const [newPage] = await Promise.all([
     page.waitForEvent('popup'),

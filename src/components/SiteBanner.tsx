@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 
 export const SiteBannerEnabled = true;
-export const SiteBannerURL = "https://cloud.google.com/resources/content/dora-impact-of-gen-ai-software-development";
-export const SiteBannerText = "Download the Impact of Generative AI in Software Development";
+export const SiteBannerURL = "https://dora.dev/survey/";
+export const SiteBannerText = "Take the 2025 DORA Survey!";
 
 /**
  * SiteBanner component.

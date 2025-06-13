@@ -4,6 +4,7 @@ import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import genAIReportThumb from "../assets/dora-impact-of-generative-ai-in-software-development-report.png";
 import doraAwardsThumb from "../assets/dora-award.png";
+import doraSurveyThumb from "../assets/survey.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -16,6 +17,10 @@ const handleDoraDevButton = () => {
 
 const handleYoutubeButton = () => {
   window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
+};
+
+const handleDoraSurveyButton = () => {
+  window.open("https://dora.dev/survey/", "_blank");
 };
 
 const handleDoraAwardButton = () => {
@@ -37,6 +42,22 @@ export const HomePage = () => {
         </Grid>
         <Grid container item spacing={2} justifyContent="center">
           <Grid item xl={4} md={6} xs={12}>
+            <Card
+              title="2025 DORA Survey"
+              imageLeft={doraSurveyThumb}
+              size="s"
+            >
+              Contribute to the latest research by taking the DORA Survey.
+              <br /><br />
+              The DORA research program is dedicated to helping technology-driven teams get better at getting better. Use this a unique opportunity to pause and evaluate your team's ways of working.
+              <br /><br />
+              <Button onClick={handleDoraSurveyButton} variant="contained" centered>
+                Take the DORA Survey
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xl={4} md={6} xs={12}>
             <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
               DORA is the largest and longest
               running research program of its kind, that seeks to understand the
@@ -49,7 +70,9 @@ export const HomePage = () => {
               </Button>
             </Card>
           </Grid>
+        </Grid>
 
+        <Grid container item spacing={2} justifyContent="center">
           <Grid item xl={4} md={6} xs={12}>
             <Card
               title="Google Cloud DORA Awards"
@@ -68,9 +91,7 @@ export const HomePage = () => {
               </Button>
             </Card>
           </Grid>
-        </Grid>
 
-        <Grid container item spacing={2} justifyContent="center">
           <Grid item xl={4} md={6} xs={12}>
             <Card
               title="Impact of Generative AI"
