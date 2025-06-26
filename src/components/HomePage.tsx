@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
+import tshirtCard from "../assets/dora-community-shirts.png";
 import genAIReportThumb from "../assets/dora-impact-of-generative-ai-in-software-development-report.png";
 import doraAwardsThumb from "../assets/dora-award.png";
 import doraSurveyThumb from "../assets/survey.png";
@@ -13,6 +14,10 @@ import { SiteBanner } from "./SiteBanner";
 
 const handleDoraDevButton = () => {
   window.open("https://dora.dev", "_blank");
+};
+
+const handleTshirtButton = () => {
+  window.open("https://www.customink.com/g/yrs0-00cz-1q8d", "_blank");
 };
 
 const handleYoutubeButton = () => {
@@ -70,9 +75,7 @@ export const HomePage = () => {
               </Button>
             </Card>
           </Grid>
-        </Grid>
 
-        <Grid container item spacing={2} justifyContent="center">
           <Grid item xl={4} md={6} xs={12}>
             <Card
               title="Google Cloud DORA Awards"
@@ -91,7 +94,9 @@ export const HomePage = () => {
               </Button>
             </Card>
           </Grid>
+        </Grid>
 
+        <Grid container item spacing={2} justifyContent="center">
           <Grid item xl={4} md={6} xs={12}>
             <Card
               title="Impact of Generative AI"
@@ -105,8 +110,28 @@ export const HomePage = () => {
               practitioners to effectively navigate this transformation and to
               maximize AI's benefits.
               <br />
+              <br />
               <Button onClick={handleGenAIReportButton} variant="contained" centered>
                 Download the Report
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xl={4} md={6} xs={12}>
+            <Card title="T-shirts" imageLeft={tshirtCard} size="s">
+            Limited-edition DORA tees are here! Multiple colors, straight cut &
+            fitted styles. Get yours before they disappear!
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <Button onClick={handleTshirtButton} variant="contained" centered>
+                Order t-shirts now
               </Button>
             </Card>
           </Grid>
