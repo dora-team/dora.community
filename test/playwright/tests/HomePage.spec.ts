@@ -54,6 +54,14 @@ test('Report card button navigates to correct URL', async ({ page }) => {
   await expect(newPage).toHaveURL('https://cloud.google.com/resources/content/dora-impact-of-gen-ai-software-development');
 });
 
+test('T-shrit sales card button navigates to correct URL', async ({ page }) => {
+  const [newPage] = await Promise.all([
+    page.waitForEvent('popup'),
+    page.getByRole('button', { name: 'Order t-shirts now' }).click(),
+  ]);
+  await expect(newPage).toHaveURL('https://www.customink.com/g/yrs0-00cz-1q8d');
+});
+
 test('YouTube button navigates to correct URL', async ({ page }) => {
   const [newPage] = await Promise.all([
     page.waitForEvent('popup'),
