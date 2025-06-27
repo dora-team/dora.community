@@ -57,7 +57,7 @@ test('Report card button navigates to correct URL', async ({ page }) => {
 test('T-shrit sales card button navigates to correct URL', async ({ page }) => {
   const [newPage] = await Promise.all([
     page.waitForEvent('popup'),
-    page.getByRole('button', { name: 'Order t-shirts now' }).click(),
+    page.getByRole('button', { name: 'Order T-shirts now' }).click(),
   ]);
   await expect(newPage).toHaveURL('https://www.customink.com/g/yrs0-00cz-1q8d');
 });

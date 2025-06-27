@@ -131,7 +131,7 @@ export const HomePage = () => {
               <br />
               <br />
               <Button onClick={handleTshirtButton} variant="contained" centered>
-                Order t-shirts now
+                Order T-shirts now
               </Button>
             </Card>
           </Grid>
