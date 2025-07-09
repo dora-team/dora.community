@@ -15,7 +15,7 @@ export const SummitPage = () => {
       <SiteBanner />
       <Box maxWidth="1600px" margin="auto" padding="1rem">
         <Hero />
-        <Card title="DORA Community Summit">
+        <Card title="DORA Community Summit 2023">
           <Box textAlign="center">
             <img src={doraFamiilyPhoto} width="720" height="252" alt="DORA Summit Family Photo - 2023" />
           </Box>
@@ -23,12 +23,10 @@ export const SummitPage = () => {
           <h2>Accelerating the journey with lessons from fellow travelers</h2>
 
           <p>
-            The inaugural DORA Community Summit was held on Monday, October 2 as a pre-event for the DevOps Enterprise Summit. Catch-up on the recordings in this <a href="https://www.youtube.com/playlist?list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5" target="_youtube">YouTube Playlist</a>.
+            The inaugural DORA Community Summit was held on Monday, October 2, 2023 as a pre-event for the DevOps Enterprise Summit. Catch-up on the recordings in this <a href="https://www.youtube.com/playlist?list=PLMtxeMdO4DaD6lHxCiccbP3vQtuH-MBB5" target="_youtube">YouTube Playlist</a>.
           </p>
 
           <h3>Schedule</h3>
-          <p>8AM - 12PM Monday, October 2 at The Cosmopolitan in Las Vegas</p>
-
           <p>
             08:00 - 09:00 - Coffee with fellow travelers, our DORA Summit
             adventure begins!
