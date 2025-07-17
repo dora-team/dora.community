@@ -4,8 +4,6 @@ import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import tshirtCard from "../assets/dora-community-shirts.png";
 import genAIReportThumb from "../assets/dora-impact-of-generative-ai-in-software-development-report.png";
-import doraAwardsThumb from "../assets/dora-award.png";
-import doraSurveyThumb from "../assets/survey.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -24,14 +22,6 @@ const handleYoutubeButton = () => {
   window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
 };
 
-const handleDoraSurveyButton = () => {
-  window.open("https://dora.dev/survey/", "_blank");
-};
-
-const handleDoraAwardButton = () => {
-  window.open("https://cloud.google.com/awards/devops/", "_blank");
-};
-
 const handleGenAIReportButton = () => {
   window.open("https://cloud.google.com/resources/content/dora-impact-of-gen-ai-software-development", "_blank");
 };
@@ -46,21 +36,6 @@ export const HomePage = () => {
           <Hero />
         </Grid>
         <Grid container item spacing={2} justifyContent="center">
-          <Grid item xl={4} md={6} xs={12}>
-            <Card
-              title="2025 DORA Survey"
-              imageLeft={doraSurveyThumb}
-              size="s"
-            >
-              Contribute to the latest research by taking the DORA Survey.
-              <br /><br />
-              The DORA research program is dedicated to helping technology-driven teams get better at getting better. Use this a unique opportunity to pause and evaluate your team's ways of working.
-              <br /><br />
-              <Button onClick={handleDoraSurveyButton} variant="contained" centered>
-                Take the DORA Survey
-              </Button>
-            </Card>
-          </Grid>
 
           <Grid item xl={4} md={6} xs={12}>
             <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
@@ -77,23 +52,23 @@ export const HomePage = () => {
           </Grid>
 
           <Grid item xl={4} md={6} xs={12}>
-            <Card
-              title="Google Cloud DORA Awards"
-              imageLeft={doraAwardsThumb}
-              size="s"
-            >
-              Has your team achieved remarkable success through DORA principles?
+            <Card title="T-shirts" imageLeft={tshirtCard} size="s">
+            Limited-edition DORA tees are here! Multiple colors, straight cut &
+            fitted styles. Get yours before they disappear!
               <br />
               <br />
-              It's time to shine! We're thrilled to announce the launch of the 2025
-              DORA Awards, celebrating outstanding achievements in technology delivery
-              and operational performance.
-              <br /><br />
-              <Button onClick={handleDoraAwardButton} variant="contained" centered>
-                Apply for the DORA Awards
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <Button onClick={handleTshirtButton} variant="contained" centered>
+                Order t-shirts now
               </Button>
             </Card>
           </Grid>
+
         </Grid>
 
         <Grid container item spacing={2} justifyContent="center">
@@ -113,25 +88,6 @@ export const HomePage = () => {
               <br />
               <Button onClick={handleGenAIReportButton} variant="contained" centered>
                 Download the Report
-              </Button>
-            </Card>
-          </Grid>
-
-          <Grid item xl={4} md={6} xs={12}>
-            <Card title="T-shirts" imageLeft={tshirtCard} size="s">
-            Limited-edition DORA tees are here! Multiple colors, straight cut &
-            fitted styles. Get yours before they disappear!
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <Button onClick={handleTshirtButton} variant="contained" centered>
-                Order t-shirts now
               </Button>
             </Card>
           </Grid>
