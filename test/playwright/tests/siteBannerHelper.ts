@@ -1,8 +1,8 @@
 import { expect, Page } from '@playwright/test';
 
 export async function checkSiteBanner(page: Page) {
-  const siteBannerURL = 'https://dora.dev/survey/';
-  const siteBannerText = 'Take the 2025 DORA Survey!';
+  const siteBannerURL = 'https://dora.dev/merch/';
+  const siteBannerText = 'Buy a DORA T-shirt!';
 
   const bannerLink = page.locator('a', { hasText: siteBannerText }); // Consider a more robust selector
 
