@@ -9,6 +9,8 @@ import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Hero } from "./Hero";
 import { SiteBanner } from "./SiteBanner";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const handleDoraDevButton = () => {
   window.open("https://dora.dev", "_blank");
@@ -27,6 +29,17 @@ const handleGenAIReportButton = () => {
 };
 
 export const HomePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <Stack spacing={0}>
       <SiteBanner />
@@ -37,7 +50,7 @@ export const HomePage = () => {
         </Grid>
         <Grid container item spacing={2} justifyContent="center">
 
-          <Grid item xl={4} md={6} xs={12}>
+          <Grid item xl={4} md={6} xs={12} id="dora-dev">
             <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
               DORA is the largest and longest
               running research program of its kind, that seeks to understand the
@@ -51,7 +64,7 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid item xl={4} md={6} xs={12}>
+          <Grid item xl={4} md={6} xs={12} id="merch">
             <Card title="T-shirts" imageLeft={tshirtCard} size="s">
             Limited-edition DORA tees are here! Multiple colors, straight cut &
             fitted styles. Get yours before they disappear!
@@ -71,7 +84,7 @@ export const HomePage = () => {
 
         </Grid>
 
-        <Grid container item spacing={2} justifyContent="center">
+        <Grid container item spacing={2} justifyContent="center" id="gen-ai-report">
           <Grid item xl={4} md={6} xs={12}>
             <Card
               title="Impact of Generative AI"
@@ -92,7 +105,7 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid item xl={4} md={6} xs={12}>
+          <Grid item xl={4} md={6} xs={12} id="youtube">
             <Card
               title="YouTube Channel"
               iconLeft={faYoutube}
@@ -118,9 +131,9 @@ export const HomePage = () => {
           </Grid>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={12} id="calendar">
           <Card title="Calendar">
-            <Box display="flex" justifyContent="center" id="test">
+            <Box display="flex" justifyContent="center">
               <Box
                 position="relative"
                 overflow="hidden"

@@ -39,3 +39,19 @@ for (const [buttonName, expectedURL] of Object.entries(buttonTests)) {
 test('Homepage displays a calendar iframe', async ({ page }) => {
   await expect(page.locator('iframe[src*="calendar.google.com"]')).toBeVisible();
 });
+
+test.describe('scrolling with a URL hash', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('/#calendar');
+  });
+
+  test('should put the calendar in the viewport', async ({ page }) => {
+    const calendarCard = page.locator('#calendar');
+    await expect(calendarCard).toBeInViewport();
+  });
+
+  test('should move the dora-dev card out of the viewport', async ({ page }) => {
+    const doraDevCard = page.locator('#dora-dev');
+    await expect(doraDevCard).not.toBeInViewport();
+  });
+});
