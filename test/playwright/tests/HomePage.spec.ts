@@ -21,7 +21,6 @@ const buttonTests = {
   'Join the dora community of practice': 'https://groups.google.com/g/dora-community/about',
   'Explore DORA.dev': 'https://dora.dev',
   'Download the report': 'https://cloud.google.com/resources/content/dora-impact-of-gen-ai-software-development',
-  'Order t-shirts now': 'https://www.customink.com/g/yrs0-00cz-1q8d',
   'Subscribe to Our Channel': 'https://www.youtube.com/@dora-dev?sub_confirmation=1',
 };
 
