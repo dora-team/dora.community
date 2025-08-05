@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-export const SiteBannerEnabled = true;
+export const SiteBannerEnabled = false;
 export const SiteBannerURL = "https://dora.dev/merch/";
 export const SiteBannerText = "Buy a DORA T-shirt!";
 

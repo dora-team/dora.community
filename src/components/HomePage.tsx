@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
-import tshirtCard from "../assets/dora-community-shirts.png";
 import genAIReportThumb from "../assets/dora-impact-of-generative-ai-in-software-development-report.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
@@ -14,10 +13,6 @@ import { useLocation } from "react-router-dom";
 
 const handleDoraDevButton = () => {
   window.open("https://dora.dev", "_blank");
-};
-
-const handleTshirtButton = () => {
-  window.open("https://www.customink.com/g/yrs0-00cz-1q8d", "_blank");
 };
 
 const handleYoutubeButton = () => {
@@ -64,27 +59,6 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid item xl={4} md={6} xs={12} id="merch">
-            <Card title="T-shirts" imageLeft={tshirtCard} size="s">
-            Limited-edition DORA tees are here! Multiple colors, straight cut &
-            fitted styles. Get yours before they disappear!
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <Button onClick={handleTshirtButton} variant="contained" centered>
-                Order t-shirts now
-              </Button>
-            </Card>
-          </Grid>
-
-        </Grid>
-
-        <Grid container item spacing={2} justifyContent="center" id="gen-ai-report">
           <Grid item xl={4} md={6} xs={12}>
             <Card
               title="Impact of Generative AI"
@@ -129,6 +103,7 @@ export const HomePage = () => {
               </Button>
             </Card>
           </Grid>
+
         </Grid>
 
         <Grid item xs={12} id="calendar">
