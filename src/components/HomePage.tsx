@@ -8,8 +8,7 @@ import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Hero } from "./Hero";
 import { SiteBanner } from "./SiteBanner";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useInPageLinking } from "../hooks/useInPageLinking";
 
 const handleDoraDevButton = () => {
   window.open("https://dora.dev", "_blank");
@@ -24,17 +23,7 @@ const handleGenAIReportButton = () => {
 };
 
 export const HomePage = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.substring(1);
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
+  useInPageLinking();
   return (
     <Stack spacing={0}>
       <SiteBanner />
