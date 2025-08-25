@@ -1,4 +1,5 @@
 import { Box, Grid } from "@mui/material";
+import { useInPageLinking } from "../hooks/useInPageLinking";
 
 import {
   Card,
@@ -20,6 +21,7 @@ import {
 } from "../assets";
 
 export const JoinPage = () => {
+  useInPageLinking();
   return (
     <>
       <SiteBanner />
@@ -210,68 +212,70 @@ export const JoinPage = () => {
         </Card>
 
 
-        <Card title="DORA Advocacy Team">
-          <Grid container spacing={{ xs: 2, md: 3 }}>
-            <Grid item xs={12} sm={6} md={4}>
-              <DoraGuideHighlight
-                title="Nathen Harvey"
-                altText="Nathen Harvey"
-                image={nathenHarvey}
-                body={
-                  <Box>
-                    Nathen Harvey leads the DORA team at Google Cloud, where he
-                    guides technology-driven teams and organizations on
-                    optimizing their software delivery and operational
-                    performance. Nathen leverages DORA's industry-leading
-                    research to help teams measurably improve developer
-                    experience and software delivery speed, stability, and
-                    efficiency. He is a co-author of several influential DORA
-                    reports and a contributor and editor of the O'Reilly book,
-                    "97 Things Every Cloud Engineer Should Know" (2020).
-                  </Box>
-                }
-                linkedIn="https://www.linkedin.com/in/nathen/"
-                twitter="https://twitter.com/nathenharvey"
-              />
+        <Box id="dora-advocacy-team">
+          <Card title="DORA Advocacy Team">
+            <Grid container spacing={{ xs: 2, md: 3 }}>
+              <Grid item xs={12} sm={6} md={4}>
+                <DoraGuideHighlight
+                  title="Nathen Harvey"
+                  altText="Nathen Harvey"
+                  image={nathenHarvey}
+                  body={
+                    <Box>
+                      Nathen Harvey leads the DORA team at Google Cloud, where he
+                      guides technology-driven teams and organizations on
+                      optimizing their software delivery and operational
+                      performance. Nathen leverages DORA's industry-leading
+                      research to help teams measurably improve developer
+                      experience and software delivery speed, stability, and
+                      efficiency. He is a co-author of several influential DORA
+                      reports and a contributor and editor of the O'Reilly book,
+                      "97 Things Every Cloud Engineer Should Know" (2020).
+                    </Box>
+                  }
+                  linkedIn="https://www.linkedin.com/in/nathen/"
+                  twitter="https://twitter.com/nathenharvey"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <DoraGuideHighlight
+                  title="Dave Stanke"
+                  altText="Dave Stanke"
+                  image={daveStanke}
+                  body="Dave Stanke is a Developer Advocate for DORA, a program
+                  run by Google Cloud. He specializes in DevOps, Site Reliability
+                  Engineering (SRE), and other flavors of technical relationship
+                  therapy. He loves chatting with practitioners: listening to
+                  stories, telling stories, sharing a healthy cry. Prior to
+                  Google, he was the CTO of OvationTix, a SaaS startup in the
+                  performing arts industry, where he specialized in feeding memory
+                  to Java servers. He chose on purpose to live in New Jersey,
+                  where he enjoys cooking, indie rock, and fatherhood."
+                  linkedIn="https://www.linkedin.com/in/davidstanke/"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <DoraGuideHighlight
+                  title="Amanda Lewis"
+                  altText="Amanda Lewis"
+                  image={amandaLewisHeadshot}
+                  body="Amanda Lewis is the DORA.community Development Lead and a
+                  developer advocate with Google Cloud, focused on DORA, DevOps,
+                  and Developer Productivity. Amanda has spent her career building
+                  connections across leadership, developers, product managers,
+                  project management, and operators through working on teams that
+                  developed e-commerce platforms, content management systems,
+                  observability tools, and supported developers. These connections
+                  and conversations lead to happy customers and better outcomes
+                  for the business. She brings her years of experience and empathy
+                  to the work that she does helping teams understand and implement
+                  DevOps and reliability practices."
+                  linkedIn="https://www.linkedin.com/in/lewisamanda/"
+                />
+              </Grid>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <DoraGuideHighlight
-                title="Dave Stanke"
-                altText="Dave Stanke"
-                image={daveStanke}
-                body="Dave Stanke is a Developer Advocate for DORA, a program
-                run by Google Cloud. He specializes in DevOps, Site Reliability
-                Engineering (SRE), and other flavors of technical relationship
-                therapy. He loves chatting with practitioners: listening to
-                stories, telling stories, sharing a healthy cry. Prior to
-                Google, he was the CTO of OvationTix, a SaaS startup in the
-                performing arts industry, where he specialized in feeding memory
-                to Java servers. He chose on purpose to live in New Jersey,
-                where he enjoys cooking, indie rock, and fatherhood."
-                linkedIn="https://www.linkedin.com/in/davidstanke/"
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <DoraGuideHighlight
-                title="Amanda Lewis"
-                altText="Amanda Lewis"
-                image={amandaLewisHeadshot}
-                body="Amanda Lewis is the DORA.community Development Lead and a
-                developer advocate with Google Cloud, focused on DORA, DevOps,
-                and Developer Productivity. Amanda has spent her career building
-                connections across leadership, developers, product managers,
-                project management, and operators through working on teams that
-                developed e-commerce platforms, content management systems,
-                observability tools, and supported developers. These connections
-                and conversations lead to happy customers and better outcomes
-                for the business. She brings her years of experience and empathy
-                to the work that she does helping teams understand and implement
-                DevOps and reliability practices."
-                linkedIn="https://www.linkedin.com/in/lewisamanda/"
-              />
-            </Grid>
-          </Grid>
-        </Card>
+          </Card>
+        </Box>
       </Box>
     </>
   );
