@@ -242,6 +242,10 @@ export const CommunityGuidelinesPage = () => {
             Thank you for being a part of the DORA Community, your presence and
             contributions are celebrated.
           </p>
+
+          <p className="updated">
+            Last updated: August 27, 2025
+          </p>
         </Card>
       </Box>
     </>
