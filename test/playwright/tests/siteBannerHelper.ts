@@ -1,9 +1,9 @@
-import { expect, Page } from '@playwright/test';
+import { expect, Page } from "@playwright/test";
 
 export async function checkSiteBanner(page: Page) {
-  const siteBannerText = 'Buy a DORA T-shirt!';
+  const siteBannerText = "Download the 2025 DORA Report!";
 
-  const bannerLink = page.locator('a', { hasText: siteBannerText });
+  const bannerLink = page.locator("a", { hasText: siteBannerText });
 
-  await expect(bannerLink).not.toBeVisible();
+  await expect(bannerLink).toBeVisible();
 }

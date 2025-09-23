@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 
-export const SiteBannerEnabled = false;
-export const SiteBannerURL = "https://dora.dev/merch/";
-export const SiteBannerText = "Buy a DORA T-shirt!";
+export const SiteBannerEnabled = true;
+export const SiteBannerURL = "https://cloud.google.com/dora";
+export const SiteBannerText = "Download the 2025 DORA Report!";
 
 /**
  * SiteBanner component.
@@ -32,7 +32,9 @@ export const SiteBanner = () => {
       }}
     >
       <>
-        <a href={`${SiteBannerURL}`} target="_blank">{SiteBannerText}</a>
+        <a href={`${SiteBannerURL}`} target="_blank">
+          {SiteBannerText}
+        </a>
       </>
     </Box>
   );

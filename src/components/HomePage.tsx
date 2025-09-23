@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
-import genAIReportThumb from "../assets/dora-impact-of-generative-ai-in-software-development-report.png";
+import doraReport2025Thumb from "../assets/2025-state-of-ai-assisted-software-development-report.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -18,8 +18,8 @@ const handleYoutubeButton = () => {
   window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
 };
 
-const handleGenAIReportButton = () => {
-  window.open("https://cloud.google.com/resources/content/dora-impact-of-gen-ai-software-development", "_blank");
+const handle2025ReportButton = () => {
+  window.open("https://cloud.google.com/dora", "_blank");
 };
 
 export const HomePage = () => {
@@ -33,16 +33,21 @@ export const HomePage = () => {
           <Hero />
         </Grid>
         <Grid container item spacing={2} justifyContent="center">
-
           <Grid item xl={4} md={6} xs={12} id="dora-dev">
             <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
-              DORA is the largest and longest
-              running research program of its kind, that seeks to understand the
-              capabilities that drive software delivery and operations
-              performance. <br /> <br /> DORA helps teams apply those
-              capabilities, leading to better organizational performance.
-              <br /><br />
-              <Button onClick={handleDoraDevButton} variant="contained" centered>
+              DORA is the largest and longest running research program of its
+              kind, that seeks to understand the capabilities that drive
+              software delivery and operations performance. <br /> <br /> DORA
+              helps teams apply those capabilities, leading to better
+              organizational performance.
+              <br />
+              <br />
+              <br />
+              <Button
+                onClick={handleDoraDevButton}
+                variant="contained"
+                centered
+              >
                 Explore DORA.dev
               </Button>
             </Card>
@@ -50,19 +55,23 @@ export const HomePage = () => {
 
           <Grid item xl={4} md={6} xs={12}>
             <Card
-              title="Impact of Generative AI"
-              imageLeft={genAIReportThumb}
+              title="2025 DORA Report"
+              imageLeft={doraReport2025Thumb}
               size="s"
             >
-              Generative AI is rapidly reshaping the software development
-              landscape, presenting both exciting opportunities and complex
-              challenges.<br /><br />
-              Read research-backed guidance for leaders and
-              practitioners to effectively navigate this transformation and to
-              maximize AI's benefits.
+              The State of AI-assisted Software Development report reveals AI’s
+              primary role is as an amplifier, magnifying an organization’s
+              existing strengths and weaknesses. The greatest returns on AI
+              investment come not from the tools themselves, but from a
+              strategic focus on the underlying organizational system.
               <br />
               <br />
-              <Button onClick={handleGenAIReportButton} variant="contained" centered>
+              <br />
+              <Button
+                onClick={handle2025ReportButton}
+                variant="contained"
+                centered
+              >
                 Download the Report
               </Button>
             </Card>
@@ -76,23 +85,47 @@ export const HomePage = () => {
               size="s"
             >
               Most sessions start with a guest speaker who's presentation is
-              recorded.<br />
+              recorded.
+              <br />
               <br />
               Some recent topics:
               <br />
               <br />
-              <li><a href="https://www.youtube.com/watch?v=qyikCFaHLRk&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=10">Mobile applications & DORA</a></li>
-              <li><a href="https://www.youtube.com/watch?v=HBEtKSIznn0&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=36">Value Stream Mapping (VSM)</a></li>
-              <li><a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42">Building a Generative Culture</a></li>
-              <li><a href="https://www.youtube.com/watch?v=7_myznsXP8Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=37">AI Adoption</a></li>
-              <li><a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12">DORA &amp; SPACE</a></li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=qyikCFaHLRk&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=10">
+                  Mobile applications & DORA
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=HBEtKSIznn0&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=36">
+                  Value Stream Mapping (VSM)
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42">
+                  Building a Generative Culture
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=7_myznsXP8Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=37">
+                  AI Adoption
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12">
+                  DORA &amp; SPACE
+                </a>
+              </li>
               <br />
-              <Button onClick={handleYoutubeButton} variant="contained" centered>
+              <Button
+                onClick={handleYoutubeButton}
+                variant="contained"
+                centered
+              >
                 Subscribe to Our Channel
               </Button>
             </Card>
           </Grid>
-
         </Grid>
 
         <Grid item xs={12} id="calendar">
@@ -108,7 +141,15 @@ export const HomePage = () => {
               >
                 <p>
                   <small>
-                    Have an event that the DORA Community might be interested in? <a href="mailto:dora-community-events@googlegroups.com?Subject=DORA+Community+Calendar+suggestion" target="_blank">Send us the details</a>.
+                    Have an event that the DORA Community might be interested
+                    in?{" "}
+                    <a
+                      href="mailto:dora-community-events@googlegroups.com?Subject=DORA+Community+Calendar+suggestion"
+                      target="_blank"
+                    >
+                      Send us the details
+                    </a>
+                    .
                   </small>
                 </p>
                 <iframe
