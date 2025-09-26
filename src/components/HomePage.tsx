@@ -90,7 +90,11 @@ export const HomePage = () => {
               <br />
               Some recent topics:
               <br />
-              <br />
+              <li>
+                <a href="https://www.youtube.com/watch?v=Sz8NWaTiWfE&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=14">
+                  State of AI-assisted Software Development
+                </a>
+              </li>
               <li>
                 <a href="https://www.youtube.com/watch?v=qyikCFaHLRk&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=10">
                   Mobile applications & DORA
@@ -104,11 +108,6 @@ export const HomePage = () => {
               <li>
                 <a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42">
                   Building a Generative Culture
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=7_myznsXP8Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=37">
-                  AI Adoption
                 </a>
               </li>
               <li>
