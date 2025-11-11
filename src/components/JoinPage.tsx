@@ -120,7 +120,17 @@ export const JoinPage = () => {
                 title="Betsalel (Saul) Williamson"
                 altText="Betsalel (Saul) Williamson"
                 image={saulWilliamson}
-                body="Betsalel (Saul) Williamson brings a broad range of experience in DevOps and community development as a Technology and Business Consultant. He is the owner of Williamson Consulting Services and helps companies implement best practices in DevOps and new product development. He is passionate about helping his peers and projects succeed. Saul is committed to community leadership, applying his expertise in market research and event development to engage local communities. This includes his past service on the boards of Pittsburgh's PDMA and IEEE chapters, as well as his current volunteer work for a local LGBT+ non-profit. Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow! Outside of work, Saul enjoys working on software hobby projects, traveling, and playing classical piano. He lives in Palm Springs, California."
+                body="Betsalel (Saul) Williamson brings a broad range of experience in DevOps and community
+                      development as a Technology and Business Consultant. He is the owner of Williamson Consulting
+                      Services and helps companies implement best practices in DevOps and new product development.
+                      He is passionate about helping his peers and projects succeed. Saul is committed to community
+                      leadership, applying his expertise in market research and event development to engage local
+                      communities. This includes his past service on the boards of Pittsburgh's PDMA and IEEE
+                      chapters, as well as his current volunteer work for a local LGBT+ non-profit. Saul lives
+                      with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity,
+                      equity, and inclusion practices that supply a healthy environment for everyone to learn and
+                      grow! Outside of work, Saul enjoys working on software hobby projects, traveling, and playing
+                      classical piano. He lives in Palm Springs, California."
                 linkedIn="https://www.linkedin.com/in/betsalel/"
               />
               </Grid>
