@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import doraReport2025Thumb from "../assets/2025-state-of-ai-assisted-software-development-report.png";
+import doraAICapabilitiesModelReportThumb from "../assets/2025-dora-ai-capabilities-model-report.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -22,6 +23,13 @@ const handle2025ReportButton = () => {
   window.open("https://cloud.google.com/dora", "_blank");
 };
 
+const handleAICapabilitiesModelReportButton = () => {
+  window.open(
+    "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
+    "_blank",
+  );
+};
+
 export const HomePage = () => {
   useInPageLinking();
   return (
@@ -33,14 +41,13 @@ export const HomePage = () => {
           <Hero />
         </Grid>
         <Grid container item spacing={2} justifyContent="center">
-          <Grid item xl={4} md={6} xs={12} id="dora-dev">
+          <Grid item xl={6} md={6} xs={12} id="dora-dev">
             <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
               DORA is the largest and longest running research program of its
               kind, that seeks to understand the capabilities that drive
               software delivery and operations performance. <br /> <br /> DORA
               helps teams apply those capabilities, leading to better
               organizational performance.
-              <br />
               <br />
               <br />
               <Button
@@ -53,9 +60,9 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid item xl={4} md={6} xs={12}>
+          <Grid item xl={6} md={6} xs={12}>
             <Card
-              title="2025 DORA Report"
+              title="DORA State of AI-assisted Software Development"
               imageLeft={doraReport2025Thumb}
               size="s"
             >
@@ -77,7 +84,9 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid item xl={4} md={6} xs={12} id="youtube">
+
+
+          <Grid item xl={6} md={6} xs={12} id="youtube">
             <Card
               title="YouTube Channel"
               iconLeft={faYoutube}
@@ -125,6 +134,33 @@ export const HomePage = () => {
               </Button>
             </Card>
           </Grid>
+
+          <Grid item xl={6} md={6} xs={12}>
+            <Card
+              title="DORA AI Capabilities Model report"
+              imageLeft={doraAICapabilitiesModelReportThumb}
+              size="s"
+            >
+              The DORA AI Capabilities Model report, a companion guide to the
+              2025 State of AI-assisted Software Development report, serves as
+              a practical guide to the seven capabilities that amplify the
+              benefits of AI. For each of the seven core capabilities, this
+              report details implementation strategies, specific tactics for
+              teams to get started, and methods for monitoring progress and
+              fostering continuous improvement.
+              <br />
+              <br />
+              <br />
+              <br />
+              <Button
+                onClick={handleAICapabilitiesModelReportButton}
+                variant="contained"
+                centered
+              >
+                Download the Report
+              </Button>
+            </Card>
+          </Grid>
         </Grid>
 
         <Grid item xs={12} id="calendar">
@@ -168,6 +204,6 @@ export const HomePage = () => {
           </Card>
         </Grid>
       </Grid>
-    </Stack>
+    </Stack >
   );
 };

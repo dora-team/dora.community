@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 
 export const SiteBannerEnabled = true;
-export const SiteBannerURL = "https://cloud.google.com/dora";
-export const SiteBannerText = "Download the 2025 DORA Report!";
+export const SiteBannerURL = "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report";
+export const SiteBannerText = "Download the DORA AI Capabilities Model report!";
 
 /**
  * SiteBanner component.
