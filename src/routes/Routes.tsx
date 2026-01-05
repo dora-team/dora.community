@@ -1,3 +1,4 @@
+import { Navigate } from "react-router-dom";
 import { Blog } from "../components/Blog";
 import { CommunityGuidelinesPage } from "../components/CommunityGuidelines";
 import { DenaliLummaPage } from "../components/DenaliLummaPage";
@@ -55,6 +56,10 @@ export const routes = [
   {
     element: <DenaliLummaPage />,
     path: "summit/denali-lumma/",
+  },
+  {
+    element: <Navigate to="/#calendar" replace />,
+    path: "/calendar",
   },
 ];
 
