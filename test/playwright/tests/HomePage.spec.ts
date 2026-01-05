@@ -19,23 +19,47 @@ test("Homepage has the correct title.", async ({ page }) => {
   await expect(page).toHaveTitle("DORA Community of Practice");
 });
 
-const buttonTests = {
-  "Join the dora community of practice":
-    "https://groups.google.com/g/dora-community/about",
-  "Explore DORA.dev": "https://dora.dev",
-  "Download the report":
-    "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
-  "Subscribe to Our Channel":
-    "https://www.youtube.com/@dora-dev?sub_confirmation=1",
-};
+const buttonTests = [
+  {
+    name: "Join the dora community of practice",
+    url: "https://groups.google.com/g/dora-community/about",
+  },
+  {
+    name: "Explore DORA.dev",
+    url: "https://dora.dev",
+    cardTitle: "DORA.dev",
+  },
+  {
+    name: "Download the report",
+    url: "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
+    cardTitle: "DORA State of AI-assisted Software Development",
+  },
+  {
+    name: "Download the report",
+    url: "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
+    cardTitle: "DORA AI Capabilities Model report",
+  },
+  {
+    name: "Subscribe to Our Channel",
+    url: "https://www.youtube.com/@dora-dev?sub_confirmation=1",
+  },
+];
 
-for (const [buttonName, expectedURL] of Object.entries(buttonTests)) {
-  test(`${buttonName} button opens correct link in new tab`, async ({
+for (const { name: buttonName, url: expectedURL, cardTitle } of buttonTests) {
+  test(`${buttonName} button${cardTitle ? ` in ${cardTitle}` : ""} opens correct link in new tab`, async ({
     page,
   }) => {
+    // If a cardTitle is provided, scope the button search to that card
+    const buttonLocator = cardTitle
+      ? page
+        .locator(".MuiGrid-item:not(.MuiGrid-container)")
+        .filter({ has: page.getByRole("heading", { name: cardTitle }) })
+        .getByRole("button", { name: buttonName })
+      : page.getByRole("button", { name: buttonName });
+
     const [newPage] = await Promise.all([
       page.waitForEvent("popup"),
-      page.getByRole("button", { name: buttonName }).click(),
+      buttonLocator.click(),
     ]);
 
     await expect(newPage).toHaveURL(expectedURL);
