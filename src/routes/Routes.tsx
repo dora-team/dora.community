@@ -1,5 +1,4 @@
 import { Navigate } from "react-router-dom";
-import { Blog } from "../components/Blog";
 import { CommunityGuidelinesPage } from "../components/CommunityGuidelines";
 import { DenaliLummaPage } from "../components/DenaliLummaPage";
 import { HomePage } from "../components/HomePage";
@@ -36,13 +35,13 @@ export const routes = [
     path: "/summit",
   },
   {
-    element: <Blog />,
+    element: <Navigate to="/" replace />,
     label: "Blog",
     menuItem: false,
     path: "/blog",
   },
   {
-    element: <Blog />,
+    element: <Navigate to="/" replace />,
     path: "blog/:id/",
   },
   {
