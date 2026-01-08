@@ -1,5 +1,7 @@
 # DORA Community Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0598ea6f-c480-4c65-8a32-123237253d58/deploy-status)](https://app.netlify.com/projects/dora-community/deploys)
+
 This project serves as the online hub for the DORA community, providing a space for members to connect, share insights, and collaborate on all things related to continuous improvement and software delivery performance.
 
 ## About DORA
