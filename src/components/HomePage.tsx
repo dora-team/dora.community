@@ -98,7 +98,7 @@ export const HomePage = () => {
               <br />
               <br />
               Some recent topics:
-              <br />
+              <Box component="ul" paddingLeft="2rem">
               <li>
                 <a href="https://www.youtube.com/watch?v=Sz8NWaTiWfE&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=14">
                   State of AI-assisted Software Development
@@ -124,6 +124,7 @@ export const HomePage = () => {
                   DORA &amp; SPACE
                 </a>
               </li>
+              </Box>
               <br />
               <Button
                 onClick={handleYoutubeButton}
