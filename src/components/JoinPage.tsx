@@ -33,9 +33,11 @@ export const JoinPage = () => {
               <Box marginBottom="1rem" fontSize="1.5rem">
                 Join the DORA Community of Practice Google Group Mailing list to:
               </Box>
-              <li>Connect with members asynchronously</li>
-              <li>Receive invitations for community events</li>
-              <li>Stay up-to-date on community news </li>
+              <ul>
+                <li>Connect with members asynchronously</li>
+                <li>Receive invitations for community events</li>
+                <li>Stay up-to-date on community news </li>
+              </ul>
               <Box marginTop="2rem" textAlign="center">
                 <SignUpButton />
               </Box>
