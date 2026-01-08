@@ -99,31 +99,33 @@ export const HomePage = () => {
               <br />
               Some recent topics:
               <br />
-              <li>
-                <a href="https://www.youtube.com/watch?v=Sz8NWaTiWfE&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=14">
-                  State of AI-assisted Software Development
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=qyikCFaHLRk&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=10">
-                  Mobile applications & DORA
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=HBEtKSIznn0&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=36">
-                  Value Stream Mapping (VSM)
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42">
-                  Building a Generative Culture
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12">
-                  DORA &amp; SPACE
-                </a>
-              </li>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=Sz8NWaTiWfE&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=14" target="_blank">
+                    State of AI-assisted Software Development
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=qyikCFaHLRk&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=10" target="_blank">
+                    Mobile applications & DORA
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=HBEtKSIznn0&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=36" target="_blank">
+                    Value Stream Mapping (VSM)
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42" target="_blank">
+                    Building a Generative Culture
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12" target="_blank">
+                    DORA &amp; SPACE
+                  </a>
+                </li>
+              </ul>
               <br />
               <Button
                 onClick={handleYoutubeButton}
