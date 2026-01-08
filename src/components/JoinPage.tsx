@@ -70,32 +70,32 @@ export const JoinPage = () => {
 
         <Box id="dora-community-guides">
           <Card title="DORA Community Guides">
-          <Grid
+            <Grid
               container
               spacing={{ xs: 2, md: 3 }}
               justifyContent="center"
             >
-            <Grid item xs={12} sm={6} md={3}>
-              <DoraGuideHighlight
-                title="Steve Fenton"
-                altText="Steve Fenton"
-                image={steveFenton}
-                body="Steve Fenton is an Octonaut at Octopus Deploy and a five-
+              <Grid item xs={12} sm={6} md={3}>
+                <DoraGuideHighlight
+                  title="Steve Fenton"
+                  altText="Steve Fenton"
+                  image={steveFenton}
+                  body="Steve Fenton is an Octonaut at Octopus Deploy and a five-
                 time Microsoft MVP with more than two decades of experience in
                 software delivery. He has written books on TypeScript (Apress,
                 InfoQ), Octopus Deploy, and Web Operations. Steve has worked in
                 the role of Software Engineer, SDET, Development Manager, and
                 Director of Product and Data in a range of startups, SMEs, and
                 enterprises."
-                linkedIn="https://www.linkedin.com/in/stevefenton/"
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <DoraGuideHighlight
-                title="Denali Lumma"
-                altText="Denali Lumma"
-                image={denaliLumma}
-                body="Denali Lumma is a technology executive with over 20 years
+                  linkedIn="https://www.linkedin.com/in/stevefenton/"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <DoraGuideHighlight
+                  title="Denali Lumma"
+                  altText="Denali Lumma"
+                  image={denaliLumma}
+                  body="Denali Lumma is a technology executive with over 20 years
                 experience in startup to public offering, small, midsize and
                 global companies supporting teams responsible for customer-facing
                 product development for B2C, B2B, healthcare and life sciences,
@@ -112,15 +112,15 @@ export const JoinPage = () => {
                 Combinator, Andreessen Horowitz, and other venture capital
                 groups. Denali lives in Los Gatos, California with her husband and
                 two children. "
-                linkedIn="https://www.linkedin.com/in/denali-lumma/"
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <DoraGuideHighlight
-                title="Betsalel (Saul) Williamson"
-                altText="Betsalel (Saul) Williamson"
-                image={saulWilliamson}
-                body="Betsalel (Saul) Williamson brings a broad range of experience in DevOps and community
+                  linkedIn="https://www.linkedin.com/in/denali-lumma/"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <DoraGuideHighlight
+                  title="Betsalel (Saul) Williamson"
+                  altText="Betsalel (Saul) Williamson"
+                  image={saulWilliamson}
+                  body="Betsalel (Saul) Williamson brings a broad range of experience in DevOps and community
                       development as a Technology and Business Consultant. He is the owner of Williamson Consulting
                       Services and helps companies implement best practices in DevOps and new product development.
                       He is passionate about helping his peers and projects succeed. Saul is committed to community
@@ -131,8 +131,8 @@ export const JoinPage = () => {
                       equity, and inclusion practices that supply a healthy environment for everyone to learn and
                       grow! Outside of work, Saul enjoys working on software hobby projects, traveling, and playing
                       classical piano. He lives in Palm Springs, California."
-                linkedIn="https://www.linkedin.com/in/betsalel/"
-              />
+                  linkedIn="https://www.linkedin.com/in/betsalel/"
+                />
               </Grid>
             </Grid>
             <Grid
@@ -233,7 +233,6 @@ export const JoinPage = () => {
                     </Box>
                   }
                   linkedIn="https://www.linkedin.com/in/nathen/"
-                  twitter="https://twitter.com/nathenharvey"
                 />
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
