@@ -94,6 +94,8 @@ for (const {
     });
   }
 
+
+
   if (hasImageLink && cardTitle) {
     test(`Image/Icon in ${cardTitle} opens correct link in new tab`, async ({
       page,
@@ -133,6 +135,26 @@ for (const {
     });
   }
 }
+
+test("DevOps Dozen badge opens correct link in new tab", async ({ page }) => {
+  const cardTitle = "DORA State of AI-assisted Software Development";
+  const cardLocator = page
+    .locator(".MuiGrid-item:not(.MuiGrid-container)")
+    .filter({ has: page.getByRole("heading", { name: cardTitle }) });
+
+  const badgeLink = cardLocator.getByRole("link", {
+    name: /^DevOps Dozen/,
+  });
+
+  const [newPage] = await Promise.all([
+    page.waitForEvent("popup"),
+    badgeLink.click({ force: true }),
+  ]);
+
+  await expect(newPage).toHaveURL(
+    "https://dora.dev/insights/devops-dozen-awards-2025/",
+  );
+});
 
 
 test("Homepage displays a calendar iframe", async ({ page }) => {
