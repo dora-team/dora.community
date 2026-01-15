@@ -42,12 +42,18 @@ export const HomePage = () => {
         </Grid>
         <Grid container item spacing={2} justifyContent="center">
           <Grid item xl={6} md={6} xs={12} id="dora-dev">
-            <Card title="DORA.dev" imageLeft={doraDevCard} size="s">
+            <Card
+              title="DORA.dev"
+              imageLeft={doraDevCard}
+              size="s"
+              link="https://dora.dev"
+            >
               DORA is the largest and longest running research program of its
               kind, that seeks to understand the capabilities that drive
               software delivery and operations performance. <br /> <br /> DORA
               helps teams apply those capabilities, leading to better
               organizational performance.
+              <br />
               <br />
               <br />
               <Button
@@ -65,14 +71,13 @@ export const HomePage = () => {
               title="DORA State of AI-assisted Software Development"
               imageLeft={doraReport2025Thumb}
               size="s"
+              link="https://cloud.google.com/dora"
             >
               The State of AI-assisted Software Development report reveals AI’s
               primary role is as an amplifier, magnifying an organization’s
               existing strengths and weaknesses. The greatest returns on AI
               investment come not from the tools themselves, but from a
               strategic focus on the underlying organizational system.
-              <br />
-              <br />
               <br />
               <Button
                 onClick={handle2025ReportButton}
@@ -92,6 +97,7 @@ export const HomePage = () => {
               iconLeft={faYoutube}
               iconStyle={{ color: "#d01b1b" }}
               size="s"
+              link="https://www.youtube.com/@dora-dev?sub_confirmation=1"
             >
               Most sessions start with a guest speaker who's presentation is
               recorded.
@@ -126,7 +132,6 @@ export const HomePage = () => {
                   </a>
                 </li>
               </ul>
-              <br />
               <Button
                 onClick={handleYoutubeButton}
                 variant="contained"
@@ -142,6 +147,7 @@ export const HomePage = () => {
               title="DORA AI Capabilities Model report"
               imageLeft={doraAICapabilitiesModelReportThumb}
               size="s"
+              link="https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report"
             >
               The DORA AI Capabilities Model report, a companion guide to the
               2025 State of AI-assisted Software Development report, serves as

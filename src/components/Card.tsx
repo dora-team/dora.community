@@ -9,6 +9,7 @@ type CardProps = {
   // children?: JSX.Element | JSX.Element[] | string;
   children?: any;
   size?: "s" | "m" | "l";
+  link?: string;
 };
 
 const imageWidth = {
@@ -19,7 +20,14 @@ const imageWidth = {
 
 
 
-export const Card = ({ title, imageLeft, iconLeft, iconStyle, children, size= "m" }: CardProps) => {
+export const Card = ({ title, imageLeft, iconLeft, iconStyle, children, size= "m", link }: CardProps) => {
+  const ImageContent = () => (
+    <>
+      {imageLeft && <img src={imageLeft} width={imageWidth[size]} />}
+      {iconLeft && <FontAwesomeIcon icon={iconLeft} style={{...iconStyle,width:imageWidth[size], fontSize: "200px"}}  />}
+    </>
+  );
+
   return (
     <Box m="0.5rem" display="flex" flex={1} flexDirection="column">
       <Box
@@ -42,18 +50,25 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children, size= "m
 
           }}
         >
-         <h2>{title}</h2>
+         {link ? (
+           <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>
+             <h2>{title}</h2>
+           </a>
+         ) : (
+           <h2>{title}</h2>
+         )}
         </Box>
         <Box display="flex" height="100%">
-          {imageLeft && (
-            <Box p="1rem">
-              <img src={imageLeft} width={imageWidth[size]} />
-            </Box>
-          )}
-          {iconLeft && (
-            <Box p="1rem">
-              <FontAwesomeIcon icon={iconLeft} style={{...iconStyle,width:imageWidth[size], fontSize: "200px"}}  />
-            </Box>
+          {(imageLeft || iconLeft) && (
+             <Box p="1rem">
+               {link ? (
+                 <a href={link} target="_blank" rel="noopener noreferrer">
+                   <ImageContent />
+                 </a>
+               ) : (
+                 <ImageContent />
+               )}
+             </Box>
           )}
           <Box p="1rem" width="100%" id="card-content">{children}</Box>
         </Box>
