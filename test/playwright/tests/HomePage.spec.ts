@@ -66,6 +66,81 @@ for (const { name: buttonName, url: expectedURL, cardTitle } of buttonTests) {
   });
 }
 
+const imageLinkTests = [
+  {
+    cardTitle: "DORA.dev",
+    url: "https://dora.dev",
+  },
+  {
+    cardTitle: "DORA State of AI-assisted Software Development",
+    url: "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
+  },
+  {
+    cardTitle: "YouTube Channel",
+    url: "https://www.youtube.com/@dora-dev?sub_confirmation=1",
+  },
+  {
+    cardTitle: "DORA AI Capabilities Model report",
+    url: "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
+  },
+];
+
+for (const { cardTitle, url: expectedURL } of imageLinkTests) {
+  test(`Image/Icon in ${cardTitle} opens correct link in new tab`, async ({
+    page,
+  }) => {
+    const cardLocator = page
+      .locator(".MuiGrid-item:not(.MuiGrid-container)")
+      .filter({ has: page.getByRole("heading", { name: cardTitle }) });
+
+    // The image link is the first anchor tag in the card (before the content)
+    const imageLink = cardLocator.locator("a").first();
+
+    const [newPage] = await Promise.all([
+      page.waitForEvent("popup"),
+      imageLink.click(),
+    ]);
+
+    await expect(newPage).toHaveURL(expectedURL);
+  });
+}
+
+const titleLinkTests = [
+  {
+    cardTitle: "DORA.dev",
+    url: "https://dora.dev",
+  },
+  {
+    cardTitle: "DORA State of AI-assisted Software Development",
+    url: "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
+  },
+  {
+    cardTitle: "YouTube Channel",
+    url: "https://www.youtube.com/@dora-dev?sub_confirmation=1",
+  },
+  {
+    cardTitle: "DORA AI Capabilities Model report",
+    url: "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
+  },
+];
+
+for (const { cardTitle, url: expectedURL } of titleLinkTests) {
+  test(`Title in ${cardTitle} opens correct link in new tab`, async ({
+    page,
+  }) => {
+    // Locate the heading that is inside an anchor tag
+    const titleLink = page.getByRole("heading", { name: cardTitle }).locator("..");
+
+    const [newPage] = await Promise.all([
+      page.waitForEvent("popup"),
+      titleLink.click(),
+    ]);
+
+    await expect(newPage).toHaveURL(expectedURL);
+  });
+}
+
+
 test("Homepage displays a calendar iframe", async ({ page }) => {
   await expect(
     page.locator('iframe[src*="calendar.google.com"]'),
