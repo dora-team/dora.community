@@ -19,125 +19,119 @@ test("Homepage has the correct title.", async ({ page }) => {
   await expect(page).toHaveTitle("DORA Community of Practice");
 });
 
-const buttonTests = [
+type CardTestConfig = {
+  url: string;
+  buttonName?: string;
+  cardTitle?: string;
+  hasImageLink?: boolean;
+  hasTitleLink?: boolean;
+  redirectUrl?: string; // Optional: use this if the URL redirects to a different final URL
+};
+
+const cards: CardTestConfig[] = [
   {
-    name: "Join the dora community of practice",
+    buttonName: "Join the dora community of practice",
     url: "https://groups.google.com/g/dora-community/about",
   },
   {
-    name: "Explore DORA.dev",
-    url: "https://dora.dev",
     cardTitle: "DORA.dev",
+    buttonName: "Explore DORA.dev",
+    url: "https://dora.dev",
+    hasImageLink: true,
+    hasTitleLink: true,
   },
   {
-    name: "Download the report",
-    url: "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
     cardTitle: "DORA State of AI-assisted Software Development",
+    buttonName: "Download the report",
+    url: "https://cloud.google.com/dora",
+    redirectUrl:
+      "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
+    hasImageLink: true,
+    hasTitleLink: true,
   },
   {
-    name: "Download the report",
-    url: "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
     cardTitle: "DORA AI Capabilities Model report",
+    buttonName: "Download the report",
+    url: "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
+    hasImageLink: true,
+    hasTitleLink: true,
   },
   {
-    name: "Subscribe to Our Channel",
+    cardTitle: "YouTube Channel",
+    buttonName: "Subscribe to Our Channel",
     url: "https://www.youtube.com/@dora-dev?sub_confirmation=1",
+    hasImageLink: true,
+    hasTitleLink: true,
   },
 ];
 
-for (const { name: buttonName, url: expectedURL, cardTitle } of buttonTests) {
-  test(`${buttonName} button${cardTitle ? ` in ${cardTitle}` : ""} opens correct link in new tab`, async ({
-    page,
-  }) => {
-    // If a cardTitle is provided, scope the button search to that card
-    const buttonLocator = cardTitle
-      ? page
+for (const {
+  cardTitle,
+  buttonName,
+  url: expectedURL,
+  redirectUrl,
+  hasImageLink,
+  hasTitleLink,
+} of cards) {
+  if (buttonName) {
+    test(`${buttonName} button${cardTitle ? ` in ${cardTitle}` : ""} opens correct link in new tab`, async ({
+      page,
+    }) => {
+      // If a cardTitle is provided, scope the button search to that card
+      const buttonLocator = cardTitle
+        ? page
+          .locator(".MuiGrid-item:not(.MuiGrid-container)")
+          .filter({ has: page.getByRole("heading", { name: cardTitle }) })
+          .getByRole("button", { name: buttonName })
+        : page.getByRole("button", { name: buttonName });
+
+      const [newPage] = await Promise.all([
+        page.waitForEvent("popup"),
+        buttonLocator.click(),
+      ]);
+
+      await expect(newPage).toHaveURL(redirectUrl || expectedURL);
+    });
+  }
+
+  if (hasImageLink && cardTitle) {
+    test(`Image/Icon in ${cardTitle} opens correct link in new tab`, async ({
+      page,
+    }) => {
+      const cardLocator = page
         .locator(".MuiGrid-item:not(.MuiGrid-container)")
-        .filter({ has: page.getByRole("heading", { name: cardTitle }) })
-        .getByRole("button", { name: buttonName })
-      : page.getByRole("button", { name: buttonName });
+        .filter({ has: page.getByRole("heading", { name: cardTitle }) });
 
-    const [newPage] = await Promise.all([
-      page.waitForEvent("popup"),
-      buttonLocator.click(),
-    ]);
+      // The image link is the anchor tag that contains an image or icon
+      // We take the first one because the card content (children) might also contain links with images/icons
+      const imageLink = cardLocator.locator("a").filter({ has: page.locator("img, svg") }).first();
 
-    await expect(newPage).toHaveURL(expectedURL);
-  });
-}
+      const [newPage] = await Promise.all([
+        page.waitForEvent("popup"),
+        imageLink.click(),
+      ]);
 
-const imageLinkTests = [
-  {
-    cardTitle: "DORA.dev",
-    url: "https://dora.dev",
-  },
-  {
-    cardTitle: "DORA State of AI-assisted Software Development",
-    url: "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
-  },
-  {
-    cardTitle: "YouTube Channel",
-    url: "https://www.youtube.com/@dora-dev?sub_confirmation=1",
-  },
-  {
-    cardTitle: "DORA AI Capabilities Model report",
-    url: "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
-  },
-];
+      await expect(newPage).toHaveURL(redirectUrl || expectedURL);
+    });
+  }
 
-for (const { cardTitle, url: expectedURL } of imageLinkTests) {
-  test(`Image/Icon in ${cardTitle} opens correct link in new tab`, async ({
-    page,
-  }) => {
-    const cardLocator = page
-      .locator(".MuiGrid-item:not(.MuiGrid-container)")
-      .filter({ has: page.getByRole("heading", { name: cardTitle }) });
+  if (hasTitleLink && cardTitle) {
+    test(`Title in ${cardTitle} opens correct link in new tab`, async ({
+      page,
+    }) => {
+      // Locate the heading that is inside an anchor tag
+      const titleLink = page
+        .getByRole("heading", { name: cardTitle })
+        .locator("..");
 
-    // The image link is the first anchor tag in the card (before the content)
-    const imageLink = cardLocator.locator("a").first();
+      const [newPage] = await Promise.all([
+        page.waitForEvent("popup"),
+        titleLink.click(),
+      ]);
 
-    const [newPage] = await Promise.all([
-      page.waitForEvent("popup"),
-      imageLink.click(),
-    ]);
-
-    await expect(newPage).toHaveURL(expectedURL);
-  });
-}
-
-const titleLinkTests = [
-  {
-    cardTitle: "DORA.dev",
-    url: "https://dora.dev",
-  },
-  {
-    cardTitle: "DORA State of AI-assisted Software Development",
-    url: "https://cloud.google.com/resources/content/2025-dora-ai-assisted-software-development-report",
-  },
-  {
-    cardTitle: "YouTube Channel",
-    url: "https://www.youtube.com/@dora-dev?sub_confirmation=1",
-  },
-  {
-    cardTitle: "DORA AI Capabilities Model report",
-    url: "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
-  },
-];
-
-for (const { cardTitle, url: expectedURL } of titleLinkTests) {
-  test(`Title in ${cardTitle} opens correct link in new tab`, async ({
-    page,
-  }) => {
-    // Locate the heading that is inside an anchor tag
-    const titleLink = page.getByRole("heading", { name: cardTitle }).locator("..");
-
-    const [newPage] = await Promise.all([
-      page.waitForEvent("popup"),
-      titleLink.click(),
-    ]);
-
-    await expect(newPage).toHaveURL(expectedURL);
-  });
+      await expect(newPage).toHaveURL(redirectUrl || expectedURL);
+    });
+  }
 }
 
 
