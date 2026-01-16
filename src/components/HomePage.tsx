@@ -4,6 +4,7 @@ import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import doraReport2025Thumb from "../assets/2025-state-of-ai-assisted-software-development-report.png";
 import doraAICapabilitiesModelReportThumb from "../assets/2025-dora-ai-capabilities-model-report.png";
+import devopsDozenBadge from "../assets/devops-dozen-2025-dora-report.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -55,7 +56,6 @@ export const HomePage = () => {
               organizational performance.
               <br />
               <br />
-              <br />
               <Button
                 onClick={handleDoraDevButton}
                 variant="contained"
@@ -66,6 +66,7 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
+
           <Grid item xl={6} md={6} xs={12}>
             <Card
               title="DORA State of AI-assisted Software Development"
@@ -73,6 +74,19 @@ export const HomePage = () => {
               size="s"
               link="https://cloud.google.com/dora"
             >
+              <div style={{ float: "right", marginLeft: "1rem", marginBottom: "0.5rem" }}>
+                <a
+                  href="https://dora.dev/insights/devops-dozen-awards-2025/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={devopsDozenBadge}
+                    alt="DevOps Dozen 2025 Awards: Best DevOps Survey/Analysis/Research"
+                    style={{ width: "12rem" }}
+                  />
+                </a>
+              </div>
               The State of AI-assisted Software Development report reveals AI’s
               primary role is as an amplifier, magnifying an organization’s
               existing strengths and weaknesses. The greatest returns on AI
