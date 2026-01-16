@@ -18,9 +18,6 @@ const imageWidth = {
   l: "350px",
 };
 
-
-
-
 const ImageContent = ({
   imageLeft,
   iconLeft,
