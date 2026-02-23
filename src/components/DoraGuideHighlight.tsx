@@ -26,7 +26,11 @@ export const DoraGuideHighlight = ({
 }: GuideProps) => {
   return (
     <Card>
-      <CardMedia sx={{ height: 500 }} image={image} title={altText} />
+      <CardMedia
+        sx={{ height: 500, backgroundPosition: "top center" }}
+        image={image}
+        title={altText}
+      />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}

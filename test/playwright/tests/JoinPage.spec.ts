@@ -30,12 +30,21 @@ test('Join page includes the Lean Coffee Discussions card', async ({ page }) => 
 });
 
 test('Join page includes the DORA Community Guides cards', async ({ page }) => {
-  await expect(page.getByRole('heading', { name: 'DORA Community Guides' })).toBeVisible();
-  await expect(page.getByText('Steve Fenton').first()).toBeVisible();
-  await expect(page.getByText('Denali Lumma').first()).toBeVisible();
-  await expect(page.getByText('Betsalel (Saul) Williamson').first()).toBeVisible();
-  await expect(page.getByText('Lisa Crispin').first()).toBeVisible();
-  await expect(page.getByText('Dhruv Agarwal').first()).toBeVisible();
+  const currentGuidesSection = page.locator('#dora-community-guides');
+  await expect(currentGuidesSection.getByRole('heading', { name: 'DORA Community Guides', exact: true })).toBeVisible();
+  await expect(currentGuidesSection.getByText('Steve Fenton').first()).toBeVisible();
+  await expect(currentGuidesSection.getByText('Denali Lumma').first()).toBeVisible();
+  await expect(currentGuidesSection.getByText('Betsalel (Saul) Williamson').first()).toBeVisible();
+  await expect(currentGuidesSection.getByText('Lisa Crispin').first()).toBeVisible();
+  await expect(currentGuidesSection.getByText('Dhruv Agarwal')).not.toBeVisible();
+});
+
+test('Join page includes the Previous DORA Community Guides section', async ({ page }) => {
+  const previousGuidesSection = page.locator('#previous-dora-community-guides');
+  await expect(previousGuidesSection.getByRole('heading', { name: 'Previous DORA Community Guides' })).toBeVisible();
+  await expect(previousGuidesSection.getByText('Dhruv Agarwal').first()).toBeVisible();
+  await expect(previousGuidesSection.getByText('March 18, 2025 - February 23, 2026')).toBeVisible();
+  await expect(previousGuidesSection.getByRole('link', { name: 'LinkedIn' })).toBeVisible();
 });
 
 test('Join page includes the DORA Advocacy Team cards', async ({ page }) => {
