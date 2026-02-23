@@ -13,7 +13,6 @@ import {
   amandaLewisHeadshot,
   daveStanke,
   denaliLumma,
-  dhruvAgarwal,
   lisaCrispin,
   nathenHarvey,
   saulWilliamson,
@@ -136,12 +135,6 @@ export const JoinPage = () => {
                   linkedIn="https://www.linkedin.com/in/betsalel/"
                 />
               </Grid>
-            </Grid>
-            <Grid
-              container
-              spacing={{ xs: 2, md: 3 }}
-              justifyContent="center"
-            >
               <Grid item xs={12} sm={6} md={3}>
                 <DoraGuideHighlight
                   title="Lisa Crispin"
@@ -177,36 +170,6 @@ export const JoinPage = () => {
                   }
                   linkedIn="https://www.linkedin.com/in/lisa-crispin-88420a/"
                   twitter="https://twitter.com/lisacrispin"
-                />
-              </Grid>
-              <Grid item xs={12} sm={6} md={3}>
-                <DoraGuideHighlight
-                  title="Dhruv Agarwal"
-                  altText="Dhruv Agarwal"
-                  image={dhruvAgarwal}
-                  body={
-                    <Box>
-                      <p>
-                        Dhruv Agarwal thrives on bringing structure to chaos,
-                        building sustainable systems, and scaling high-performing
-                        teams. A builder at heart, he has spent the last decade
-                        crafting software, leading teams, and driving efficiency in
-                        engineering workflows.
-                      </p>
-                      <p>
-                        Beyond technology, Dhruv is a passionate storyteller, hosting
-                        podcasts like The Change Story and The Tech Voyager, where he
-                        explores innovation, leadership, and transformation.
-                      </p>
-                      <p>
-                        As the CEO of <a href="https://www.middlewarehq.com/" target="_blank">MiddlewareHQ</a>,
-                        he is on a mission to help engineering teams streamline
-                        operations, improve efficiency, and build resilient
-                        systems for the future."
-                      </p>
-                    </Box>
-                  }
-                  linkedIn="https://www.linkedin.com/in/dhruvagga/"
                 />
               </Grid>
             </Grid>
@@ -272,6 +235,34 @@ export const JoinPage = () => {
                 />
               </Grid>
             </Grid>
+          </Card>
+        </Box>
+
+        <Box id="previous-dora-community-guides">
+          <Card title="Previous DORA Community Guides">
+            <Box p="1rem">
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={4}>
+                  <strong>Name</strong>
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                  <strong>Dates of service</strong>
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                  <strong>Social profile</strong>
+                </Grid>
+
+                <Grid item xs={12} sm={4}>
+                  Dhruv Agarwal
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                  March 18, 2025 - February 23, 2026
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                  <a href="https://www.linkedin.com/in/dhruvagga/" target="_blank">LinkedIn</a>
+                </Grid>
+              </Grid>
+            </Box>
           </Card>
         </Box>
       </Box>
