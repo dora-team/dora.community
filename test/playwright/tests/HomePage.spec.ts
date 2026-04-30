@@ -57,9 +57,23 @@ const cards: CardTestConfig[] = [
     hasTitleLink: true,
   },
   {
+    cardTitle: "ROI of AI-assisted Software Development report",
+    buttonName: "Download the report",
+    url: "https://dora.dev/ai/roi/report/",
+    hasImageLink: true,
+    hasTitleLink: true,
+  },
+  {
     cardTitle: "YouTube Channel",
     buttonName: "Subscribe to Our Channel",
     url: "https://www.youtube.com/@dora-dev?sub_confirmation=1",
+    hasImageLink: true,
+    hasTitleLink: true,
+  },
+  {
+    cardTitle: "Google Cloud DORA Award nominations",
+    buttonName: "Submit a Nomination",
+    url: "https://cloud.google.com/awards/dora",
     hasImageLink: true,
     hasTitleLink: true,
   },
