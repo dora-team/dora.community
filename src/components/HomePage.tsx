@@ -93,6 +93,11 @@ export const HomePage = () => {
               <br />
               <ul>
                 <li>
+                  <a href="https://www.youtube.com/watch?v=oF_DAF9aNgg&list=PLMtxeMdO4DaDD3a3jPyPTkiU8mC9xRt8M&index=3" target="_blank">
+                    DORA AI Capabilities Model
+                  </a>
+                </li>
+                <li>
                   <a href="https://www.youtube.com/watch?v=Sz8NWaTiWfE&list=PLMtxeMdO4DaAyqLaGrm8q55COt8eCMrKl&index=14" target="_blank">
                     State of AI-assisted Software Development
                   </a>
@@ -103,7 +108,6 @@ export const HomePage = () => {
                   </a>
                 </li>
               </ul>
-              <br />
               <Button
                 onClick={handleYoutubeButton}
                 variant="contained"
