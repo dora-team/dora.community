@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const VITE_PREVIEW_PORT = 4173;
+const VITE_PREVIEW_PORT = 5173;
 const VITE_PREVIEW_URL = `http://localhost:${VITE_PREVIEW_PORT}`;
 
 /**

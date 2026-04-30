@@ -4,6 +4,8 @@ import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import doraReport2025Thumb from "../assets/2025-state-of-ai-assisted-software-development-report.png";
 import doraAICapabilitiesModelReportThumb from "../assets/2025-dora-ai-capabilities-model-report.png";
+import doraAward from "../assets/dora-award.png";
+import roiReportThumb from "../assets/roi-of-ai-assisted-software-development-report-thumb.png";
 import devopsDozenBadge from "../assets/devops-dozen-2025-dora-report.png";
 import { Button } from "./Button";
 import { Card } from "./Card";
@@ -20,6 +22,10 @@ const handleYoutubeButton = () => {
   window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
 };
 
+const handleAwardNominationsButton = () => {
+  window.open("https://cloud.google.com/awards/dora", "_blank");
+};
+
 const handle2025ReportButton = () => {
   window.open("https://cloud.google.com/dora", "_blank");
 };
@@ -27,6 +33,13 @@ const handle2025ReportButton = () => {
 const handleAICapabilitiesModelReportButton = () => {
   window.open(
     "https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report",
+    "_blank",
+  );
+};
+
+const handleROIReportButton = () => {
+  window.open(
+    "https://dora.dev/roi-ai-report",
     "_blank",
   );
 };
@@ -42,7 +55,7 @@ export const HomePage = () => {
           <Hero />
         </Grid>
         <Grid container item spacing={2} justifyContent="center">
-          <Grid item xl={6} md={6} xs={12} id="dora-dev">
+          <Grid item xl={4} md={4} xs={12} id="dora-dev">
             <Card
               title="DORA.dev"
               imageLeft={doraDevCard}
@@ -54,8 +67,6 @@ export const HomePage = () => {
               software delivery and operations performance. <br /> <br /> DORA
               helps teams apply those capabilities, leading to better
               organizational performance.
-              <br />
-              <br />
               <Button
                 onClick={handleDoraDevButton}
                 variant="contained"
@@ -66,46 +77,7 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-
-          <Grid item xl={6} md={6} xs={12}>
-            <Card
-              title="DORA State of AI-assisted Software Development"
-              imageLeft={doraReport2025Thumb}
-              size="s"
-              link="https://cloud.google.com/dora"
-            >
-              <div style={{ float: "right", marginLeft: "1rem", marginBottom: "0.5rem" }}>
-                <a
-                  href="https://dora.dev/insights/devops-dozen-awards-2025/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={devopsDozenBadge}
-                    alt="DevOps Dozen 2025 Awards: Best DevOps Survey/Analysis/Research"
-                    style={{ width: "12rem" }}
-                  />
-                </a>
-              </div>
-              The State of AI-assisted Software Development report reveals AI’s
-              primary role is as an amplifier, magnifying an organization’s
-              existing strengths and weaknesses. The greatest returns on AI
-              investment come not from the tools themselves, but from a
-              strategic focus on the underlying organizational system.
-              <br />
-              <Button
-                onClick={handle2025ReportButton}
-                variant="contained"
-                centered
-              >
-                Download the Report
-              </Button>
-            </Card>
-          </Grid>
-
-
-
-          <Grid item xl={6} md={6} xs={12} id="youtube">
+          <Grid item xl={4} md={4} xs={12} id="youtube">
             <Card
               title="YouTube Channel"
               iconLeft={faYoutube}
@@ -130,22 +102,8 @@ export const HomePage = () => {
                     Mobile applications & DORA
                   </a>
                 </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=HBEtKSIznn0&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=36" target="_blank">
-                    Value Stream Mapping (VSM)
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=7gjLjRRXB7Y&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=42" target="_blank">
-                    Building a Generative Culture
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=AlOJ-3vRyjE&list=PLMtxeMdO4DaDmWE8raSDr-uju3j91x21w&index=12" target="_blank">
-                    DORA &amp; SPACE
-                  </a>
-                </li>
               </ul>
+              <br />
               <Button
                 onClick={handleYoutubeButton}
                 variant="contained"
@@ -156,7 +114,66 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid item xl={6} md={6} xs={12}>
+          <Grid item xl={4} md={4} xs={12} id="award-nominations">
+            <Card
+              title="Google Cloud DORA Award nominations"
+              imageLeft={doraAward}
+              size="s"
+              link="https://cloud.google.com/awards/dora"
+            >
+              Nominations for the Google Cloud DORA Awards are now open! Celebrate
+              the teams who are driving excellence in software
+              delivery and operations through the application of DORA research
+              and capabilities.
+              <br />
+              <br />
+              <br />
+              <Button
+                onClick={handleAwardNominationsButton}
+                variant="contained"
+                centered
+              >
+                Submit a Nomination
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xl={4} md={4} xs={12}>
+            <Card
+              title="DORA State of AI-assisted Software Development"
+              imageLeft={doraReport2025Thumb}
+              size="s"
+              link="https://cloud.google.com/dora"
+            >
+              <div style={{ float: "right", marginLeft: "1rem", marginBottom: "0.5rem" }}>
+                <a
+                  href="https://dora.dev/insights/devops-dozen-awards-2025/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={devopsDozenBadge}
+                    alt="DevOps Dozen 2025 Awards: Best DevOps Survey/Analysis/Research"
+                    style={{ width: "12rem" }}
+                  />
+                </a>
+              </div>
+              The State of AI-assisted Software Development report reveals AI’s
+              primary role is as an amplifier, magnifying an organization’s
+              existing strengths and weaknesses. The greatest returns on AI
+              investment come not from the tools themselves, but from a
+              strategic focus on the underlying organizational system.
+              <Button
+                onClick={handle2025ReportButton}
+                variant="contained"
+                centered
+              >
+                Download the Report
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xl={4} md={4} xs={12}>
             <Card
               title="DORA AI Capabilities Model report"
               imageLeft={doraAICapabilitiesModelReportThumb}
@@ -168,14 +185,39 @@ export const HomePage = () => {
               a practical guide to the seven capabilities that amplify the
               benefits of AI. For each of the seven core capabilities, this
               report details implementation strategies, specific tactics for
-              teams to get started, and methods for monitoring progress and
-              fostering continuous improvement.
+              teams to get started, and methods for monitoring progress.
               <br />
               <br />
               <br />
               <br />
               <Button
                 onClick={handleAICapabilitiesModelReportButton}
+                variant="contained"
+                centered
+              >
+                Download the Report
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xl={4} md={4} xs={12} id="roi-report">
+            <Card
+              title="ROI of AI-assisted Software Development report"
+              imageLeft={roiReportThumb}
+              size="s"
+              link="https://dora.dev/roi-ai-report"
+            >
+              Discover the return on investment of AI-assisted software
+              development. This report provides insights into how AI tools are
+              impacting productivity, quality, and delivery speed, helping you
+              build a business case for AI adoption in your organization.
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <Button
+                onClick={handleROIReportButton}
                 variant="contained"
                 centered
               >
