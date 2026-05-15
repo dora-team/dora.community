@@ -6,6 +6,8 @@ import { JohnDeerePage } from "../components/JohnDeerePage";
 import { JoinPage } from "../components/JoinPage";
 import { OpeningKeynotePage } from "../components/OpeningKeynotePage";
 import { SummitPage } from "../components/SummitPage";
+import { ExternalRedirect } from "../components/ExternalRedirect";
+import { REDIRECTS } from "../data/redirects";
 
 // Ordered list of routes. Add the menuItem: true to any route that needs to be displayed in the navigation bar
 export const routes = [
@@ -60,6 +62,10 @@ export const routes = [
     element: <Navigate to="/#calendar" replace />,
     path: "/calendar",
   },
+  ...REDIRECTS.map((r) => ({
+    path: r.path,
+    element: <ExternalRedirect to={r.to} />,
+  })),
 ];
 
 export const menuItems: { label: string; path: string }[] = routes
