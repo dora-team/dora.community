@@ -4,7 +4,6 @@ import Stack from "@mui/material/Stack";
 import doraDevCard from "../assets/doradevcard.png";
 import doraReport2025Thumb from "../assets/2025-state-of-ai-assisted-software-development-report.png";
 import doraAICapabilitiesModelReportThumb from "../assets/2025-dora-ai-capabilities-model-report.png";
-import doraAward from "../assets/dora-award.png";
 import roiReportThumb from "../assets/roi-of-ai-assisted-software-development-report-thumb.png";
 import devopsDozenBadge from "../assets/devops-dozen-2025-dora-report.png";
 import { Button } from "./Button";
@@ -20,10 +19,6 @@ const handleDoraDevButton = () => {
 
 const handleYoutubeButton = () => {
   window.open("https://www.youtube.com/@dora-dev?sub_confirmation=1", "_blank");
-};
-
-const handleAwardNominationsButton = () => {
-  window.open("https://cloud.google.com/awards/dora", "_blank");
 };
 
 const handle2025ReportButton = () => {
@@ -118,31 +113,30 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid item xl={4} md={4} xs={12} id="award-nominations">
+          <Grid item xl={4} md={4} xs={12} id="roi-report">
             <Card
-              title="Google Cloud DORA Award nominations"
-              imageLeft={doraAward}
+              title="ROI of AI-assisted Software Development report"
+              imageLeft={roiReportThumb}
               size="s"
-              link="https://cloud.google.com/awards/dora"
+              link="https://dora.dev/roi-ai-report"
             >
-              Nominations for the Google Cloud DORA Awards are now open! Celebrate
-              the teams who are driving excellence in software
-              delivery and operations through the application of DORA research
-              and capabilities.
-              <br />
+              Discover the return on investment of AI-assisted software
+              development. This report provides insights into how AI tools are
+              impacting productivity, quality, and delivery speed, helping you
+              build a business case for AI adoption in your organization.
               <br />
               <br />
               <Button
-                onClick={handleAwardNominationsButton}
+                onClick={handleROIReportButton}
                 variant="contained"
                 centered
               >
-                Submit a Nomination
+                Download the Report
               </Button>
             </Card>
           </Grid>
 
-          <Grid item xl={4} md={4} xs={12}>
+          <Grid item xl={6} md={6} xs={12}>
             <Card
               title="DORA State of AI-assisted Software Development"
               imageLeft={doraReport2025Thumb}
@@ -177,7 +171,7 @@ export const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid item xl={4} md={4} xs={12}>
+          <Grid item xl={6} md={6} xs={12}>
             <Card
               title="DORA AI Capabilities Model report"
               imageLeft={doraAICapabilitiesModelReportThumb}
@@ -192,36 +186,8 @@ export const HomePage = () => {
               teams to get started, and methods for monitoring progress.
               <br />
               <br />
-              <br />
-              <br />
               <Button
                 onClick={handleAICapabilitiesModelReportButton}
-                variant="contained"
-                centered
-              >
-                Download the Report
-              </Button>
-            </Card>
-          </Grid>
-
-          <Grid item xl={4} md={4} xs={12} id="roi-report">
-            <Card
-              title="ROI of AI-assisted Software Development report"
-              imageLeft={roiReportThumb}
-              size="s"
-              link="https://dora.dev/roi-ai-report"
-            >
-              Discover the return on investment of AI-assisted software
-              development. This report provides insights into how AI tools are
-              impacting productivity, quality, and delivery speed, helping you
-              build a business case for AI adoption in your organization.
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <Button
-                onClick={handleROIReportButton}
                 variant="contained"
                 centered
               >

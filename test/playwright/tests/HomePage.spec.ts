@@ -70,13 +70,6 @@ const cards: CardTestConfig[] = [
     hasImageLink: true,
     hasTitleLink: true,
   },
-  {
-    cardTitle: "Google Cloud DORA Award nominations",
-    buttonName: "Submit a Nomination",
-    url: "https://cloud.google.com/awards/dora",
-    hasImageLink: true,
-    hasTitleLink: true,
-  },
 ];
 
 for (const {
