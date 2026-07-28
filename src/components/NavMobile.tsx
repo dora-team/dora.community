@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Menu as MenuIcon } from "@mui/icons-material";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 

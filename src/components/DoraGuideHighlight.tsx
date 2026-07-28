@@ -4,8 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Twitter } from "@mui/icons-material";
+import { LinkedIn as LinkedInIcon, Twitter } from "@mui/icons-material";
 
 type GuideProps = {
   altText: string;
