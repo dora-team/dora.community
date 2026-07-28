@@ -3,7 +3,7 @@ import {Box } from "@mui/material";
 import { Hero } from "./Hero";
 import mattRing from "../assets/matt-ring.jpg";
 import justinThomsen from "../assets/justin-thomsen.jpg";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { LinkedIn as LinkedInIcon } from "@mui/icons-material";
 import ringSlides  from "../assets/slides/DORA-Community-Summit-Matt-Ring.pdf";
 import { Link } from "react-router-dom";
 import { SiteBanner } from "./SiteBanner";
