@@ -268,13 +268,13 @@ export const JoinPage = () => {
                     image={nathenHarvey}
                     body={
                       <Box>
-                        Nathen Harvey leads Google Cloud’s DORA team, using its
-                        research to help organizations improve software delivery speed,
-                        stability, and efficiency.
+                        Nathen Harvey is a Principal Technologist on the Developer 
+                        Experience team at Amazon Web Services (AWS).
                         <br /><br />
-                        He focuses on enhancing developer experience and is dedicated to
-                        fostering technical communities like the DORA Community, which
-                        provides opportunities to learn and collaborate.
+                        He focuses on software delivery performance, platform 
+                        engineering, and AI enablement. Nathen has deep expertise
+                        in shaping developer ecosystems and was the lead author of 
+                        multiple DORA reports.
                       </Box>
                     }
                     linkedIn="https://www.linkedin.com/in/nathen/"
