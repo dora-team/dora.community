@@ -47,11 +47,12 @@ test('Join page includes the Previous DORA Community Guides section', async ({ p
   await expect(previousGuidesSection.getByRole('link', { name: 'LinkedIn' })).toBeVisible();
 });
 
-test('Join page includes the DORA Advocacy Team cards', async ({ page }) => {
-  await expect(page.getByRole('heading', { name: 'DORA Advocacy Team' })).toBeVisible();
-  await expect(page.getByText('Nathen Harvey').first()).toBeVisible();
-  await expect(page.getByText('Dave Stanke').first()).toBeVisible();
-  await expect(page.getByText('Amanda Lewis').first()).toBeVisible();
+test('Join page includes the DORA Community Leads cards', async ({ page }) => {
+  const currentGuidesSection = page.locator('#dora-community-guides');
+  await expect(currentGuidesSection.getByText('Nathen Harvey').first()).toBeVisible();
+  await expect(currentGuidesSection.getByText('Dave Stanke').first()).toBeVisible();
+  await expect(currentGuidesSection.getByText('Amanda Lewis').first()).toBeVisible();
+  await expect(currentGuidesSection.getByText('DORA Community Lead').first()).toBeVisible();
 });
 
 test('Homepage displays the correct site banner', async ({ page }) => {

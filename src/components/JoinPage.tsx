@@ -1,7 +1,5 @@
 import {
   Box,
-  Chip,
-  Divider,
   Grid,
   Paper,
   Table,
@@ -224,9 +222,10 @@ export const JoinPage = () => {
           </Grid>
         </Grid>
 
-        {/* Combined Section: DORA Community Guides & DORA Advocacy Team */}
-        <Box id="dora-community-leadership" sx={{ mt: 3 }}>
-          <Card title="DORA Community Guides & Advocacy Team">
+        {/* Section: DORA Community Guides & Leads */}
+        <Box id="dora-community-guides" sx={{ mt: 3 }}>
+          <span id="dora-advocacy-team" />
+          <Card title="DORA Community Guides">
             <Box p={{ xs: "1rem", md: "1.5rem" }}>
               <Box
                 mb={4}
@@ -243,211 +242,143 @@ export const JoinPage = () => {
                 <ForumIcon sx={{ color: "#556cd6", fontSize: 36, display: { xs: "none", sm: "block" } }} />
                 <Typography variant="body1" sx={{ color: "#374151", fontSize: "1.05rem", lineHeight: 1.6 }}>
                   The DORA Community brings together software practitioners, researchers, and leaders.
-                  Our <strong>DORA Community Guides</strong> and Google Cloud&apos;s <strong>DORA Advocacy Team</strong> work
+                  Our <strong>DORA Community Leads</strong> and <strong>DORA Community Guides</strong> work
                   together to guide discussions, host events, and share insights to help organizations improve software delivery
                   and operational performance.
                 </Typography>
               </Box>
 
-              {/* Subsection: DORA Community Guides */}
-              <Box id="dora-community-guides" sx={{ mb: 5 }}>
-                <Box
-                  display="flex"
-                  flexWrap="wrap"
-                  alignItems="center"
-                  gap={1.5}
-                  mb={1}
-                >
-                  <Typography
-                    variant="h5"
-                    component="h3"
-                    sx={{ fontWeight: 700, color: "#202124", m: 0 }}
-                  >
-                    DORA Community Guides
-                  </Typography>
-                  <Chip
-                    label="Guides"
-                    size="small"
-                    color="secondary"
-                    variant="outlined"
-                    sx={{ fontWeight: 600 }}
+              <Grid container spacing={{ xs: 2, md: 3 }} justifyContent="center">
+                <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+                  <DoraGuideHighlight
+                    title="Amanda Lewis"
+                    altText="Amanda Lewis"
+                    role="DORA Community Lead"
+                    image={amandaLewisHeadshot}
+                    body="Amanda Lewis is the DORA.community Development Lead and a developer advocate with Google Cloud, focused on DORA, DevOps, and Developer Productivity. Amanda has spent her career building connections across leadership, developers, product managers, project management, and operators through working on teams that developed e-commerce platforms, content management systems, observability tools, and supported developers. These connections and conversations lead to happy customers and better outcomes for the business. She brings her years of experience and empathy to the work that she does helping teams understand and implement DevOps and reliability practices."
+                    linkedIn="https://www.linkedin.com/in/lewisamanda/"
                   />
-                </Box>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "#5f6368", mb: 3, fontSize: "0.95rem" }}
-                >
-                  Experienced industry practitioners who foster community learning, discussions, and initiatives.
-                </Typography>
-
-                <Grid container spacing={{ xs: 2, md: 3 }} justifyContent="center">
-                  <Grid item xs={12} sm={6} md={3} sx={{ display: "flex" }}>
-                    <DoraGuideHighlight
-                      title="Steve Fenton"
-                      altText="Steve Fenton"
-                      role="DORA Community Guide"
-                      image={steveFenton}
-                      body="Steve Fenton is an Octonaut at Octopus Deploy and a five-time Microsoft MVP with more than two decades of experience in software delivery. He has written books on TypeScript (Apress, InfoQ), Octopus Deploy, and Web Operations. Steve has worked in the role of Software Engineer, SDET, Development Manager, and Director of Product and Data in a range of startups, SMEs, and enterprises."
-                      linkedIn="https://www.linkedin.com/in/stevefenton/"
-                    />
-                  </Grid>
-
-                  <Grid item xs={12} sm={6} md={3} sx={{ display: "flex" }}>
-                    <DoraGuideHighlight
-                      title="Denali Lumma"
-                      altText="Denali Lumma"
-                      role="DORA Community Guide"
-                      image={denaliLumma}
-                      body="Denali Lumma is a technology executive with over 20 years experience in startup to public offering, small, midsize and global companies supporting teams responsible for customer-facing product development for B2C, B2B, healthcare and life sciences, and infrastructure teams responsible for technical platforms, security, privacy, compliance, corporate IT, quality, reliability, and availability. She has helped to build multiple unicorns as an early engineer at companies like Netflix, 23andMe, Okta, Salesforce, and Uber. Denali serves on the board for Savage Jazz Dance Company, distinguished by its disciplined dancers and instructors, and its dedication to the exploration of jazz music's range of expression. She is an investor in Steezy, making dance the next big global sport. Denali is Founder and CEO at Doubling, offering technical advisory services to portfolio companies at Y Combinator, Andreessen Horowitz, and other venture capital groups. Denali lives in Los Gatos, California with her husband and two children."
-                      linkedIn="https://www.linkedin.com/in/denali-lumma/"
-                    />
-                  </Grid>
-
-                  <Grid item xs={12} sm={6} md={3} sx={{ display: "flex" }}>
-                    <DoraGuideHighlight
-                      title="Betsalel (Saul) Williamson"
-                      altText="Betsalel (Saul) Williamson"
-                      role="DORA Community Guide"
-                      image={saulWilliamson}
-                      body="Betsalel (Saul) Williamson brings a broad range of experience in DevOps and community development as a Technology and Business Consultant. He is the owner of Williamson Consulting Services and helps companies implement best practices in DevOps and new product development. He is passionate about helping his peers and projects succeed. Saul is committed to community leadership, applying his expertise in market research and event development to engage local communities. This includes his past service on the boards of Pittsburgh's PDMA and IEEE chapters, as well as his current volunteer work for a local LGBT+ non-profit. Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow! Outside of work, Saul enjoys working on software hobby projects, traveling, and playing classical piano. He lives in Palm Springs, California."
-                      linkedIn="https://www.linkedin.com/in/betsalel/"
-                    />
-                  </Grid>
-
-                  <Grid item xs={12} sm={6} md={3} sx={{ display: "flex" }}>
-                    <DoraGuideHighlight
-                      title="Lisa Crispin"
-                      altText="Lisa Crispin"
-                      role="DORA Community Guide"
-                      image={lisaCrispin}
-                      body={
-                        <Box>
-                          Lisa Crispin is the co-author, with Janet Gregory, of three
-                          books: Agile Testing Condensed: A Brief Introduction, More
-                          Agile Testing: Learning Journeys for the Whole Team, Agile
-                          Testing: A Practical Guide for Testers and Agile Teams; the
-                          LiveLessons Agile Testing Essentials video course. She and
-                          Janet co-founded the Agile Testing Fellowship, which offers
-                          “Holistic Testing: Strategies for agile teams” live training
-                          course both remotely and in-person. Lisa was voted by her
-                          peers as the Most Influential Agile Testing Professional
-                          Person at Agile Testing Days in 2012. She is co-founder with
-                          Janet of Agile Testing Fellowship, Inc. and is happily
-                          available for training and consulting. Please visit{" "}
-                          <a
-                            href="https://www.lisacrispin.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "#1a73e8", textDecoration: "none" }}
-                          >
-                            www.lisacrispin.com
-                          </a>
-                          ,{" "}
-                          <a
-                            href="https://www.agiletestingfellow.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "#1a73e8", textDecoration: "none" }}
-                          >
-                            www.agiletestingfellow.com
-                          </a>
-                          , and{" "}
-                          <a
-                            href="https://www.agiletester.ca"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "#1a73e8", textDecoration: "none" }}
-                          >
-                            www.agiletester.ca
-                          </a>{" "}
-                          for more. Contact Lisa on Twitter, and LinkedIn.
-                        </Box>
-                      }
-                      linkedIn="https://www.linkedin.com/in/lisa-crispin-88420a/"
-                      twitter="https://twitter.com/lisacrispin"
-                    />
-                  </Grid>
                 </Grid>
-              </Box>
 
-              <Divider sx={{ my: 4 }} />
-
-              {/* Subsection: DORA Advocacy Team */}
-              <Box id="dora-advocacy-team" sx={{ mb: 2 }}>
-                <Box
-                  display="flex"
-                  flexWrap="wrap"
-                  alignItems="center"
-                  gap={1.5}
-                  mb={1}
-                >
-                  <Typography
-                    variant="h5"
-                    component="h3"
-                    sx={{ fontWeight: 700, color: "#202124", m: 0 }}
-                  >
-                    DORA Advocacy Team
-                  </Typography>
-                  <Chip
-                    label="Google Cloud"
-                    size="small"
-                    color="primary"
-                    variant="outlined"
-                    sx={{ fontWeight: 600 }}
+                <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+                  <DoraGuideHighlight
+                    title="Nathen Harvey"
+                    altText="Nathen Harvey"
+                    role="DORA Community Lead"
+                    image={nathenHarvey}
+                    body={
+                      <Box>
+                        Nathen Harvey leads Google Cloud’s DORA team, using its
+                        research to help organizations improve software delivery speed,
+                        stability, and efficiency.
+                        <br /><br />
+                        He focuses on enhancing developer experience and is dedicated to
+                        fostering technical communities like the DORA Community, which
+                        provides opportunities to learn and collaborate.
+                      </Box>
+                    }
+                    linkedIn="https://www.linkedin.com/in/nathen/"
                   />
-                </Box>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "#5f6368", mb: 3, fontSize: "0.95rem" }}
-                >
-                  Google Cloud&apos;s team dedicated to DORA research advocacy, developer productivity, and community leadership.
-                </Typography>
-
-                <Grid container spacing={{ xs: 2, md: 3 }} justifyContent="center">
-                  <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
-                    <DoraGuideHighlight
-                      title="Nathen Harvey"
-                      altText="Nathen Harvey"
-                      role="DORA Advocacy Team"
-                      image={nathenHarvey}
-                      body={
-                        <Box>
-                          Nathen Harvey leads Google Cloud’s DORA team, using its
-                          research to help organizations improve software delivery speed,
-                          stability, and efficiency.
-                          <br /><br />
-                          He focuses on enhancing developer experience and is dedicated to
-                          fostering technical communities like the DORA Community, which
-                          provides opportunities to learn and collaborate.
-                        </Box>
-                      }
-                      linkedIn="https://www.linkedin.com/in/nathen/"
-                    />
-                  </Grid>
-
-                  <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
-                    <DoraGuideHighlight
-                      title="Dave Stanke"
-                      altText="Dave Stanke"
-                      role="DORA Advocacy Team"
-                      image={daveStanke}
-                      body="Dave Stanke is a Developer Advocate for DORA, a program run by Google Cloud. He specializes in DevOps, Site Reliability Engineering (SRE), and other flavors of technical relationship therapy. He loves chatting with practitioners: listening to stories, telling stories, sharing a healthy cry. Prior to Google, he was the CTO of OvationTix, a SaaS startup in the performing arts industry, where he specialized in feeding memory to Java servers. He chose on purpose to live in New Jersey, where he enjoys cooking, indie rock, and fatherhood."
-                      linkedIn="https://www.linkedin.com/in/davidstanke/"
-                    />
-                  </Grid>
-
-                  <Grid item xs={12} sm={6} md={4} sx={{ display: "flex" }}>
-                    <DoraGuideHighlight
-                      title="Amanda Lewis"
-                      altText="Amanda Lewis"
-                      role="DORA Advocacy Team"
-                      image={amandaLewisHeadshot}
-                      body="Amanda Lewis is the DORA.community Development Lead and a developer advocate with Google Cloud, focused on DORA, DevOps, and Developer Productivity. Amanda has spent her career building connections across leadership, developers, product managers, project management, and operators through working on teams that developed e-commerce platforms, content management systems, observability tools, and supported developers. These connections and conversations lead to happy customers and better outcomes for the business. She brings her years of experience and empathy to the work that she does helping teams understand and implement DevOps and reliability practices."
-                      linkedIn="https://www.linkedin.com/in/lewisamanda/"
-                    />
-                  </Grid>
                 </Grid>
-              </Box>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+                  <DoraGuideHighlight
+                    title="Dave Stanke"
+                    altText="Dave Stanke"
+                    role="DORA Community Lead"
+                    image={daveStanke}
+                    body="Dave Stanke is a Developer Advocate for DORA, a program run by Google Cloud. He specializes in DevOps, Site Reliability Engineering (SRE), and other flavors of technical relationship therapy. He loves chatting with practitioners: listening to stories, telling stories, sharing a healthy cry. Prior to Google, he was the CTO of OvationTix, a SaaS startup in the performing arts industry, where he specialized in feeding memory to Java servers. He chose on purpose to live in New Jersey, where he enjoys cooking, indie rock, and fatherhood."
+                    linkedIn="https://www.linkedin.com/in/davidstanke/"
+                  />
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+                  <DoraGuideHighlight
+                    title="Steve Fenton"
+                    altText="Steve Fenton"
+                    role="DORA Community Guide"
+                    image={steveFenton}
+                    body="Steve Fenton is an Octonaut at Octopus Deploy and a five-time Microsoft MVP with more than two decades of experience in software delivery. He has written books on TypeScript (Apress, InfoQ), Octopus Deploy, and Web Operations. Steve has worked in the role of Software Engineer, SDET, Development Manager, and Director of Product and Data in a range of startups, SMEs, and enterprises."
+                    linkedIn="https://www.linkedin.com/in/stevefenton/"
+                  />
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+                  <DoraGuideHighlight
+                    title="Denali Lumma"
+                    altText="Denali Lumma"
+                    role="DORA Community Guide"
+                    image={denaliLumma}
+                    body="Denali Lumma is a technology executive with over 20 years experience in startup to public offering, small, midsize and global companies supporting teams responsible for customer-facing product development for B2C, B2B, healthcare and life sciences, and infrastructure teams responsible for technical platforms, security, privacy, compliance, corporate IT, quality, reliability, and availability. She has helped to build multiple unicorns as an early engineer at companies like Netflix, 23andMe, Okta, Salesforce, and Uber. Denali serves on the board for Savage Jazz Dance Company, distinguished by its disciplined dancers and instructors, and its dedication to the exploration of jazz music's range of expression. She is an investor in Steezy, making dance the next big global sport. Denali is Founder and CEO at Doubling, offering technical advisory services to portfolio companies at Y Combinator, Andreessen Horowitz, and other venture capital groups. Denali lives in Los Gatos, California with her husband and two children."
+                    linkedIn="https://www.linkedin.com/in/denali-lumma/"
+                  />
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+                  <DoraGuideHighlight
+                    title="Betsalel (Saul) Williamson"
+                    altText="Betsalel (Saul) Williamson"
+                    role="DORA Community Guide"
+                    image={saulWilliamson}
+                    body="Betsalel (Saul) Williamson brings a broad range of experience in DevOps and community development as a Technology and Business Consultant. He is the owner of Williamson Consulting Services and helps companies implement best practices in DevOps and new product development. He is passionate about helping his peers and projects succeed. Saul is committed to community leadership, applying his expertise in market research and event development to engage local communities. This includes his past service on the boards of Pittsburgh's PDMA and IEEE chapters, as well as his current volunteer work for a local LGBT+ non-profit. Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow! Outside of work, Saul enjoys working on software hobby projects, traveling, and playing classical piano. He lives in Palm Springs, California."
+                    linkedIn="https://www.linkedin.com/in/betsalel/"
+                  />
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} sx={{ display: "flex" }}>
+                  <DoraGuideHighlight
+                    title="Lisa Crispin"
+                    altText="Lisa Crispin"
+                    role="DORA Community Guide"
+                    image={lisaCrispin}
+                    body={
+                      <Box>
+                        Lisa Crispin is the co-author, with Janet Gregory, of three
+                        books: Agile Testing Condensed: A Brief Introduction, More
+                        Agile Testing: Learning Journeys for the Whole Team, Agile
+                        Testing: A Practical Guide for Testers and Agile Teams; the
+                        LiveLessons Agile Testing Essentials video course. She and
+                        Janet co-founded the Agile Testing Fellowship, which offers
+                        “Holistic Testing: Strategies for agile teams” live training
+                        course both remotely and in-person. Lisa was voted by her
+                        peers as the Most Influential Agile Testing Professional
+                        Person at Agile Testing Days in 2012. She is co-founder with
+                        Janet of Agile Testing Fellowship, Inc. and is happily
+                        available for training and consulting. Please visit{" "}
+                        <a
+                          href="https://www.lisacrispin.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "#1a73e8", textDecoration: "none" }}
+                        >
+                          www.lisacrispin.com
+                        </a>
+                        ,{" "}
+                        <a
+                          href="https://www.agiletestingfellow.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "#1a73e8", textDecoration: "none" }}
+                        >
+                          www.agiletestingfellow.com
+                        </a>
+                        , and{" "}
+                        <a
+                          href="https://www.agiletester.ca"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "#1a73e8", textDecoration: "none" }}
+                        >
+                          www.agiletester.ca
+                        </a>{" "}
+                        for more. Contact Lisa on Twitter, and LinkedIn.
+                      </Box>
+                    }
+                    linkedIn="https://www.linkedin.com/in/lisa-crispin-88420a/"
+                    twitter="https://twitter.com/lisacrispin"
+                  />
+                </Grid>
+              </Grid>
             </Box>
           </Card>
         </Box>

@@ -81,7 +81,7 @@ export const DoraGuideHighlight = ({
                 fontSize: "0.75rem",
                 borderRadius: "6px",
               }}
-              color={role.toLowerCase().includes("advocacy") ? "primary" : "secondary"}
+              color={role.toLowerCase().includes("lead") ? "primary" : "secondary"}
               variant="outlined"
             />
           </Box>

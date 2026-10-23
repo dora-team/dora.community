@@ -146,10 +146,10 @@ export const CommunityGuidelinesPage = () => {
           <p>
             We strive to create a community where everyone feels welcome and can
             participate in a harassment-free environment. When a community
-            member violates these guidelines, the <a href="/join/#dora-advocacy-team">DORA
-            Advocacy Team</a> will take
+            member violates these guidelines, the <a href="/join/#dora-community-guides">DORA
+            Community Leads</a> will take
             action. These actions are at the sole discretion of the DORA
-            Advocacy Team and may include:
+            Community Leads and may include:
           </p>
 
           <ul>
@@ -168,7 +168,7 @@ export const CommunityGuidelinesPage = () => {
           <p>
             If you experience or witness a violation of these guidelines,
             please <a href="mailto:dora-advocacy@google.com" target="_blank">contact
-            the DORA Advocacy Team</a>.
+            the DORA Community Leads</a>.
           </p>
 
           <h3>Sharing with the community: Mailing list and community calendar</h3>
