@@ -255,7 +255,7 @@ export const JoinPage = () => {
                     altText="Amanda Lewis"
                     role="DORA Community Lead"
                     image={amandaLewisHeadshot}
-                    body="Amanda Lewis is the DORA.community Development Lead and a developer advocate with Google Cloud, focused on DORA, DevOps, and Developer Productivity. Amanda has spent her career building connections across leadership, developers, product managers, project management, and operators through working on teams that developed e-commerce platforms, content management systems, observability tools, and supported developers. These connections and conversations lead to happy customers and better outcomes for the business. She brings her years of experience and empathy to the work that she does helping teams understand and implement DevOps and reliability practices."
+                    body="Amanda Lewis is a Senior Developer Relations Engineer on Google’s Builder Relations team, championing engineering culture, developer productivity, and pragmatic AI adoption. Her tech path began coding BASIC on a TRS-80 at age eight, paired with an early foundation in hospitality that honed her emphasis on empathy, communication, and human-centered leadership. A co-author of the DORA AI Capabilities Model Report and co-founder of the DORA Community of Practice, Amanda brings two decades of cross-platform software experience to her current focus on agentic workflows and eliminating developer toil."
                     linkedIn="https://www.linkedin.com/in/lewisamanda/"
                   />
                 </Grid>
