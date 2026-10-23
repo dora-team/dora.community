@@ -34,6 +34,7 @@
     "vite-raw-plugin": "^1.0.2"
   },
   "devDependencies": {
+    "@rolldown/binding-darwin-arm64": "^1.1.5",
     "@types/lodash": "^4.14.202",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
