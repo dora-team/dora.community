@@ -6,8 +6,8 @@ const ButtonStyled = styled(MuiButton)({
   // padding: "0.5rem",
 });
 
-export const Button = (props: any) => {
-  if (props.centered) {
+export const Button = ({ centered, ...props }: any) => {
+  if (centered) {
     return (
       <Box textAlign="center" pt="1rem">
         <ButtonStyled {...props} />

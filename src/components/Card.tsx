@@ -50,12 +50,17 @@ export const Card = ({
   link,
 }: CardProps) => {
   return (
-    <Box m="0.5rem" display="flex" flex={1} flexDirection="column">
+    <Box m="0.5rem" display="flex" flex={1} flexDirection="column" height="calc(100% - 1rem)">
       <Box
         style={{
-          borderRadius: "14px 14px 0 0",
+          borderRadius: "14px",
           border: "1px solid #dadce0",
           overflow: "hidden",
+          backgroundColor: "#fff",
+          display: "flex",
+          flexDirection: "column",
+          flex: 1,
+          height: "100%",
         }}
       >
         <Box
@@ -63,10 +68,7 @@ export const Card = ({
           textAlign="center"
           style={{
             backgroundColor: "#f8f9fa",
-            // backgroundColor: "#f00",
-            // borderRadius: "14px 14px 0 0",
-
-            borderRadius: "8px",
+            borderBottom: "1px solid #dadce0",
           }}
         >
           {link ? (
@@ -81,7 +83,7 @@ export const Card = ({
             <h2>{title}</h2>
           )}
         </Box>
-        <Box display="flex" height="100%">
+        <Box display="flex" flex={1} height="100%">
           {(imageLeft || iconLeft) && (
             <Box p="1rem">
               {link ? (
@@ -103,7 +105,7 @@ export const Card = ({
               )}
             </Box>
           )}
-          <Box p="1rem" width="100%" id="card-content">
+          <Box p="1rem" width="100%" id="card-content" display="flex" flexDirection="column" flex={1}>
             {children}
           </Box>
         </Box>
