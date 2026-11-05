@@ -18,40 +18,33 @@ The DORA program conducts research to understand the capabilities that drive hig
 
 ## Getting Started
 
+For the full developer guide, including tests, project layout, common tasks,
+and troubleshooting, see **[docs/getting-started.md](docs/getting-started.md)**.
+
 ### Prerequisites
 
-* [Node.js](https://nodejs.org/)
-* [npm](https://www.npmjs.com/)
+* [Node.js](https://nodejs.org/) `^20.19.0` or `>=22.12.0` (required by Vite 8)
+* [npm](https://www.npmjs.com/) (bundled with Node.js)
 
-### Installation
+### Quick start
 
-1. Clone the repository:
+```bash
+git clone https://github.com/dora-team/dora.community.git
+cd dora.community
+npm ci
+npm run dev
+```
 
-    ```bash
-    git clone https://github.com/dora-team/dora.community.git
-    ```
+Then open <http://localhost:5173>.
 
-2. Navigate to the project directory:
+### Useful scripts
 
-    ```bash
-    cd dora-community-website
-    ```
-
-3. Install dependencies:
-
-    ```bash
-    npm install
-    ```
-
-### Development
-
-1. Start the development server:
-
-    ```bash
-    npx vite
-    ```
-
-    This will start a local development server, and you can access the website in your browser.
+| Command | What it does |
+| ------- | ------------ |
+| `npm run dev` | Start the Vite dev server with hot reload |
+| `npm run build` | Type-check (`tsc`) and build to `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run test:e2e` | Run Playwright tests (one-time setup is in the [developer guide](docs/getting-started.md#end-to-end-tests-playwright)) |
 
 ## Contributing
 
